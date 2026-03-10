@@ -1,0 +1,133 @@
+# Decision Registry
+# Canonical record of all significant decisions made by the board and leadership team.
+# Each entry creates an auditable trail linking context, process, outcome, and lessons.
+
+schema:
+  decision_id:
+    type: string
+    format: "DEC-YYYY-NNN"
+    description: "Unique identifier for the decision"
+    required: true
+  title:
+    type: string
+    description: "One-line description of the decision (verb + noun)"
+    required: true
+  date:
+    type: date
+    format: "YYYY-MM-DD"
+    description: "Date the decision was made"
+    required: true
+  decision_type:
+    type: string
+    enum: [one-way-door, two-way-door, partially-reversible]
+    description: "Reversibility classification per taxonomies/decision-types.md"
+    required: true
+  scope:
+    type: string
+    enum: [strategic, operational, tactical]
+    description: "Scope classification"
+    required: true
+  decision_maker:
+    type: string
+    description: "Person who made or owned the final call"
+    required: true
+  method:
+    type: string
+    enum: [conviction, consent, conviction-advisory, consensus]
+    description: "Decision method used per patterns/consensus-vs-conviction-pattern.md"
+    required: true
+  decision_statement:
+    type: string
+    description: "Clear, unambiguous statement of what was decided"
+    required: true
+  rationale:
+    type: string
+    description: "Why this option was chosen over alternatives"
+    required: true
+  alternatives_considered:
+    type: list
+    description: "Other options that were evaluated"
+    required: true
+  dissent:
+    type: list
+    items:
+      dissenter: string
+      position: string
+      review_trigger: string
+    description: "Recorded dissenting views with conditions for revisiting"
+    required: false
+  confidence:
+    type: string
+    enum: [high, medium, low]
+    description: "Board confidence in the decision at time of making"
+    required: true
+  quality_score:
+    type: float
+    description: "Score from utilities/decision-quality-rubric.md"
+    required: false
+  kill_criteria:
+    type: string
+    description: "Observable signals that should trigger reversal"
+    required: false
+  review_date:
+    type: date
+    description: "Scheduled date for decision review"
+    required: true
+  status:
+    type: string
+    enum: [active, reversed, superseded, completed, under-review]
+    description: "Current status of the decision"
+    required: true
+  outcome:
+    type: string
+    description: "Actual outcome once known — filled in at review"
+    required: false
+  lessons:
+    type: string
+    description: "Lessons learned — filled in at review or reversal"
+    required: false
+
+entries:
+  - decision_id: "DEC-2026-001"
+    title: "Expand into LATAM market starting with Mexico City"
+    date: 2026-01-15
+    decision_type: one-way-door
+    scope: strategic
+    decision_maker: "CEO"
+    method: conviction-advisory
+    decision_statement: "Open a Mexico City office in Q3 2026 with a 3-person team to establish LATAM market presence."
+    rationale: "LATAM represents 18% of addressable market. Mexico City provides regulatory clarity, talent access, and timezone overlap. First-mover advantage is available for 12-18 months."
+    alternatives_considered:
+      - "Enter via Brazil (larger market but regulatory complexity)"
+      - "Partner with local reseller (lower investment but less control)"
+      - "Defer to 2027 (lower risk but competitor may establish first)"
+    dissent:
+      - dissenter: "CTO"
+        position: "Engineering team is stretched; LATAM diverts resources from enterprise features"
+        review_trigger: "If enterprise pipeline drops below $500K by Q3, reopen this discussion"
+    confidence: medium
+    quality_score: 4.05
+    kill_criteria: "If zero customers acquired in first 90 days or burn exceeds $80K/month"
+    review_date: 2026-10-15
+    status: active
+    outcome: null
+    lessons: null
+
+  - decision_id: "DEC-2026-002"
+    title: "Hire VP Engineering from external search"
+    date: 2026-02-01
+    decision_type: partially-reversible
+    scope: strategic
+    decision_maker: "CEO"
+    method: consensus
+    decision_statement: "Engage Spencer Stuart for external VP Engineering search targeting candidates who have scaled teams from 12 to 50+ engineers."
+    rationale: "Internal candidates lack experience at required scale. VP Eng is critical path for enterprise product roadmap and engineering culture."
+    alternatives_considered:
+      - "Promote senior engineer internally (lower cost, higher culture risk)"
+      - "Hire fractional VP Eng (faster, less commitment, less authority)"
+    confidence: high
+    kill_criteria: "If no strong finalist after 90 days, pivot to fractional model"
+    review_date: 2026-05-01
+    status: active
+    outcome: null
+    lessons: null

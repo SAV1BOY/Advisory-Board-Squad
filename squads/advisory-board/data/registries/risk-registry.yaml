@@ -1,0 +1,131 @@
+# Risk Registry
+# Canonical record of all identified risks tracked by the board and leadership team.
+
+schema:
+  risk_id:
+    type: string
+    format: "RISK-YYYY-NNN"
+    required: true
+  title:
+    type: string
+    required: true
+  risk_type:
+    type: string
+    enum: [strategic, operational, financial, reputational, legal-regulatory, technology, people, market, existential, concentration]
+    required: true
+  description:
+    type: string
+    required: true
+  source:
+    type: string
+    required: true
+  probability:
+    type: string
+    enum: [very-low, low, medium, high, very-high]
+    required: true
+  impact:
+    type: string
+    enum: [negligible, minor, moderate, major, catastrophic]
+    required: true
+  composite_score:
+    type: integer
+    description: "Probability (1-5) x Impact (1-5)"
+    required: true
+  velocity:
+    type: string
+    enum: [sudden, fast, gradual]
+    required: true
+  strategy:
+    type: string
+    enum: [accept, mitigate, transfer, avoid]
+    required: true
+  mitigation_actions:
+    type: list
+    required: false
+  owner:
+    type: string
+    required: true
+  early_warning_indicators:
+    type: list
+    required: false
+  review_cadence:
+    type: string
+    enum: [weekly, monthly, quarterly]
+    required: true
+  last_reviewed:
+    type: date
+    required: true
+  status:
+    type: string
+    enum: [active, mitigated, materialized, retired]
+    required: true
+
+entries:
+  - risk_id: "RISK-2026-001"
+    title: "Key-person dependency on CTO"
+    risk_type: people
+    description: "CTO holds sole architectural knowledge of payments engine. No documentation exists. Backup engineer joined 3 weeks ago."
+    source: "Engineering team structure"
+    probability: medium
+    impact: major
+    composite_score: 12
+    velocity: sudden
+    strategy: mitigate
+    mitigation_actions:
+      - "Architecture documentation sprint — 2 weeks"
+      - "Assign backup engineer to shadow CTO"
+      - "Negotiate 12-month retention bonus"
+    owner: "VP Engineering"
+    early_warning_indicators:
+      - "CTO engagement score drops below 6/10"
+      - "CTO declines retention offer"
+      - "Increased recruiter outreach to CTO detected"
+    review_cadence: monthly
+    last_reviewed: 2026-03-01
+    status: active
+
+  - risk_id: "RISK-2026-002"
+    title: "Revenue concentration — top 3 customers at 52% of ARR"
+    risk_type: concentration
+    description: "Three enterprise customers represent 52% of revenue. Loss of any single customer creates a material cash crisis."
+    source: "Financial analysis"
+    probability: medium
+    impact: catastrophic
+    composite_score: 15
+    velocity: fast
+    strategy: mitigate
+    mitigation_actions:
+      - "Accelerate SMB acquisition to dilute concentration below 40%"
+      - "Establish quarterly executive relationships with each top-3 customer"
+      - "Build early warning NPS tracking for these accounts"
+    owner: "CFO"
+    early_warning_indicators:
+      - "NPS score for any top-3 customer drops below 30"
+      - "Champion at any top-3 customer departs"
+      - "Top-3 customer begins evaluating competitors"
+    review_cadence: monthly
+    last_reviewed: 2026-03-01
+    status: active
+
+  - risk_id: "RISK-2026-003"
+    title: "Runway below 12 months without fundraise"
+    risk_type: financial
+    description: "At current burn rate of $320K/month with $4.2M cash, runway is 13 months. Any burn increase or revenue miss pushes below 12 months."
+    source: "Monthly financial review"
+    probability: medium
+    impact: major
+    composite_score: 12
+    velocity: gradual
+    strategy: mitigate
+    mitigation_actions:
+      - "Begin Series A preparation by Q2"
+      - "Identify 3 cost reduction levers totaling $40K/month if needed"
+      - "Secure bridge commitment from existing investors"
+    owner: "CFO"
+    early_warning_indicators:
+      - "Monthly burn exceeds $350K for 2 consecutive months"
+      - "Revenue growth drops below 8% QoQ"
+      - "Runway drops below 10 months"
+    review_cadence: monthly
+    last_reviewed: 2026-03-01
+    status: active

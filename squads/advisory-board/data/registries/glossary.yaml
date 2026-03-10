@@ -1,0 +1,97 @@
+# Glossary
+# Canonical definitions for terms used across the Advisory Board Squad documentation.
+# Ensures consistent language and shared understanding.
+
+schema:
+  term:
+    type: string
+    required: true
+  definition:
+    type: string
+    required: true
+  context:
+    type: string
+    description: "Where and how this term is used in our system"
+    required: false
+  related_terms:
+    type: list
+    required: false
+  source:
+    type: string
+    required: false
+
+entries:
+  - term: "One-Way Door"
+    definition: "An irreversible decision where the cost of reversal exceeds 50% of the original investment or the consequences are permanent."
+    context: "Used in decision classification to determine process weight."
+    related_terms: ["Two-Way Door", "Partially Reversible", "Decision Type"]
+    source: "Jeff Bezos, Amazon shareholder letters"
+
+  - term: "Two-Way Door"
+    definition: "A reversible decision that can be undone at less than 10% of the original cost within a reasonable timeframe."
+    context: "Used to identify decisions that should be made quickly."
+    related_terms: ["One-Way Door", "Reversible Decision Pattern"]
+    source: "Jeff Bezos, Amazon shareholder letters"
+
+  - term: "Moat"
+    definition: "A durable competitive advantage that protects a business from competition and enables sustained above-average returns."
+    context: "Used in strategic analysis and moat registry tracking."
+    related_terms: ["Network Effects", "Switching Costs", "Data Moat"]
+    source: "Warren Buffett, Berkshire Hathaway"
+
+  - term: "Expected Value (EV)"
+    definition: "The probability-weighted average of all possible outcomes of a decision. Calculated as the sum of (probability x outcome value) for each scenario."
+    context: "Used in decision analysis via ev-calculator.md."
+    related_terms: ["Scenario Table", "Decision Quality"]
+
+  - term: "Pre-Mortem"
+    definition: "A prospective exercise conducted before a decision is finalized that imagines the decision has failed and works backward to identify likely causes."
+    context: "Used as a structured pattern for stress-testing decisions."
+    related_terms: ["Postmortem", "Risk Assessment"]
+    source: "Gary Klein, cognitive psychologist"
+
+  - term: "Kill Criteria"
+    definition: "Pre-defined, observable signals that should trigger the termination or reversal of an initiative, regardless of sunk costs."
+    context: "Required in decision memos and experiment briefs."
+    related_terms: ["Kill Decision Pattern", "Sunk Cost"]
+
+  - term: "Dissent and Commit"
+    definition: "A decision pattern where disagreement is voiced and recorded before the decision, then all parties commit fully to execution once the decision is made."
+    context: "Core operating principle and formal decision pattern."
+    related_terms: ["Consensus", "Conviction"]
+    source: "Andy Grove (Intel), Jeff Bezos (Amazon)"
+
+  - term: "Sunk Cost"
+    definition: "Investment already made that cannot be recovered regardless of future decisions. Irrelevant to forward-looking decision-making."
+    context: "Referenced in kill-decision-pattern.md to combat sunk cost fallacy."
+    related_terms: ["Kill Criteria", "Forward Value"]
+
+  - term: "Runway"
+    definition: "Months of continued operation possible at current burn rate with existing cash reserves. Calculated as cash on hand divided by monthly net burn."
+    context: "Primary financial health metric tracked in capital reviews."
+    related_terms: ["Burn Rate", "Capital Position"]
+
+  - term: "Composite Risk Score"
+    definition: "Probability rank (1-5) multiplied by Impact rank (1-5) for a score of 1-25. Used to prioritize risks in the risk registry."
+    context: "Used in risk-blocks.md and risk-registry.yaml."
+    related_terms: ["Risk Registry", "Early Warning Indicator"]
+
+  - term: "Decision Quality Score"
+    definition: "Weighted score (1-5) evaluating the process quality of a decision independent of its outcome. Measures framing, options, information, reasoning, dissent, and execution readiness."
+    context: "Scored using decision-quality-rubric.md for every significant decision."
+    related_terms: ["Decision Registry", "Outcome Bias"]
+
+  - term: "Stakeholder Map"
+    definition: "A structured analysis of all parties affected by a decision, classified by type (decision-maker, influencer, implementer, etc.) with engagement approach for each."
+    context: "Required for major decisions and communication planning."
+    related_terms: ["Stakeholder Types", "RACI"]
+
+  - term: "Conviction Decision"
+    definition: "A decision made by an individual with concentrated knowledge, typically for reversible decisions where speed matters more than consensus."
+    context: "One of four decision methods in consensus-vs-conviction-pattern.md."
+    related_terms: ["Consensus", "Consent", "Conviction + Advisory"]
+
+  - term: "Culture Health Score"
+    definition: "Weighted aggregate score (1-5) measuring the gap between stated cultural values and lived organizational reality across six dimensions."
+    context: "Assessed quarterly using culture-health-rubric.md."
+    related_terms: ["Psychological Safety", "Culture Registry"]

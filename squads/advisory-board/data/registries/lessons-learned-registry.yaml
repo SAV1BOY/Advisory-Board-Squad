@@ -1,0 +1,90 @@
+# Lessons Learned Registry
+# Captures organizational learning from postmortems, experiments, and significant events.
+
+schema:
+  lesson_id:
+    type: string
+    format: "LESSON-YYYY-NNN"
+    required: true
+  title:
+    type: string
+    required: true
+  source_event:
+    type: string
+    description: "What event or analysis produced this lesson"
+    required: true
+  source_id:
+    type: string
+    description: "Reference to related registry entry (DEC-, EXP-, CRISIS-, etc.)"
+    required: false
+  date_captured:
+    type: date
+    required: true
+  category:
+    type: string
+    enum: [decision-making, execution, hiring, culture, strategy, product, financial, crisis, partnership]
+    required: true
+  lesson_statement:
+    type: string
+    description: "Specific, actionable lesson"
+    required: true
+  context:
+    type: string
+    description: "What happened that taught us this"
+    required: true
+  action_taken:
+    type: string
+    description: "What changed as a result of this lesson"
+    required: false
+  applicable_to:
+    type: list
+    description: "Situations where this lesson should be applied"
+    required: true
+  status:
+    type: string
+    enum: [active, superseded, integrated]
+    required: true
+
+entries:
+  - lesson_id: "LESSON-2026-001"
+    title: "Validate channel-market fit before committing to full build"
+    source_event: "Mobile app failure — 340 activations vs 5,000 target"
+    source_id: "EXP-2025-008"
+    date_captured: 2026-01-15
+    category: product
+    lesson_statement: "When entering a new form factor or channel, run a 30-day prototype with real users before committing to a full engineering investment. Customer interview enthusiasm does not predict adoption in unfamiliar channels."
+    context: "Built a full mobile app based on 12 enthusiastic customer interviews. Actual adoption was 7% of forecast. The interviews selected for enthusiasm, not representativeness."
+    action_taken: "Added mandatory 30-day prototype phase to product development process for new channels"
+    applicable_to:
+      - "New platform/channel launches"
+      - "Product extensions into unfamiliar form factors"
+      - "Any initiative based primarily on qualitative customer feedback"
+    status: active
+
+  - lesson_id: "LESSON-2026-002"
+    title: "Backchannel references reveal what provided references hide"
+    source_event: "Head of Sales hire underperformed — provided references were glowing, backchannel revealed pattern of team turnover"
+    source_id: "HIRE-2025-004"
+    date_captured: 2025-11-01
+    category: hiring
+    lesson_statement: "For any VP+ hire, conduct minimum 2 backchannel references in addition to provided references. Ask specifically about team retention under the candidate's leadership."
+    context: "Hired Head of Sales based on strong provided references. Within 6 months, 3 of 5 sales reps quit citing management style. Backchannel references (conducted post-hire) confirmed this was a known pattern."
+    action_taken: "Updated hiring process to require 2 backchannel references for all VP+ hires. Added team retention question to reference check template."
+    applicable_to:
+      - "All VP-level and above hires"
+      - "Any hire where the role involves managing a team"
+    status: active
+
+  - lesson_id: "LESSON-2026-003"
+    title: "Content marketing does not drive mid-market pipeline"
+    source_event: "Content marketing experiment killed after 4 months"
+    source_id: "EXP-2026-002"
+    date_captured: 2026-03-01
+    category: strategy
+    lesson_statement: "Mid-market decision-makers in our category do not discover tools through blog content. Invest in product-led growth and targeted outbound instead of content marketing for pipeline generation."
+    context: "Published 32 articles over 4 months. Generated 8 leads/month but zero attributable pipeline. Brand awareness improved but did not convert to buying intent."
+    action_taken: "Reallocated $15K/month from content to product-led growth experiments"
+    applicable_to:
+      - "Future marketing channel decisions"
+      - "Budget allocation for mid-market acquisition"
+    status: active

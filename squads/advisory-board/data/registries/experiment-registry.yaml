@@ -1,0 +1,85 @@
+# Experiment Registry
+# Tracks active and completed experiments, bets, and initiatives with their hypotheses and outcomes.
+
+schema:
+  experiment_id:
+    type: string
+    format: "EXP-YYYY-NNN"
+    required: true
+  title:
+    type: string
+    required: true
+  hypothesis:
+    type: string
+    description: "If we do X, we expect Y because Z"
+    required: true
+  category:
+    type: string
+    enum: [product, growth, operations, culture, technology, market]
+    required: true
+  owner:
+    type: string
+    required: true
+  start_date:
+    type: date
+    required: true
+  time_box:
+    type: string
+    description: "Maximum duration before evaluation"
+    required: true
+  cost_cap:
+    type: string
+    required: false
+  success_criteria:
+    type: list
+    required: true
+  kill_criteria:
+    type: list
+    required: true
+  status:
+    type: string
+    enum: [active, succeeded, failed, killed, extended, pivoted]
+    required: true
+  outcome:
+    type: string
+    required: false
+  lessons:
+    type: string
+    required: false
+
+entries:
+  - experiment_id: "EXP-2026-001"
+    title: "Self-serve onboarding for mid-market"
+    hypothesis: "If we build a self-serve onboarding flow for mid-market customers, we will reduce time-to-value from 14 days to 3 days, increasing activation rate by 25%."
+    category: product
+    owner: "VP Product"
+    start_date: 2026-01-15
+    time_box: "8 weeks"
+    cost_cap: "$40K engineering time"
+    success_criteria:
+      - "Time-to-value drops below 5 days for 60%+ of new mid-market customers"
+      - "Activation rate increases by 15% or more"
+    kill_criteria:
+      - "Time-to-value shows no improvement after 4 weeks"
+      - "Customer satisfaction scores drop during onboarding"
+    status: active
+    outcome: null
+    lessons: null
+
+  - experiment_id: "EXP-2026-002"
+    title: "Content marketing for inbound pipeline"
+    hypothesis: "If we publish 2 high-quality articles per week targeting mid-market decision-makers, we will generate 20 qualified inbound leads per month within 4 months."
+    category: growth
+    owner: "VP Marketing"
+    start_date: 2025-11-01
+    time_box: "4 months"
+    cost_cap: "$60K (writer + distribution)"
+    success_criteria:
+      - "20+ qualified inbound leads per month by month 4"
+      - "Content drives measurable pipeline (attribution)"
+    kill_criteria:
+      - "Fewer than 5 leads per month after 3 months"
+      - "No attributable pipeline after 4 months"
+    status: killed
+    outcome: "4 months, 8 leads per month. No measurable pipeline attribution. Content generated brand awareness but not qualified leads."
+    lessons: "Mid-market decision-makers do not discover tools through blog content. Reallocating budget to product-led growth and targeted outbound."

@@ -1,0 +1,78 @@
+# Forecast Registry
+# Tracks predictions made by the board and leadership team to calibrate judgment over time.
+
+schema:
+  forecast_id:
+    type: string
+    format: "FCST-YYYY-NNN"
+    required: true
+  forecaster:
+    type: string
+    required: true
+  date_made:
+    type: date
+    required: true
+  category:
+    type: string
+    enum: [revenue, growth, market, competitive, hiring, fundraising, product, operational]
+    required: true
+  statement:
+    type: string
+    description: "Precise, falsifiable prediction"
+    required: true
+  confidence:
+    type: integer
+    description: "Probability estimate 1-99%"
+    required: true
+  time_horizon:
+    type: string
+    required: true
+  resolution_date:
+    type: date
+    required: true
+  actual_outcome:
+    type: string
+    required: false
+  accurate:
+    type: boolean
+    required: false
+  calibration_notes:
+    type: string
+    required: false
+
+entries:
+  - forecast_id: "FCST-2026-001"
+    forecaster: "CFO"
+    date_made: 2026-01-15
+    category: revenue
+    statement: "ARR will reach $5M by June 30, 2026"
+    confidence: 60
+    time_horizon: "6 months"
+    resolution_date: 2026-06-30
+    actual_outcome: null
+    accurate: null
+    calibration_notes: null
+
+  - forecast_id: "FCST-2026-002"
+    forecaster: "CEO"
+    date_made: 2026-01-15
+    category: competitive
+    statement: "Primary competitor will launch a free tier within 6 months"
+    confidence: 40
+    time_horizon: "6 months"
+    resolution_date: 2026-07-15
+    actual_outcome: null
+    accurate: null
+    calibration_notes: null
+
+  - forecast_id: "FCST-2025-010"
+    forecaster: "VP Product"
+    date_made: 2025-10-01
+    category: product
+    statement: "Mobile app will achieve 5,000 activations in first 90 days"
+    confidence: 70
+    time_horizon: "90 days"
+    resolution_date: 2026-01-01
+    actual_outcome: "340 activations — 93% below forecast"
+    accurate: false
+    calibration_notes: "VP Product overconfident. Customer interviews were biased toward enthusiasts. Mobile usage patterns fundamentally different than web. Adjust future product forecasts downward by 40% when entering new form factors."

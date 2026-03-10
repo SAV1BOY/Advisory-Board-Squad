@@ -1,0 +1,87 @@
+# Stakeholder Registry
+# Maps all significant stakeholders, their type, interests, and engagement approach.
+
+schema:
+  stakeholder_id:
+    type: string
+    format: "STKH-NNN"
+    required: true
+  name:
+    type: string
+    required: true
+  type:
+    type: string
+    enum: [decision-maker, influencer, implementer, beneficiary, impacted-party, gatekeeper, advisor, opponent, observer, champion]
+    required: true
+  organization:
+    type: string
+    required: false
+  interests:
+    type: list
+    required: true
+  influence_level:
+    type: string
+    enum: [very-high, high, medium, low]
+    required: true
+  engagement_approach:
+    type: string
+    required: true
+  communication_cadence:
+    type: string
+    required: true
+  relationship_owner:
+    type: string
+    required: true
+  last_contact:
+    type: date
+    required: false
+  status:
+    type: string
+    enum: [active, dormant, exited]
+    required: true
+
+entries:
+  - stakeholder_id: "STKH-001"
+    name: "Lead Investor — Horizon Ventures"
+    type: decision-maker
+    organization: "Horizon Ventures"
+    interests:
+      - "Return on investment"
+      - "Company growth trajectory"
+      - "Path to Series A"
+    influence_level: very-high
+    engagement_approach: "Monthly board meeting, quarterly deep-dive, ad-hoc strategic counsel"
+    communication_cadence: "Monthly investor update + quarterly board meeting"
+    relationship_owner: "CEO"
+    last_contact: 2026-03-01
+    status: active
+
+  - stakeholder_id: "STKH-002"
+    name: "Enterprise Customer — Acme Corp"
+    type: beneficiary
+    organization: "Acme Corp"
+    interests:
+      - "Product reliability and uptime"
+      - "Feature roadmap alignment with their needs"
+      - "Data security and compliance"
+    influence_level: high
+    engagement_approach: "Quarterly business review, dedicated CSM, executive sponsor pairing"
+    communication_cadence: "Weekly CSM check-in, monthly exec sponsor call, quarterly QBR"
+    relationship_owner: "VP Customer Success"
+    last_contact: 2026-02-28
+    status: active
+
+  - stakeholder_id: "STKH-003"
+    name: "Board Advisor — Domain Expert"
+    type: advisor
+    organization: "Independent"
+    interests:
+      - "Strategic impact and learning"
+      - "Network development"
+      - "Advisory equity appreciation"
+    influence_level: medium
+    engagement_approach: "Monthly 1:1 with CEO, quarterly board attendance, ad-hoc consultation on domain questions"
+    communication_cadence: "Monthly 1:1, quarterly board materials"
+    relationship_owner: "CEO"
+    last_contact: 2026-02-15
+    status: active

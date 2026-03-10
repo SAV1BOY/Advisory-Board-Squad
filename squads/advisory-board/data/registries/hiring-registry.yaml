@@ -1,0 +1,87 @@
+# Hiring Registry
+# Tracks executive and critical-role hiring processes, decisions, and outcomes.
+
+schema:
+  hire_id:
+    type: string
+    format: "HIRE-YYYY-NNN"
+    required: true
+  role:
+    type: string
+    required: true
+  status:
+    type: string
+    enum: [open, sourcing, interviewing, offer, hired, closed-no-hire, on-hold]
+    required: true
+  priority:
+    type: string
+    enum: [critical, high, medium]
+    required: true
+  hiring_manager:
+    type: string
+    required: true
+  opened_date:
+    type: date
+    required: true
+  target_close_date:
+    type: date
+    required: true
+  actual_close_date:
+    type: date
+    required: false
+  candidates_sourced:
+    type: integer
+    required: false
+  candidates_interviewed:
+    type: integer
+    required: false
+  finalists:
+    type: integer
+    required: false
+  hire_name:
+    type: string
+    required: false
+  hire_decision_score:
+    type: float
+    description: "Scorecard evaluation average"
+    required: false
+  ninety_day_outcome:
+    type: string
+    enum: [exceeding, meeting, below, terminated, pending]
+    required: false
+  lessons:
+    type: string
+    required: false
+
+entries:
+  - hire_id: "HIRE-2026-001"
+    role: "VP Engineering"
+    status: sourcing
+    priority: critical
+    hiring_manager: "CEO"
+    opened_date: 2026-02-01
+    target_close_date: 2026-05-01
+    actual_close_date: null
+    candidates_sourced: 34
+    candidates_interviewed: 8
+    finalists: 0
+    hire_name: null
+    hire_decision_score: null
+    ninety_day_outcome: pending
+    lessons: null
+
+  - hire_id: "HIRE-2026-002"
+    role: "Head of Customer Success"
+    status: interviewing
+    priority: high
+    hiring_manager: "COO"
+    opened_date: 2026-01-15
+    target_close_date: 2026-04-01
+    actual_close_date: null
+    candidates_sourced: 22
+    candidates_interviewed: 6
+    finalists: 2
+    hire_name: null
+    hire_decision_score: null
+    ninety_day_outcome: pending
+    lessons: null

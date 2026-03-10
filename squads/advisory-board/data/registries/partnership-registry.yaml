@@ -1,0 +1,79 @@
+# Partnership Registry
+# Tracks strategic partnerships from evaluation through governance and postmortem.
+
+schema:
+  partnership_id:
+    type: string
+    format: "PART-YYYY-NNN"
+    required: true
+  partner_name:
+    type: string
+    required: true
+  partnership_type:
+    type: string
+    enum: [distribution, technology-integration, co-development, go-to-market, supply-chain, strategic-investment, joint-venture]
+    required: true
+  status:
+    type: string
+    enum: [evaluating, negotiating, active, on-hold, winding-down, terminated, completed]
+    required: true
+  strategic_rationale:
+    type: string
+    required: true
+  value_thesis:
+    type: string
+    required: true
+  owner:
+    type: string
+    required: true
+  start_date:
+    type: date
+    required: false
+  term_length:
+    type: string
+    required: false
+  kpis:
+    type: list
+    required: false
+  health_score:
+    type: float
+    description: "1-5 scale based on KPI performance and relationship quality"
+    required: false
+  last_reviewed:
+    type: date
+    required: true
+  next_review:
+    type: date
+    required: true
+
+entries:
+  - partnership_id: "PART-2026-001"
+    partner_name: "CloudScale Analytics"
+    partnership_type: technology-integration
+    status: active
+    strategic_rationale: "Embed analytics into platform without 18-month build cycle"
+    value_thesis: "Analytics add-on increases ACV by 20% and reduces churn by 8%"
+    owner: "VP Product"
+    start_date: 2025-11-01
+    term_length: "2 years with annual renewal"
+    kpis:
+      - "Integration uptime: 99.9% target"
+      - "Customer adoption: 40% target"
+      - "Analytics add-on MRR: $50K target"
+    health_score: 3.4
+    last_reviewed: 2026-02-15
+    next_review: 2026-05-15
+
+  - partnership_id: "PART-2026-002"
+    partner_name: "EnterpriseCo Distribution"
+    partnership_type: distribution
+    status: evaluating
+    strategic_rationale: "Access to 500+ enterprise customers through EnterpriseCo marketplace"
+    value_thesis: "10-15 enterprise leads per quarter at zero CAC"
+    owner: "VP Sales"
+    start_date: null
+    term_length: null
+    kpis: null
+    health_score: null
+    last_reviewed: 2026-03-01
+    next_review: 2026-04-01

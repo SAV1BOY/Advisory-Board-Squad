@@ -1,0 +1,84 @@
+# Culture Registry
+# Tracks cultural values, rituals, incidents, and health assessments.
+
+schema:
+  entry_id:
+    type: string
+    format: "CULT-YYYY-NNN"
+    required: true
+  entry_type:
+    type: string
+    enum: [value, ritual, incident, assessment]
+    required: true
+  title:
+    type: string
+    required: true
+  description:
+    type: string
+    required: true
+  value_linked:
+    type: string
+    description: "Which core value this entry relates to"
+    required: false
+  health_score:
+    type: float
+    description: "For assessments: overall culture health score"
+    required: false
+  date:
+    type: date
+    required: true
+  owner:
+    type: string
+    required: false
+  status:
+    type: string
+    enum: [active, deprecated, resolved, scheduled]
+    required: true
+  follow_up:
+    type: string
+    required: false
+
+entries:
+  - entry_id: "CULT-2026-001"
+    entry_type: value
+    title: "Default to transparency"
+    description: "Share information broadly by default. Restrict only when legally required. When in doubt, share."
+    value_linked: null
+    health_score: null
+    date: 2025-06-01
+    owner: "CEO"
+    status: active
+    follow_up: null
+
+  - entry_id: "CULT-2026-002"
+    entry_type: ritual
+    title: "Friday Failure Share"
+    description: "30-minute all-hands where one team shares a recent failure and what was learned. Rotating presenters. Applause for vulnerability."
+    value_linked: "Default to transparency"
+    health_score: null
+    date: 2025-09-01
+    owner: "Chief of Staff"
+    status: active
+    follow_up: "Review attendance and quality quarterly"
+
+  - entry_id: "CULT-2026-003"
+    entry_type: assessment
+    title: "Q1 2026 Culture Health Assessment"
+    description: "Anonymous survey (87% response) plus 12 skip-level interviews. Overall: 3.6/5.0, up from 3.3."
+    value_linked: null
+    health_score: 3.6
+    date: 2026-03-01
+    owner: "VP People"
+    status: active
+    follow_up: "Address disagree-and-commit gap (scored 2.8) — implement formal dissent capture in all decision meetings"
+
+  - entry_id: "CULT-2026-004"
+    entry_type: incident
+    title: "Positive exemplar: Engineer escalated data integrity concern"
+    description: "Junior engineer discovered and reported a data calculation error being used in customer dashboards. Escalated despite awareness that it would create work for the team. CEO recognized in all-hands."
+    value_linked: "Default to transparency"
+    health_score: null
+    date: 2026-02-14
+    owner: null
+    status: resolved
+    follow_up: "Used as example in onboarding materials"

@@ -1,0 +1,118 @@
+# Principle Registry
+# Canonical record of operating principles that govern board and organizational decision-making.
+# Principles are ranked by priority — when two principles conflict, the higher-ranked one governs.
+
+schema:
+  principle_id:
+    type: string
+    format: "PRIN-NNN"
+    description: "Unique identifier"
+    required: true
+  title:
+    type: string
+    description: "Short name for the principle"
+    required: true
+  statement:
+    type: string
+    description: "Full principle statement as a behavioral directive"
+    required: true
+  rationale:
+    type: string
+    description: "Why this principle exists and what failure mode it prevents"
+    required: true
+  priority_rank:
+    type: integer
+    description: "Rank order — lower number is higher priority in conflicts"
+    required: true
+  source:
+    type: string
+    description: "Where this principle originated (person, book, experience)"
+    required: false
+  examples:
+    type: list
+    description: "Concrete examples of the principle in action"
+    required: false
+  anti_patterns:
+    type: list
+    description: "Common ways the principle is violated or misapplied"
+    required: false
+  adopted_date:
+    type: date
+    description: "When the principle was formally adopted"
+    required: true
+  last_reviewed:
+    type: date
+    description: "When the principle was last reviewed for relevance"
+    required: true
+  status:
+    type: string
+    enum: [active, deprecated, under-review]
+    required: true
+
+entries:
+  - principle_id: "PRIN-001"
+    title: "Long-term value over short-term metrics"
+    statement: "When short-term metrics conflict with long-term value creation, choose long-term value. Explain the tradeoff transparently to stakeholders."
+    rationale: "Short-term optimization is the default human bias. Without this principle, quarterly pressure erodes decade-scale value."
+    priority_rank: 1
+    source: "Bezos shareholder letters; Berkshire Hathaway operating principles"
+    examples:
+      - "Investing in SOC2 certification despite Q2 revenue impact because it unlocks enterprise market"
+      - "Declining a $200K custom deal that would distort the product roadmap"
+    anti_patterns:
+      - "Using 'long-term' as an excuse to avoid accountability for near-term execution"
+      - "Ignoring short-term survival (runway) in favor of abstract long-term vision"
+    adopted_date: 2025-06-01
+    last_reviewed: 2026-01-15
+    status: active
+
+  - principle_id: "PRIN-002"
+    title: "Radical transparency as default"
+    statement: "Share information broadly by default. Restrict only when legally required or when sharing would cause disproportionate harm. When in doubt, share."
+    rationale: "Information hoarding creates power imbalances, slows decisions, and erodes trust. Transparency enables distributed decision-making."
+    priority_rank: 2
+    source: "Dalio — Principles; Bridgewater operating model"
+    examples:
+      - "Sharing company financials with all employees monthly"
+      - "Publishing board meeting summaries (redacted for legal sensitivity) to the leadership team"
+    anti_patterns:
+      - "Weaponizing transparency — sharing information to embarrass or politically damage someone"
+      - "Transparency without context — sharing raw data without interpretation leads to anxiety, not empowerment"
+    adopted_date: 2025-06-01
+    last_reviewed: 2026-01-15
+    status: active
+
+  - principle_id: "PRIN-003"
+    title: "Disagree and commit"
+    statement: "Express disagreement clearly before a decision is made. Once the decision is made, commit fully to execution regardless of whether you agreed."
+    rationale: "Prevents both groupthink (by encouraging dissent) and paralysis (by requiring commitment after the decision)."
+    priority_rank: 3
+    source: "Bezos; Intel — Andy Grove"
+    examples:
+      - "CFO disagrees with acquisition price but commits to executing diligence and close after board decision"
+    anti_patterns:
+      - "Agreeing in meetings, undermining in hallways"
+      - "Committing verbally but executing with minimal effort"
+    adopted_date: 2025-06-01
+    last_reviewed: 2026-01-15
+    status: active
+
+  - principle_id: "PRIN-004"
+    title: "Speed on reversible decisions"
+    statement: "Make two-way door decisions quickly with 70% information. Reserve deliberation for one-way door decisions."
+    rationale: "Most organizations are too slow on reversible decisions. Speed of learning compounds — every day of delay on a reversible decision is waste."
+    priority_rank: 4
+    source: "Bezos Day 1 philosophy; Boyd OODA loop"
+    adopted_date: 2025-06-01
+    last_reviewed: 2026-01-15
+    status: active
+
+  - principle_id: "PRIN-005"
+    title: "Ownership over consensus"
+    statement: "Every initiative, decision, and metric has a single owner. Groups can advise but cannot own."
+    rationale: "Shared ownership is no ownership. When everyone is responsible, no one is accountable."
+    priority_rank: 5
+    source: "Amazon leadership principles; Extreme Ownership — Jocko Willink"
+    adopted_date: 2025-06-01
+    last_reviewed: 2026-01-15
+    status: active

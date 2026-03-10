@@ -1,0 +1,1267 @@
+# ============================================================================
+# ADVISORY BOARD SQUAD — MASTER CONFIGURATION
+# ============================================================================
+# The routing brain of the advisory-board squad. Every task, agent assignment,
+# framework reference, checklist, template, and registry lookup originates here.
+# Version: 2.0.0
+# Last updated: 2026-03-10
+# ============================================================================
+
+squad:
+  name: advisory-board
+  version: "2.0.0"
+  description: "Board-level strategy, capital allocation, leadership, culture, governance"
+  chief_agent: board-chair
+  base_path: squads/advisory-board
+  status: active
+  maintainer: board-chair
+  review_cycle: quarterly
+  last_review: "2026-01-15"
+  next_review: "2026-04-15"
+
+# ============================================================================
+# PRINCIPLES — The non-negotiable axioms governing all board decisions
+# ============================================================================
+principles:
+  - truth_over_comfort
+  - incentives_first
+  - second_order_thinking
+  - reversible_fast_irreversible_slow
+  - write_it_down_or_it_didnt_happen
+  - compounding_over_hype
+  - integrity_over_optics
+
+principles_detail:
+  truth_over_comfort:
+    definition: "Surface uncomfortable facts early. Suppressed truth compounds into crisis."
+    enforcement: "Any agent may invoke truth_over_comfort to override consensus-seeking language."
+    anti_pattern: "Softening bad news to avoid conflict."
+
+  incentives_first:
+    definition: "Before analyzing behavior, analyze the incentive structure producing it."
+    enforcement: "Every strategic recommendation must include an incentives-alignment check."
+    anti_pattern: "Blaming people for outcomes that incentives made inevitable."
+
+  second_order_thinking:
+    definition: "Ask 'and then what?' at least three levels deep before committing."
+    enforcement: "Decision memos require a second-order effects section to pass quality gate."
+    anti_pattern: "Optimizing a metric without modeling downstream consequences."
+
+  reversible_fast_irreversible_slow:
+    definition: "Type 2 decisions move fast. Type 1 decisions get full deliberation."
+    enforcement: "Every task routing classifies decision type. Type 1 triggers expanded checklist."
+    anti_pattern: "Treating all decisions as equally weighty or equally trivial."
+
+  write_it_down_or_it_didnt_happen:
+    definition: "Verbal agreements, undocumented decisions, and hallway consensus do not exist."
+    enforcement: "No decision is final until the memo is signed and filed in data/decisions/."
+    anti_pattern: "Relying on shared memory instead of shared documents."
+
+  compounding_over_hype:
+    definition: "Favor slow, durable advantages over flashy short-term wins."
+    enforcement: "Moat reviews weight compounding factors 2x vs. one-time gains."
+    anti_pattern: "Chasing trends that produce headlines but not defensibility."
+
+  integrity_over_optics:
+    definition: "Do the right thing even when no one is watching and especially when it is costly."
+    enforcement: "Ethics review is mandatory for all partnership and capital decisions."
+    anti_pattern: "Choosing the decision that looks best over the decision that is best."
+
+# ============================================================================
+# AGENTS — The 11 specialist agents of the advisory board
+# ============================================================================
+agents:
+  board-chair:
+    role: "Chief orchestrator. Routes tasks, runs meetings, resolves deadlocks, owns quality."
+    persona: "Disciplined, fair, decisive. Speaks last in deliberation."
+    path: agents/board-chair.md
+    domain: governance
+
+  strategic-advisor:
+    role: "Competitive strategy, moat analysis, market positioning, product-strategy review."
+    persona: "Analytical, pattern-matching, contrarian when evidence warrants."
+    path: agents/strategic-advisor.md
+    domain: strategy
+
+  capital-allocator:
+    role: "Financial modeling, fundraising, investment decisions, resource allocation."
+    persona: "Numerate, conservative on assumptions, aggressive on opportunity."
+    path: agents/capital-allocator.md
+    domain: capital
+
+  talent-advisor:
+    role: "Executive hiring, org design, succession planning, team effectiveness."
+    persona: "People-first, evidence-based, allergic to vanity titles."
+    path: agents/talent-advisor.md
+    domain: people
+
+  culture-steward:
+    role: "Culture audits, trust repair, values alignment, organizational health."
+    persona: "Empathetic, truth-telling, long-horizon thinker."
+    path: agents/culture-steward.md
+    domain: culture
+
+  risk-sentinel:
+    role: "Risk mapping, crisis response, scenario planning, compliance."
+    persona: "Paranoid optimist. Prepares for worst, builds for best."
+    path: agents/risk-sentinel.md
+    domain: risk
+
+  partnership-broker:
+    role: "Partnership evaluation, deal structuring, negotiation strategy, alliance management."
+    persona: "Relationship-oriented, commercially rigorous, trust-but-verify."
+    path: agents/partnership-broker.md
+    domain: partnerships
+
+  growth-navigator:
+    role: "Growth strategy, execution planning, 30-60-90 programs, scaling frameworks."
+    persona: "Execution-obsessed, metrics-driven, allergic to strategy without action."
+    path: agents/growth-navigator.md
+    domain: growth
+
+  governance-clerk:
+    role: "Documentation, compliance, decision logs, meeting minutes, registry maintenance."
+    persona: "Meticulous, process-oriented, institutional memory keeper."
+    path: agents/governance-clerk.md
+    domain: governance
+
+  ethics-compass:
+    role: "Ethical review, stakeholder impact, sustainability, long-term reputation."
+    persona: "Principled, multi-stakeholder perspective, uncomfortable-question asker."
+    path: agents/ethics-compass.md
+    domain: ethics
+
+  simplicity-czar:
+    role: "Complexity reduction, focus enforcement, scope control, noise filtering."
+    persona: "Ruthlessly simple. If it cannot be explained in one sentence, it is not ready."
+    path: agents/simplicity-czar.md
+    domain: operations
+
+# ============================================================================
+# ROUTING — Task-to-agent mapping with full resource references
+# ============================================================================
+# Each task defines:
+#   agents       — ordered list, first is lead, rest are consulted
+#   frameworks   — thinking tools to apply (paths relative to frameworks/)
+#   checklists   — quality gates to pass (paths relative to checklists/)
+#   templates    — output formats to use (paths relative to templates/)
+#   registry     — data stores to read/write (paths relative to data/)
+# ============================================================================
+
+routing:
+
+  # --------------------------------------------------------------------------
+  # BOARD OPERATIONS
+  # --------------------------------------------------------------------------
+
+  board-setup:
+    description: "Constitute a new advisory board from scratch — charter, composition, cadence, norms."
+    decision_type: type_1_irreversible
+    agents:
+      - board-chair
+      - governance-clerk
+      - talent-advisor
+      - ethics-compass
+    frameworks:
+      - frameworks/board-composition-matrix.md
+      - frameworks/charter-design.md
+      - frameworks/decision-rights-mapping.md
+      - frameworks/fiduciary-duty-guide.md
+    checklists:
+      - checklists/chair/board-setup-readiness.md
+      - checklists/governance/charter-completeness.md
+      - checklists/governance/conflict-of-interest-disclosure.md
+    templates:
+      - templates/meeting/board-charter-template.md
+      - templates/meeting/board-composition-scorecard.md
+      - templates/meeting/annual-calendar-template.md
+    registry:
+      - data/registries/board-member-registry.yaml
+      - data/registries/committee-assignments.yaml
+
+  board-meeting-prep:
+    description: "Prepare all materials for an upcoming board meeting — agenda, pre-reads, data packs."
+    decision_type: type_2_reversible
+    agents:
+      - board-chair
+      - governance-clerk
+      - strategic-advisor
+      - capital-allocator
+    frameworks:
+      - frameworks/decision-memo-framework.md
+      - frameworks/pre-read-design.md
+      - frameworks/agenda-architecture.md
+    checklists:
+      - checklists/chair/meeting-prep-48h.md
+      - checklists/board-decision-memo-quality.md
+      - checklists/governance/pre-read-distribution.md
+      - checklists/chair/consent-agenda-filter.md
+    templates:
+      - templates/meeting/board-agenda-template.md
+      - templates/meeting/pre-read-packet-template.md
+      - templates/memos/decision-memo-template.md
+      - templates/dashboards/board-dashboard-template.md
+    registry:
+      - data/meeting-minutes/
+      - data/decisions/
+      - data/metrics/
+
+  board-meeting-run:
+    description: "Facilitate and run a board meeting — discussion flow, decision capture, time management."
+    decision_type: type_2_reversible
+    agents:
+      - board-chair
+      - governance-clerk
+      - simplicity-czar
+    frameworks:
+      - frameworks/meeting-facilitation-protocol.md
+      - frameworks/decision-memo-framework.md
+      - frameworks/consent-agenda-framework.md
+      - frameworks/deliberation-protocol.md
+    checklists:
+      - checklists/chair/meeting-run-quality.md
+      - checklists/chair/decision-capture-checklist.md
+      - checklists/governance/minute-taking-standards.md
+    templates:
+      - templates/meeting/meeting-minutes-template.md
+      - templates/meeting/action-item-tracker-template.md
+      - templates/memos/decision-memo-template.md
+    registry:
+      - data/meeting-minutes/
+      - data/decisions/
+      - data/registries/action-items.yaml
+
+  board-effectiveness-review:
+    description: "Assess how well the board is functioning — composition, dynamics, output quality, cadence."
+    decision_type: type_2_reversible
+    agents:
+      - board-chair
+      - governance-clerk
+      - culture-steward
+      - ethics-compass
+    frameworks:
+      - frameworks/board-effectiveness-scorecard.md
+      - frameworks/team-health-diagnostic.md
+      - frameworks/ralph-loop.md
+      - frameworks/governance-maturity-model.md
+    checklists:
+      - checklists/governance/board-self-assessment.md
+      - checklists/governance/information-quality-review.md
+      - checklists/chair/chair-self-assessment.md
+    templates:
+      - templates/reports/board-effectiveness-report.md
+      - templates/reports/governance-improvement-plan.md
+    registry:
+      - data/metrics/board-effectiveness-scores.yaml
+      - data/registries/board-improvement-backlog.yaml
+
+  # --------------------------------------------------------------------------
+  # STRATEGY
+  # --------------------------------------------------------------------------
+
+  strategic-diagnosis:
+    description: "Diagnose the company's strategic position — strengths, weaknesses, opportunities, existential risks."
+    decision_type: type_1_irreversible
+    agents:
+      - strategic-advisor
+      - board-chair
+      - risk-sentinel
+      - growth-navigator
+    frameworks:
+      - frameworks/strategic-diagnosis.md
+      - frameworks/second-order-thinking.md
+      - frameworks/competitive-landscape-mapping.md
+      - frameworks/jobs-to-be-done.md
+      - frameworks/porter-five-forces.md
+      - frameworks/wardley-mapping.md
+    checklists:
+      - checklists/strategy/strategic-diagnosis-completeness.md
+      - checklists/strategy/assumption-stress-test.md
+      - checklists/second-order-effects-quality.md
+      - checklists/munger/mental-models-applied.md
+    templates:
+      - templates/memos/strategic-diagnosis-memo.md
+      - templates/briefs/competitive-brief.md
+      - templates/dashboards/strategy-dashboard.md
+    registry:
+      - data/research/market-notes/
+      - data/research/competitor-notes/
+      - data/research/industry-trends/
+      - data/forecasts/
+
+  moat-review:
+    description: "Evaluate the durability and depth of competitive advantages — network effects, switching costs, brand, scale."
+    decision_type: type_1_irreversible
+    agents:
+      - strategic-advisor
+      - capital-allocator
+      - board-chair
+    frameworks:
+      - frameworks/moat-analysis.md
+      - frameworks/compounding-advantage-framework.md
+      - frameworks/network-effects-diagnostic.md
+      - frameworks/switching-cost-calculator.md
+    checklists:
+      - checklists/strategy/moat-durability-checklist.md
+      - checklists/thiel/zero-to-one-moat-test.md
+      - checklists/munger/moat-mental-models.md
+    templates:
+      - templates/memos/moat-review-memo.md
+      - templates/reports/moat-scorecard.md
+    registry:
+      - data/research/competitor-notes/
+      - data/metrics/moat-scores.yaml
+
+  product-strategy-review:
+    description: "Review product direction, roadmap priorities, and product-market fit signals."
+    decision_type: type_2_reversible
+    agents:
+      - strategic-advisor
+      - growth-navigator
+      - simplicity-czar
+      - board-chair
+    frameworks:
+      - frameworks/product-strategy-canvas.md
+      - frameworks/jobs-to-be-done.md
+      - frameworks/product-market-fit-diagnostic.md
+      - frameworks/feature-prioritization.md
+    checklists:
+      - checklists/product/product-strategy-review-quality.md
+      - checklists/product/pmf-signal-checklist.md
+      - checklists/strategy/roadmap-coherence.md
+    templates:
+      - templates/memos/product-strategy-memo.md
+      - templates/briefs/product-brief.md
+    registry:
+      - data/research/customer-insights/
+      - data/metrics/product-metrics.yaml
+
+  pivot-or-persevere-decision:
+    description: "Decide whether to stay the course, pivot direction, or kill a line of business."
+    decision_type: type_1_irreversible
+    agents:
+      - strategic-advisor
+      - board-chair
+      - capital-allocator
+      - risk-sentinel
+      - culture-steward
+    frameworks:
+      - frameworks/pivot-or-persevere.md
+      - frameworks/decision-memo-framework.md
+      - frameworks/sunk-cost-inoculation.md
+      - frameworks/regret-minimization.md
+      - frameworks/second-order-thinking.md
+      - frameworks/pre-mortem.md
+    checklists:
+      - checklists/strategy/pivot-readiness.md
+      - checklists/reversible-vs-irreversible-quality.md
+      - checklists/board-decision-memo-quality.md
+      - checklists/sivers/hell-yes-or-no.md
+    templates:
+      - templates/memos/pivot-decision-memo.md
+      - templates/memos/decision-memo-template.md
+    registry:
+      - data/decisions/
+      - data/metrics/
+      - archive/pivot-history/
+
+  # --------------------------------------------------------------------------
+  # EXECUTION
+  # --------------------------------------------------------------------------
+
+  execution-30-60-90:
+    description: "Build and monitor a 30-60-90 day execution plan for a strategic initiative."
+    decision_type: type_2_reversible
+    agents:
+      - growth-navigator
+      - board-chair
+      - simplicity-czar
+      - strategic-advisor
+    frameworks:
+      - frameworks/30-60-90-execution.md
+      - frameworks/okr-design.md
+      - frameworks/accountability-mapping.md
+      - frameworks/milestone-architecture.md
+    checklists:
+      - checklists/growth/execution-plan-quality.md
+      - checklists/growth/milestone-definition-checklist.md
+      - checklists/chair/accountability-check.md
+    templates:
+      - templates/briefs/execution-plan-brief.md
+      - templates/dashboards/execution-tracker.md
+      - templates/reports/progress-report-template.md
+    registry:
+      - data/metrics/execution-scores.yaml
+      - data/registries/initiative-tracker.yaml
+
+  # --------------------------------------------------------------------------
+  # CAPITAL
+  # --------------------------------------------------------------------------
+
+  capital-allocation-review:
+    description: "Review how capital is deployed across the business — ROI, runway, opportunity cost."
+    decision_type: type_1_irreversible
+    agents:
+      - capital-allocator
+      - board-chair
+      - strategic-advisor
+      - risk-sentinel
+    frameworks:
+      - frameworks/capital-allocation-framework.md
+      - frameworks/opportunity-cost-framework.md
+      - frameworks/runway-modeling.md
+      - frameworks/hurdle-rate-calibration.md
+      - frameworks/kelly-criterion-lite.md
+    checklists:
+      - checklists/capital/allocation-review-completeness.md
+      - checklists/capital/roi-validation-checklist.md
+      - checklists/capital/runway-health-check.md
+      - checklists/incentives-alignment-quality.md
+    templates:
+      - templates/memos/capital-allocation-memo.md
+      - templates/dashboards/capital-dashboard.md
+      - templates/reports/allocation-review-report.md
+    registry:
+      - data/metrics/financial-metrics.yaml
+      - data/forecasts/
+      - data/decisions/
+
+  fundraising-plan:
+    description: "Design and evaluate a fundraising strategy — timing, terms, investors, narrative."
+    decision_type: type_1_irreversible
+    agents:
+      - capital-allocator
+      - board-chair
+      - strategic-advisor
+      - partnership-broker
+    frameworks:
+      - frameworks/fundraising-readiness.md
+      - frameworks/investor-targeting.md
+      - frameworks/term-sheet-analysis.md
+      - frameworks/dilution-modeling.md
+      - frameworks/narrative-for-capital.md
+    checklists:
+      - checklists/capital/fundraising-readiness-checklist.md
+      - checklists/capital/term-sheet-review-checklist.md
+      - checklists/capital/investor-due-diligence-checklist.md
+      - checklists/governance/fiduciary-check.md
+    templates:
+      - templates/memos/fundraising-strategy-memo.md
+      - templates/briefs/investor-brief.md
+      - templates/reports/fundraising-progress-report.md
+    registry:
+      - data/registries/investor-registry.yaml
+      - data/metrics/financial-metrics.yaml
+      - data/forecasts/
+
+  investment-decision:
+    description: "Evaluate a specific investment opportunity — M&A, strategic bet, major capex."
+    decision_type: type_1_irreversible
+    agents:
+      - capital-allocator
+      - board-chair
+      - risk-sentinel
+      - strategic-advisor
+      - ethics-compass
+    frameworks:
+      - frameworks/investment-thesis-framework.md
+      - frameworks/decision-memo-framework.md
+      - frameworks/pre-mortem.md
+      - frameworks/regret-minimization.md
+      - frameworks/due-diligence-framework.md
+    checklists:
+      - checklists/capital/investment-decision-checklist.md
+      - checklists/board-decision-memo-quality.md
+      - checklists/reversible-vs-irreversible-quality.md
+      - checklists/risk/downside-protection-checklist.md
+    templates:
+      - templates/memos/investment-decision-memo.md
+      - templates/memos/decision-memo-template.md
+      - templates/reports/due-diligence-report.md
+    registry:
+      - data/decisions/
+      - data/forecasts/
+      - data/metrics/financial-metrics.yaml
+
+  # --------------------------------------------------------------------------
+  # PEOPLE
+  # --------------------------------------------------------------------------
+
+  exec-hiring:
+    description: "Hire a C-level or VP-level executive — sourcing, scorecard, interview, reference, decision."
+    decision_type: type_1_irreversible
+    agents:
+      - talent-advisor
+      - board-chair
+      - culture-steward
+      - strategic-advisor
+    frameworks:
+      - frameworks/topgrading-scorecard.md
+      - frameworks/who-method-hiring.md
+      - frameworks/role-architecture.md
+      - frameworks/reference-check-protocol.md
+      - frameworks/cultural-add-assessment.md
+    checklists:
+      - checklists/hiring/exec-hiring-process-checklist.md
+      - checklists/hiring/scorecard-completeness.md
+      - checklists/hiring/reference-check-checklist.md
+      - checklists/hiring/offer-negotiation-checklist.md
+      - checklists/culture/cultural-alignment-check.md
+    templates:
+      - templates/people/exec-scorecard-template.md
+      - templates/people/interview-guide-template.md
+      - templates/people/reference-check-template.md
+      - templates/people/offer-letter-framework.md
+      - templates/memos/hiring-decision-memo.md
+    registry:
+      - data/registries/hiring-pipeline.yaml
+      - data/registries/talent-network.yaml
+      - archive/hiring-misses/
+
+  org-design-review:
+    description: "Review and redesign organizational structure — reporting lines, spans, layers, decision rights."
+    decision_type: type_1_irreversible
+    agents:
+      - talent-advisor
+      - board-chair
+      - simplicity-czar
+      - culture-steward
+    frameworks:
+      - frameworks/org-design-principles.md
+      - frameworks/span-of-control-analysis.md
+      - frameworks/decision-rights-mapping.md
+      - frameworks/conways-law-audit.md
+    checklists:
+      - checklists/leadership/org-design-review-checklist.md
+      - checklists/leadership/role-clarity-checklist.md
+      - checklists/leadership/reporting-line-health.md
+    templates:
+      - templates/people/org-chart-template.md
+      - templates/memos/org-design-memo.md
+      - templates/reports/org-health-report.md
+    registry:
+      - data/registries/org-chart.yaml
+      - data/metrics/org-health-scores.yaml
+
+  succession-planning:
+    description: "Build succession plans for critical roles — CEO, C-suite, key technical leads."
+    decision_type: type_1_irreversible
+    agents:
+      - talent-advisor
+      - board-chair
+      - governance-clerk
+      - culture-steward
+    frameworks:
+      - frameworks/succession-pipeline.md
+      - frameworks/leadership-readiness-assessment.md
+      - frameworks/bus-factor-analysis.md
+      - frameworks/development-plan-architecture.md
+    checklists:
+      - checklists/leadership/succession-plan-completeness.md
+      - checklists/leadership/readiness-assessment-checklist.md
+      - checklists/governance/fiduciary-check.md
+    templates:
+      - templates/people/succession-plan-template.md
+      - templates/people/development-plan-template.md
+      - templates/reports/bench-strength-report.md
+    registry:
+      - data/registries/succession-plans.yaml
+      - data/registries/talent-network.yaml
+
+  # --------------------------------------------------------------------------
+  # CULTURE
+  # --------------------------------------------------------------------------
+
+  conflict-resolution:
+    description: "Resolve interpersonal or structural conflict between executives, teams, or stakeholders."
+    decision_type: type_2_reversible
+    agents:
+      - culture-steward
+      - board-chair
+      - talent-advisor
+      - ethics-compass
+    frameworks:
+      - frameworks/conflict-resolution-protocol.md
+      - frameworks/crucial-conversations-guide.md
+      - frameworks/mediation-framework.md
+      - frameworks/trust-equation.md
+    checklists:
+      - checklists/culture/conflict-resolution-checklist.md
+      - checklists/culture/trust-assessment.md
+      - checklists/lencioni/five-dysfunctions-check.md
+      - checklists/brene-brown/vulnerability-safety-check.md
+    templates:
+      - templates/memos/conflict-resolution-memo.md
+      - templates/people/mediation-session-template.md
+    registry:
+      - data/registries/conflict-log.yaml
+
+  culture-audit:
+    description: "Assess organizational culture — values lived vs. stated, psychological safety, engagement."
+    decision_type: type_2_reversible
+    agents:
+      - culture-steward
+      - board-chair
+      - talent-advisor
+      - ethics-compass
+    frameworks:
+      - frameworks/culture-audit-framework.md
+      - frameworks/values-alignment-diagnostic.md
+      - frameworks/psychological-safety-assessment.md
+      - frameworks/engagement-driver-model.md
+    checklists:
+      - checklists/culture/culture-audit-completeness.md
+      - checklists/culture/values-gap-checklist.md
+      - checklists/culture/psychological-safety-checklist.md
+      - checklists/sinek/why-alignment-check.md
+      - checklists/brene-brown/courage-culture-check.md
+    templates:
+      - templates/reports/culture-audit-report.md
+      - templates/dashboards/culture-dashboard.md
+      - templates/memos/culture-intervention-memo.md
+    registry:
+      - data/metrics/culture-scores.yaml
+      - data/metrics/engagement-data.yaml
+
+  trust-repair:
+    description: "Repair broken trust — between founders, between leadership and team, between company and stakeholders."
+    decision_type: type_1_irreversible
+    agents:
+      - culture-steward
+      - board-chair
+      - ethics-compass
+      - talent-advisor
+    frameworks:
+      - frameworks/trust-equation.md
+      - frameworks/trust-repair-protocol.md
+      - frameworks/accountability-framework.md
+      - frameworks/crucial-conversations-guide.md
+    checklists:
+      - checklists/culture/trust-repair-checklist.md
+      - checklists/culture/trust-assessment.md
+      - checklists/lencioni/five-dysfunctions-check.md
+      - checklists/brene-brown/trust-inventory.md
+    templates:
+      - templates/memos/trust-repair-memo.md
+      - templates/people/accountability-agreement-template.md
+    registry:
+      - data/registries/trust-incidents.yaml
+      - data/registries/conflict-log.yaml
+
+  # --------------------------------------------------------------------------
+  # PARTNERSHIPS
+  # --------------------------------------------------------------------------
+
+  partnership-evaluation:
+    description: "Evaluate a potential partnership — strategic fit, terms, risks, integration requirements."
+    decision_type: type_1_irreversible
+    agents:
+      - partnership-broker
+      - board-chair
+      - strategic-advisor
+      - risk-sentinel
+      - capital-allocator
+      - ethics-compass
+    frameworks:
+      - frameworks/partnership-evaluation-matrix.md
+      - frameworks/deal-structure-framework.md
+      - frameworks/negotiation-strategy.md
+      - frameworks/strategic-fit-diagnostic.md
+      - frameworks/partnership-lifecycle.md
+    checklists:
+      - checklists/partnerships/partnership-evaluation-checklist.md
+      - checklists/partnerships/deal-term-review.md
+      - checklists/partnerships/integration-readiness.md
+      - checklists/risk/counterparty-risk-checklist.md
+      - checklists/hoffman/alliance-health-check.md
+    templates:
+      - templates/memos/partnership-evaluation-memo.md
+      - templates/briefs/partnership-brief.md
+      - templates/reports/due-diligence-report.md
+    registry:
+      - data/registries/partnership-pipeline.yaml
+      - data/registries/active-partnerships.yaml
+
+  # --------------------------------------------------------------------------
+  # RISK
+  # --------------------------------------------------------------------------
+
+  crisis-response-72h:
+    description: "Activate the 72-hour crisis response protocol — triage, contain, communicate, recover."
+    decision_type: type_1_irreversible
+    agents:
+      - risk-sentinel
+      - board-chair
+      - ethics-compass
+      - culture-steward
+      - governance-clerk
+    frameworks:
+      - frameworks/crisis-response-72h.md
+      - frameworks/stakeholder-communication-matrix.md
+      - frameworks/triage-framework.md
+      - frameworks/post-crisis-review.md
+    checklists:
+      - checklists/risk/crisis-response-activation.md
+      - checklists/risk/stakeholder-notification-checklist.md
+      - checklists/risk/containment-verification.md
+      - checklists/risk/legal-exposure-check.md
+      - checklists/governance/crisis-documentation.md
+    templates:
+      - templates/memos/crisis-situation-memo.md
+      - templates/briefs/stakeholder-communication-brief.md
+      - templates/reports/crisis-after-action-report.md
+    registry:
+      - data/registries/crisis-log.yaml
+      - data/registries/action-items.yaml
+      - archive/crisis-retros/
+
+  # --------------------------------------------------------------------------
+  # OPERATIONS & REVIEW
+  # --------------------------------------------------------------------------
+
+  simplify-and-focus:
+    description: "Cut complexity — identify what to stop doing, reduce scope, enforce focus on the vital few."
+    decision_type: type_2_reversible
+    agents:
+      - simplicity-czar
+      - board-chair
+      - strategic-advisor
+      - growth-navigator
+    frameworks:
+      - frameworks/simplify-and-focus.md
+      - frameworks/essentialism-filter.md
+      - frameworks/complexity-audit.md
+      - frameworks/opportunity-cost-framework.md
+    checklists:
+      - checklists/strategy/simplification-checklist.md
+      - checklists/naval/leverage-focus-check.md
+      - checklists/sivers/hell-yes-or-no.md
+    templates:
+      - templates/memos/simplification-memo.md
+      - templates/reports/complexity-audit-report.md
+    registry:
+      - data/registries/initiative-tracker.yaml
+      - data/registries/killed-projects.yaml
+
+  decision-quality-review:
+    description: "Audit past decisions for quality of process, not just outcome — calibrate judgment over time."
+    decision_type: type_2_reversible
+    agents:
+      - board-chair
+      - governance-clerk
+      - strategic-advisor
+      - ethics-compass
+    frameworks:
+      - frameworks/decision-quality-framework.md
+      - frameworks/ralph-loop.md
+      - frameworks/outcome-vs-process-separation.md
+      - frameworks/calibration-scoring.md
+    checklists:
+      - checklists/governance/decision-quality-audit-checklist.md
+      - checklists/dalio/believability-weighted-review.md
+      - checklists/munger/checklist-of-cognitive-biases.md
+    templates:
+      - templates/reports/decision-quality-report.md
+      - templates/dashboards/decision-quality-dashboard.md
+    registry:
+      - data/decisions/
+      - data/metrics/decision-quality-scores.yaml
+      - archive/decisions-archive/
+
+  quarterly-board-review:
+    description: "Conduct the quarterly board review — performance vs. plan, strategic pivots, upcoming decisions."
+    decision_type: type_2_reversible
+    agents:
+      - board-chair
+      - governance-clerk
+      - strategic-advisor
+      - capital-allocator
+      - talent-advisor
+      - culture-steward
+      - risk-sentinel
+    frameworks:
+      - frameworks/quarterly-review-framework.md
+      - frameworks/board-effectiveness-scorecard.md
+      - frameworks/ralph-loop.md
+      - frameworks/okr-review.md
+    checklists:
+      - checklists/chair/quarterly-review-prep.md
+      - checklists/governance/board-self-assessment.md
+      - checklists/strategy/strategy-on-track-check.md
+      - checklists/capital/quarterly-financial-review.md
+      - checklists/culture/quarterly-culture-pulse.md
+    templates:
+      - templates/meeting/quarterly-board-package.md
+      - templates/reports/quarterly-review-report.md
+      - templates/dashboards/board-dashboard-template.md
+    registry:
+      - data/metrics/
+      - data/decisions/
+      - data/meeting-minutes/
+      - data/forecasts/
+
+  cross-squad-sync:
+    description: "Synchronize priorities, handoffs, and shared assets with other squads."
+    decision_type: type_2_reversible
+    agents:
+      - board-chair
+      - governance-clerk
+      - strategic-advisor
+      - growth-navigator
+    frameworks:
+      - frameworks/cross-squad-integration.md
+      - frameworks/handoff-protocol.md
+      - frameworks/shared-asset-governance.md
+    checklists:
+      - checklists/governance/cross-squad-sync-checklist.md
+      - checklists/governance/handoff-quality-check.md
+    templates:
+      - templates/meeting/cross-squad-sync-template.md
+      - templates/reports/cross-squad-status-report.md
+    registry:
+      - data/registries/cross-squad-log.yaml
+      - data/registries/shared-asset-index.yaml
+
+# ============================================================================
+# CROSS-SQUAD INTEGRATION — Bidirectional handoffs with 8 sibling squads
+# ============================================================================
+
+cross_squad:
+
+  brand_squad:
+    description: "Brand positioning, identity, and perception management."
+    handoff_to:
+      - "Strategic positioning decisions that affect brand direction"
+      - "Moat review findings related to brand as competitive advantage"
+      - "Culture audit results that impact employer brand"
+      - "Crisis communication requiring brand-aligned messaging"
+    handoff_from:
+      - "Brand health metrics for board reporting"
+      - "Brand perception data for strategic diagnosis"
+      - "Competitive brand analysis for moat review"
+      - "Employer brand insights for talent strategy"
+    shared_assets:
+      - "reference/brand-strategy-principles.md"
+      - "data/metrics/brand-health-scores.yaml"
+      - "frameworks/brand-moat-integration.md"
+
+  copy_squad:
+    description: "Written communications, messaging, and editorial standards."
+    handoff_to:
+      - "Board communications requiring professional writing"
+      - "Investor update narratives and shareholder letters"
+      - "Crisis communication drafts for external audiences"
+      - "Partnership announcements and press materials"
+    handoff_from:
+      - "Polished board communications and investor updates"
+      - "Stakeholder messaging for crisis response"
+      - "Editorial standards for board documentation"
+      - "Narrative frameworks for fundraising materials"
+    shared_assets:
+      - "voice/board-communications-style-guide.md"
+      - "templates/briefs/investor-update-brief.md"
+      - "reference/shareholder-letter-standards.md"
+
+  data_squad:
+    description: "Data infrastructure, analytics, and business intelligence."
+    handoff_to:
+      - "KPI definitions and measurement requirements"
+      - "Data requests for strategic diagnosis and capital review"
+      - "Metric definitions for board dashboards"
+      - "Forecasting model requirements"
+    handoff_from:
+      - "Validated dashboards and data packs for board meetings"
+      - "Forecasting models and scenario analyses"
+      - "Data quality assessments for decision-making"
+      - "Market and competitive data for strategic review"
+    shared_assets:
+      - "data/metrics/kpi-definitions.yaml"
+      - "templates/dashboards/data-integration-spec.md"
+      - "frameworks/data-quality-standards.md"
+
+  cybersecurity_squad:
+    description: "Security posture, threat management, and compliance."
+    handoff_to:
+      - "Security risk items for board risk register"
+      - "Compliance requirements affecting governance"
+      - "Crisis scenarios involving data breach or cyber attack"
+      - "Due diligence security requirements for partnerships and M&A"
+    handoff_from:
+      - "Security posture reports for board review"
+      - "Threat landscape briefings for risk assessment"
+      - "Compliance status updates for governance"
+      - "Security due diligence findings on partners and targets"
+    shared_assets:
+      - "data/registries/security-risk-register.yaml"
+      - "checklists/risk/cybersecurity-governance-checklist.md"
+      - "frameworks/security-risk-escalation.md"
+
+  design_squad:
+    description: "Product design, user experience, and design systems."
+    handoff_to:
+      - "Product strategy decisions affecting design direction"
+      - "User experience priorities from strategic review"
+      - "Board presentation design requirements"
+      - "Customer insight themes from product-strategy review"
+    handoff_from:
+      - "Design-formatted board presentations and materials"
+      - "UX research insights for product strategy review"
+      - "Design system updates affecting product direction"
+      - "Customer journey maps for strategic diagnosis"
+    shared_assets:
+      - "templates/meeting/board-presentation-design-spec.md"
+      - "reference/board-visual-standards.md"
+      - "data/research/customer-insights/"
+
+  traffic_squad:
+    description: "Growth channels, acquisition, and distribution strategy."
+    handoff_to:
+      - "Growth strategy direction from board-level decisions"
+      - "Capital allocation decisions for growth channels"
+      - "Partnership approvals affecting distribution"
+      - "Product strategy pivots impacting acquisition"
+    handoff_from:
+      - "Channel performance data for capital allocation review"
+      - "Growth metrics for board dashboards"
+      - "CAC/LTV models for investment decisions"
+      - "Market penetration data for strategic diagnosis"
+    shared_assets:
+      - "data/metrics/growth-metrics.yaml"
+      - "frameworks/growth-capital-integration.md"
+      - "templates/dashboards/growth-dashboard-spec.md"
+
+  storytelling_squad:
+    description: "Narrative strategy, content, and thought leadership."
+    handoff_to:
+      - "Strategic narrative direction for external storytelling"
+      - "Company story evolution from pivot or strategic reset"
+      - "Leadership narratives for exec hiring and employer brand"
+      - "Crisis narrative requirements and key messages"
+    handoff_from:
+      - "Company narrative assets for investor communications"
+      - "Thought leadership content for board credibility"
+      - "Story-driven frameworks for partnership pitches"
+      - "Narrative analysis of competitive positioning"
+    shared_assets:
+      - "reference/company-narrative-canon.md"
+      - "voice/narrative-strategy-alignment.md"
+      - "swipe/shareholder-letters/"
+
+  movement_squad:
+    description: "Community building, advocacy, and movement creation."
+    handoff_to:
+      - "Community strategy alignment with board-level mission"
+      - "Sustainability and stakeholder impact from ethics review"
+      - "Culture values that should propagate to community"
+      - "Partnership decisions affecting community partnerships"
+    handoff_from:
+      - "Community health metrics for board review"
+      - "Stakeholder sentiment data for strategic diagnosis"
+      - "Advocacy impact data for moat review"
+      - "Community feedback for culture audit"
+    shared_assets:
+      - "data/metrics/community-health-scores.yaml"
+      - "frameworks/stakeholder-value-integration.md"
+      - "reference/mission-alignment-standards.md"
+
+# ============================================================================
+# QUALITY GATES — Mandatory checks and per-domain standards
+# ============================================================================
+
+quality_gates:
+
+  mandatory:
+    - name: "decision_memo_quality"
+      description: "Every decision memo must pass the board-decision-memo-quality checklist before circulation."
+      checklist: checklists/board-decision-memo-quality.md
+      applies_to: all_decision_tasks
+      enforcement: block_on_fail
+
+    - name: "second_order_check"
+      description: "All strategic and capital decisions must include second-order effects analysis."
+      checklist: checklists/second-order-effects-quality.md
+      applies_to: [strategic-diagnosis, moat-review, pivot-or-persevere-decision, capital-allocation-review, investment-decision]
+      enforcement: block_on_fail
+
+    - name: "reversibility_classification"
+      description: "Every decision must be classified as Type 1 or Type 2 before proceeding."
+      checklist: checklists/reversible-vs-irreversible-quality.md
+      applies_to: all_tasks
+      enforcement: block_on_fail
+
+    - name: "incentives_alignment"
+      description: "Decisions involving people, compensation, or partnerships must pass incentives check."
+      checklist: checklists/incentives-alignment-quality.md
+      applies_to: [exec-hiring, org-design-review, partnership-evaluation, capital-allocation-review, fundraising-plan]
+      enforcement: block_on_fail
+
+    - name: "documentation_standard"
+      description: "All outputs must be written, filed, and indexed. Verbal-only decisions are invalid."
+      enforcement: block_on_fail
+      applies_to: all_tasks
+
+  per_domain:
+
+    strategy:
+      gates:
+        - name: "assumption_stress_test"
+          description: "Strategic recommendations must include explicit assumptions and stress-test results."
+          checklist: checklists/strategy/assumption-stress-test.md
+          enforcement: block_on_fail
+        - name: "competitive_context"
+          description: "Strategy outputs must reference current competitive landscape data (< 90 days old)."
+          enforcement: warn_on_fail
+        - name: "time_horizon_clarity"
+          description: "Every strategic recommendation must specify the time horizon it applies to."
+          enforcement: block_on_fail
+
+    capital:
+      gates:
+        - name: "financial_model_review"
+          description: "All financial projections must include assumptions, sensitivity analysis, and base/bull/bear scenarios."
+          enforcement: block_on_fail
+        - name: "opportunity_cost_stated"
+          description: "Capital deployment recommendations must state what else the capital could fund."
+          enforcement: block_on_fail
+        - name: "runway_impact"
+          description: "Any capital decision must quantify impact on cash runway."
+          enforcement: block_on_fail
+
+    people:
+      gates:
+        - name: "scorecard_before_search"
+          description: "No executive search begins without a completed hiring scorecard."
+          checklist: checklists/hiring/scorecard-completeness.md
+          enforcement: block_on_fail
+        - name: "reference_check_minimum"
+          description: "Minimum 5 back-channel references for any C-level hire."
+          enforcement: block_on_fail
+        - name: "cultural_alignment"
+          description: "Executive candidates must pass cultural-alignment assessment."
+          checklist: checklists/culture/cultural-alignment-check.md
+          enforcement: warn_on_fail
+
+    culture:
+      gates:
+        - name: "data_before_diagnosis"
+          description: "Culture interventions must be preceded by data collection, not assumptions."
+          enforcement: block_on_fail
+        - name: "psychological_safety_baseline"
+          description: "Culture audits must include psychological safety measurement."
+          checklist: checklists/culture/psychological-safety-checklist.md
+          enforcement: block_on_fail
+        - name: "anonymous_input_channel"
+          description: "Culture assessments must include an anonymous feedback mechanism."
+          enforcement: warn_on_fail
+
+    risk:
+      gates:
+        - name: "scenario_planning"
+          description: "Risk assessments must include at minimum three scenarios (base, bear, black swan)."
+          enforcement: block_on_fail
+        - name: "stakeholder_notification_plan"
+          description: "Crisis responses must include a stakeholder communication plan within 4 hours."
+          enforcement: block_on_fail
+        - name: "legal_review_trigger"
+          description: "Any risk with potential legal exposure must be flagged for legal counsel review."
+          enforcement: block_on_fail
+
+    partnerships:
+      gates:
+        - name: "strategic_fit_score"
+          description: "Partnership proposals must include a scored strategic fit assessment."
+          checklist: checklists/partnerships/partnership-evaluation-checklist.md
+          enforcement: block_on_fail
+        - name: "exit_clause_review"
+          description: "All partnership agreements must include reviewed exit clauses."
+          enforcement: block_on_fail
+        - name: "ethics_screen"
+          description: "Partners must pass an ethics and reputation screen before engagement."
+          enforcement: block_on_fail
+
+    governance:
+      gates:
+        - name: "meeting_documentation"
+          description: "Every board meeting produces minutes within 48 hours."
+          enforcement: block_on_fail
+        - name: "decision_log_currency"
+          description: "Decision log must be updated within 24 hours of any board decision."
+          enforcement: block_on_fail
+        - name: "conflict_of_interest_disclosure"
+          description: "Board members must disclose conflicts before any vote or deliberation."
+          enforcement: block_on_fail
+        - name: "quarterly_self_assessment"
+          description: "Board conducts self-assessment every quarter."
+          enforcement: warn_on_fail
+
+# ============================================================================
+# KPIs — Measurable indicators tracked across four categories
+# ============================================================================
+
+kpis:
+
+  board_effectiveness:
+    - id: BE-01
+      name: "Decision Memo Quality Score"
+      description: "Average score of decision memos against the quality checklist (0-100)."
+      target: ">= 85"
+      frequency: per_meeting
+      source: data/metrics/decision-quality-scores.yaml
+
+    - id: BE-02
+      name: "Pre-Read Distribution Timeliness"
+      description: "Percentage of board materials distributed >= 72 hours before meeting."
+      target: ">= 95%"
+      frequency: per_meeting
+      source: data/metrics/board-effectiveness-scores.yaml
+
+    - id: BE-03
+      name: "Decision Velocity"
+      description: "Average days from decision memo draft to final signed decision."
+      target: "<= 14 days"
+      frequency: quarterly
+      source: data/metrics/decision-quality-scores.yaml
+
+    - id: BE-04
+      name: "Board Meeting NPS"
+      description: "Net Promoter Score from board members on meeting value (post-meeting survey)."
+      target: ">= 70"
+      frequency: per_meeting
+      source: data/metrics/board-effectiveness-scores.yaml
+
+    - id: BE-05
+      name: "Action Item Completion Rate"
+      description: "Percentage of board action items completed by committed deadline."
+      target: ">= 90%"
+      frequency: quarterly
+      source: data/registries/action-items.yaml
+
+  business_outcomes:
+    - id: BO-01
+      name: "Strategic Plan Adherence"
+      description: "Percentage of quarterly OKRs on track vs. board-approved strategic plan."
+      target: ">= 75%"
+      frequency: quarterly
+      source: data/metrics/execution-scores.yaml
+
+    - id: BO-02
+      name: "Capital Efficiency Ratio"
+      description: "Revenue per dollar of capital deployed vs. plan."
+      target: ">= 1.0x plan"
+      frequency: quarterly
+      source: data/metrics/financial-metrics.yaml
+
+    - id: BO-03
+      name: "Moat Durability Score"
+      description: "Composite score of competitive advantage indicators (0-100)."
+      target: ">= 70"
+      frequency: semi_annual
+      source: data/metrics/moat-scores.yaml
+
+    - id: BO-04
+      name: "Revenue Growth vs. Board Forecast"
+      description: "Actual revenue growth compared to board-approved forecast."
+      target: ">= 90% of forecast"
+      frequency: quarterly
+      source: data/metrics/financial-metrics.yaml
+
+    - id: BO-05
+      name: "Runway Months Remaining"
+      description: "Months of cash runway at current burn rate."
+      target: ">= 18 months"
+      frequency: monthly
+      source: data/metrics/financial-metrics.yaml
+
+  org_health:
+    - id: OH-01
+      name: "Executive Retention Rate"
+      description: "Percentage of C-suite and VP-level leaders retained over trailing 12 months."
+      target: ">= 85%"
+      frequency: quarterly
+      source: data/metrics/org-health-scores.yaml
+
+    - id: OH-02
+      name: "Culture Alignment Score"
+      description: "Employee survey score on values alignment (0-100)."
+      target: ">= 75"
+      frequency: semi_annual
+      source: data/metrics/culture-scores.yaml
+
+    - id: OH-03
+      name: "Psychological Safety Index"
+      description: "Team-level psychological safety score from anonymous survey (0-100)."
+      target: ">= 70"
+      frequency: semi_annual
+      source: data/metrics/culture-scores.yaml
+
+    - id: OH-04
+      name: "Succession Coverage"
+      description: "Percentage of critical roles with at least one identified successor."
+      target: ">= 80%"
+      frequency: semi_annual
+      source: data/registries/succession-plans.yaml
+
+    - id: OH-05
+      name: "Engagement Score"
+      description: "Overall employee engagement score from pulse survey (0-100)."
+      target: ">= 72"
+      frequency: quarterly
+      source: data/metrics/engagement-data.yaml
+
+  operational:
+    - id: OP-01
+      name: "Decision Log Currency"
+      description: "Percentage of decisions documented within 24 hours of being made."
+      target: "100%"
+      frequency: per_meeting
+      source: data/decisions/
+
+    - id: OP-02
+      name: "Cross-Squad Sync Cadence"
+      description: "Percentage of scheduled cross-squad syncs completed on time."
+      target: ">= 90%"
+      frequency: quarterly
+      source: data/registries/cross-squad-log.yaml
+
+    - id: OP-03
+      name: "Quality Gate Pass Rate"
+      description: "Percentage of outputs passing all mandatory quality gates on first submission."
+      target: ">= 80%"
+      frequency: quarterly
+      source: data/metrics/decision-quality-scores.yaml
+
+    - id: OP-04
+      name: "RalphLoop Cycle Completion"
+      description: "Percentage of decisions that complete a full learn-from-outcome review cycle."
+      target: ">= 70%"
+      frequency: quarterly
+      source: data/metrics/decision-quality-scores.yaml
+
+# ============================================================================
+# DEFAULTS — Fallback behavior when routing does not match a specific task
+# ============================================================================
+
+defaults:
+  fallback_agent: board-chair
+  fallback_framework: frameworks/decision-memo-framework.md
+  fallback_checklist: checklists/board-decision-memo-quality.md
+  fallback_template: templates/memos/decision-memo-template.md
+  decision_type: type_2_reversible
+  documentation_required: true
+  minimum_options: 3
+  dissent_required: true
+  review_trigger_required: true
+  max_memo_length_pages: 5
+  pre_read_lead_time_hours: 72
+  decision_log_update_hours: 24
+  meeting_minutes_deadline_hours: 48
+  escalation_path:
+    - board-chair
+    - ethics-compass
+    - full_board_vote
+  archive_policy:
+    decisions: permanent
+    meeting_minutes: permanent
+    memos: permanent
+    metrics: 5_years_rolling
+    crisis_logs: permanent

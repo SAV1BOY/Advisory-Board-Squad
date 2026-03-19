@@ -13,6 +13,14 @@ Run a comprehensive annual strategy refresh cycle that reassesses the company's 
 - **Support:** CFO, CTO, CPO, functional leaders, Strategy Lead
 - **Advisory:** Full board, with deep engagement from members with relevant domain expertise
 
+
+## Agent Assignment
+> Routing: see `config.yaml → routing → quarterly-board-review`
+
+- **Lead:** strategic-advisor (Peter Thiel)
+- **Support:** board-chair (Board Chair), capital-allocator (Charlie Munger), risk-sentinel (Ray Dalio)
+- **Review:** growth-navigator (Naval Ravikant)
+
 ## Pre-Requisites
 - [ ] Prior year strategy document and OKRs with actuals
 - [ ] Competitive landscape report current

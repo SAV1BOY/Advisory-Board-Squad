@@ -14,6 +14,13 @@ Retrospectively assess the quality of board and management decisions to improve 
 - **Support:** Board Ops for data compilation, functional leaders for outcome data
 - **Advisory:** Full board participates in the review discussion
 
+
+## Agent Assignment
+> Routing: see `config.yaml → routing → decision-quality-review`
+
+- **Lead:** board-chair (Board Chair)
+- **Support:** governance-clerk (Simon Sinek), strategic-advisor (Peter Thiel), ethics-compass (Yvon Chouinard)
+
 ## Pre-Requisites
 - [ ] Decision log current with all decisions tracked
 - [ ] Outcome data available for decisions older than 6 months

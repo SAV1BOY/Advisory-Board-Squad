@@ -14,6 +14,13 @@ Assess the strength and trajectory of the company's competitive moat across all 
 - **Support:** Product, Engineering, Sales, Customer Success
 - **Advisory:** Board members with competitive strategy expertise
 
+
+## Agent Assignment
+> Routing: see `config.yaml → routing → moat-review`
+
+- **Lead:** strategic-advisor (Peter Thiel)
+- **Support:** capital-allocator (Charlie Munger), board-chair (Board Chair)
+
 ## Pre-Requisites
 - [ ] Current moat tracker populated with latest data
 - [ ] Competitive intelligence current

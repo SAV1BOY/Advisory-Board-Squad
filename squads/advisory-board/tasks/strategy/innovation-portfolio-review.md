@@ -14,6 +14,14 @@ Review the company's portfolio of innovation investments across core business im
 - **Support:** CEO, CFO, Engineering leadership
 - **Advisory:** Board members with technology or product expertise
 
+
+## Agent Assignment
+> Routing: see `config.yaml → routing → product-strategy-review`
+
+- **Lead:** strategic-advisor (Peter Thiel)
+- **Support:** growth-navigator (Naval Ravikant), capital-allocator (Charlie Munger)
+- **Review:** simplicity-czar (Derek Sivers)
+
 ## Pre-Requisites
 - [ ] Current R&D spend breakdown available
 - [ ] Project status for all innovation initiatives current

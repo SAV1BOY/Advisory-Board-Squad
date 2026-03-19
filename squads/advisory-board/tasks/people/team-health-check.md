@@ -15,6 +15,14 @@ Assess the health and effectiveness of a specific team or the broader organizati
 - **Support:** Team managers, HR business partners
 - **Advisory:** Board sponsor if board-level intervention may be needed
 
+
+## Agent Assignment
+> Routing: see `config.yaml → routing → conflict-resolution`
+
+- **Lead:** talent-advisor (Patrick Lencioni)
+- **Support:** culture-steward (Brene Brown), board-chair (Board Chair)
+- **Review:** ethics-compass (Yvon Chouinard)
+
 ## Pre-Requisites
 - [ ] Survey or assessment instrument prepared
 - [ ] Team performance data available

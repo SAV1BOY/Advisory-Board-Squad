@@ -15,6 +15,13 @@ Maintain the company's risk register as a living document. Add new risks, update
 - **Support:** All functional leaders for their domain risks, Legal for compliance risks, CTO for technology risks
 - **Advisory:** Board finance or risk committee
 
+
+## Agent Assignment
+> Routing: see `config.yaml → routing → crisis-response-72h`
+
+- **Lead:** risk-sentinel (Ray Dalio)
+- **Support:** governance-clerk (Simon Sinek), board-chair (Board Chair)
+
 ## Pre-Requisites
 - [ ] Current risk register available
 - [ ] Functional leaders briefed on update process

@@ -13,6 +13,14 @@ Evaluate a specific investment proposal (new product, market, technology, or cap
 - **Support:** CFO (financial analysis), Legal (contract review)
 - **Advisory:** Board finance committee or full board
 
+
+## Agent Assignment
+> Routing: see `config.yaml → routing → investment-decision`
+
+- **Lead:** capital-allocator (Charlie Munger)
+- **Support:** board-chair (Board Chair), risk-sentinel (Ray Dalio), strategic-advisor (Peter Thiel)
+- **Review:** ethics-compass (Yvon Chouinard)
+
 ## Pre-Requisites
 - [ ] Business case developed with financial projections
 - [ ] Alternative approaches evaluated (build vs. buy vs. partner)

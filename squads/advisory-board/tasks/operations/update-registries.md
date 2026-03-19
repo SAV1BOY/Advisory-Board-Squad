@@ -14,6 +14,13 @@ Maintain all board governance registries and logs as living documents. Ensure th
 - **Support:** Functional leaders for their domain registries, Legal for compliance registries
 - **Advisory:** Board Chair reviews quarterly
 
+
+## Agent Assignment
+> Routing: see `config.yaml → routing → cross-squad-sync`
+
+- **Lead:** governance-clerk (Simon Sinek)
+- **Support:** board-chair (Board Chair)
+
 ## Pre-Requisites
 - [ ] Current registry documents available
 - [ ] Update inputs collected from stakeholders

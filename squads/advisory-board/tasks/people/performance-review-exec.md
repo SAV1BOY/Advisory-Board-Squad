@@ -14,6 +14,14 @@ Conduct rigorous performance reviews for all executives using a structured frame
 - **Support:** CHRO for process design, 360 feedback coordination, and calibration facilitation
 - **Advisory:** Board compensation committee for CEO review
 
+
+## Agent Assignment
+> Routing: see `config.yaml → routing → exec-hiring`
+
+- **Lead:** talent-advisor (Patrick Lencioni)
+- **Support:** board-chair (Board Chair), culture-steward (Brene Brown)
+- **Review:** governance-clerk (Simon Sinek)
+
 ## Pre-Requisites
 - [ ] Performance period data collected
 - [ ] OKR and KPI results finalized

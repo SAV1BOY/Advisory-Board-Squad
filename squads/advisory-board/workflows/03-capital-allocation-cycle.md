@@ -14,11 +14,11 @@ A rigorous process for evaluating how the company deploys financial resources ac
 
 | Agent | Role |
 |---|---|
-| Board-Chair | Facilitates decision, ensures discipline |
-| Strategy-Analyst | Builds financial models, scenarios, EV calculations |
-| Devil's-Advocate | Stress-tests assumptions, argues the counter-case |
-| Risk-Analyst | Assesses downside scenarios, tail risks, correlation effects |
-| Execution-Tracker | Monitors post-allocation performance against projections |
+| board-chair (Board Chair) | Facilitates decision, ensures discipline |
+| strategic-advisor (Peter Thiel) | Builds financial models, scenarios, EV calculations |
+| capital-allocator (Charlie Munger) | Stress-tests assumptions, argues the counter-case |
+| risk-sentinel (Ray Dalio) | Assesses downside scenarios, tail risks, correlation effects |
+| growth-navigator (Naval Ravikant) | Monitors post-allocation performance against projections |
 
 ## Phases
 
@@ -30,7 +30,7 @@ A rigorous process for evaluating how the company deploys financial resources ac
    - What is the required investment (amount, timing, duration)?
    - What are the key assumptions?
    - What is the opportunity cost?
-2. Strategy-Analyst categorizes requests: growth investments, maintenance/infrastructure, defensive/risk-mitigation, optionality/experiments.
+2. strategic-advisor categorizes requests: growth investments, maintenance/infrastructure, defensive/risk-mitigation, optionality/experiments.
 3. Rank requests by expected value using a consistent framework (NPV, IRR, or payback period depending on type).
 4. Identify any requests that are mutually exclusive or have significant dependencies.
 
@@ -41,36 +41,36 @@ A rigorous process for evaluating how the company deploys financial resources ac
    b. Assign probability weights to each scenario (explicit, documented).
    c. Calculate expected value = Σ(probability × outcome) for each request.
    d. Model the portfolio effect: how do requests interact? What is the total portfolio risk?
-2. Risk-Analyst runs stress tests: what if two downside scenarios hit simultaneously? What is the maximum drawdown?
-3. Devil's-Advocate identifies the "hidden assumptions" in each model — the inputs that, if wrong, invalidate the case.
+2. risk-sentinel runs stress tests: what if two downside scenarios hit simultaneously? What is the maximum drawdown?
+3. capital-allocator identifies the "hidden assumptions" in each model — the inputs that, if wrong, invalidate the case.
 4. Package the analysis into a capital allocation brief (5-page max + appendix with model details).
 
 ### Phase 3 — Decision Session (Day 12-14)
 
-1. Board-Chair convenes a dedicated capital allocation session (90 minutes).
-2. Strategy-Analyst presents the portfolio view: all requests ranked, scenarios summarized, portfolio risk assessed.
+1. board-chair convenes a dedicated capital allocation session (90 minutes).
+2. strategic-advisor presents the portfolio view: all requests ranked, scenarios summarized, portfolio risk assessed.
 3. For each material request:
    a. Presenter states the ask and recommendation (3 min).
-   b. Devil's-Advocate presents the strongest counter-case (3 min).
-   c. Risk-Analyst highlights the key risk factors (2 min).
+   b. capital-allocator presents the strongest counter-case (3 min).
+   c. risk-sentinel highlights the key risk factors (2 min).
    d. Board discussion (10 min).
    e. Decision: fund, reject, defer, or fund with conditions.
-4. Board-Chair confirms the total allocation stays within the capital budget envelope.
+4. board-chair confirms the total allocation stays within the capital budget envelope.
 5. Record all decisions with rationale, conditions, dissenting views, and review dates.
 
 ### Phase 4 — Post-Allocation Monitoring (Ongoing)
 
-1. Execution-Tracker sets up tracking for each funded initiative:
+1. growth-navigator sets up tracking for each funded initiative:
    - Milestone schedule with go/no-go gates.
    - Key metrics that map back to the assumptions in the original model.
    - Variance reporting: actual vs. projected at each milestone.
-2. Monthly async update from each initiative owner to Execution-Tracker.
+2. Monthly async update from each initiative owner to growth-navigator.
 3. Quarterly portfolio review: which initiatives are on track, ahead, behind, or should be killed?
 4. Kill criteria are defined at allocation time, not invented later when sunk costs create bias.
 
 ### Phase 5 — Retrospective Review (Annually)
 
-1. Strategy-Analyst pulls the last 12 months of capital allocation decisions.
+1. strategic-advisor pulls the last 12 months of capital allocation decisions.
 2. For each decision: what did we project? What actually happened? Why?
 3. Calculate the portfolio's realized return vs. expected return.
 4. Identify systematic biases: are we consistently over-optimistic on timelines? Under-estimating costs? Over-weighting growth vs. maintenance?
@@ -81,11 +81,11 @@ A rigorous process for evaluating how the company deploys financial resources ac
 
 | Gate | Criteria | Owner |
 |---|---|---|
-| G1 — Requests complete | All requests use standard template, assumptions explicit | Strategy-Analyst |
-| G2 — Scenarios built | Top 5-7 requests modeled with three scenarios and probability weights | Strategy-Analyst |
-| G3 — Stress-tested | Devil's Advocate and Risk-Analyst have reviewed every material request | Devil's-Advocate |
-| G4 — Decisions recorded | Every decision logged with rationale, conditions, kill criteria, review date | Board-Chair |
-| G5 — Tracking live | Execution-Tracker has milestone schedule and metrics for every funded initiative | Execution-Tracker |
+| G1 — Requests complete | All requests use standard template, assumptions explicit | strategic-advisor (Peter Thiel) |
+| G2 — Scenarios built | Top 5-7 requests modeled with three scenarios and probability weights | strategic-advisor (Peter Thiel) |
+| G3 — Stress-tested | capital-allocator and risk-sentinel have reviewed every material request | capital-allocator (Charlie Munger) |
+| G4 — Decisions recorded | Every decision logged with rationale, conditions, kill criteria, review date | board-chair (Board Chair) |
+| G5 — Tracking live | growth-navigator has milestone schedule and metrics for every funded initiative | growth-navigator (Naval Ravikant) |
 
 ## Outputs
 
@@ -123,8 +123,8 @@ A rigorous process for evaluating how the company deploys financial resources ac
 | Failure Mode | Symptom | Mitigation |
 |---|---|---|
 | Peanut-butter spreading | Capital spread thinly across too many initiatives | Force-rank and fund the top N; set a minimum allocation threshold |
-| Sunk cost paralysis | Failing initiatives never get killed | Define kill criteria upfront; Execution-Tracker flags automatically |
-| Optimism bias | Every model shows a hockey stick | Require a "what would have to be true" section; Devil's Advocate challenges inputs |
+| Sunk cost paralysis | Failing initiatives never get killed | Define kill criteria upfront; growth-navigator flags automatically |
+| Optimism bias | Every model shows a hockey stick | Require a "what would have to be true" section; capital-allocator challenges inputs |
 | Maintenance neglect | Growth investments crowd out infrastructure | Reserve a fixed percentage for maintenance; make it non-negotiable |
-| Missing opportunity cost | Requests evaluated in isolation | Strategy-Analyst presents the portfolio view, including what gets deferred if X is funded |
-| Retrospective skip | Annual review never happens | Board-Chair blocks the Q4 session; it is a standing agenda item |
+| Missing opportunity cost | Requests evaluated in isolation | strategic-advisor presents the portfolio view, including what gets deferred if X is funded |
+| Retrospective skip | Annual review never happens | board-chair blocks the Q4 session; it is a standing agenda item |

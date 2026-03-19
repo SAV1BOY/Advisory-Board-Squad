@@ -15,11 +15,11 @@ A structured process for preparing, drafting, reviewing, and distributing commun
 
 | Agent | Role |
 |---|---|
-| Board-Chair | Reviews and approves external communications |
-| Strategy-Analyst | Provides data and context for communications |
-| Governance-Ops | Manages distribution, tracking, and archiving |
-| Culture-Guardian | Reviews tone and values alignment |
-| Risk-Analyst | Reviews for legal, regulatory, and reputational risks |
+| board-chair (Board Chair) | Reviews and approves external communications |
+| strategic-advisor (Peter Thiel) | Provides data and context for communications |
+| governance-clerk (Simon Sinek) | Manages distribution, tracking, and archiving |
+| culture-steward (Brene Brown) | Reviews tone and values alignment |
+| risk-sentinel (Ray Dalio) | Reviews for legal, regulatory, and reputational risks |
 
 ## Phases
 
@@ -31,7 +31,7 @@ A structured process for preparing, drafting, reviewing, and distributing commun
    - Purpose: inform, request action, manage expectations, build trust.
    - Urgency: routine (follow standard cadence) or time-sensitive (accelerated timeline).
    - Sensitivity: public, confidential, privileged.
-2. Strategy-Analyst assembles the data and context package:
+2. strategic-advisor assembles the data and context package:
    - Key metrics and performance data.
    - Strategic context (what the audience needs to understand the message).
    - Comparison to prior communications (consistency check).
@@ -58,24 +58,24 @@ A structured process for preparing, drafting, reviewing, and distributing commun
 ### Phase 3 — Review (Days 5-7)
 
 1. Review chain (all reviewers operate in parallel where possible):
-   - Board-Chair: accuracy of strategic framing, alignment with board decisions.
-   - Risk-Analyst: legal, regulatory, and reputational risk. Flag anything that could create liability.
-   - Culture-Guardian: tone, values alignment, empathy. Does it read as authentic?
-   - Strategy-Analyst: data accuracy, consistency with prior communications.
-2. Consolidate feedback. Author resolves conflicts (Board-Chair has final say on strategic framing, Risk-Analyst has veto on legal risk).
-3. Final draft approved by Board-Chair.
+   - board-chair: accuracy of strategic framing, alignment with board decisions.
+   - risk-sentinel: legal, regulatory, and reputational risk. Flag anything that could create liability.
+   - culture-steward: tone, values alignment, empathy. Does it read as authentic?
+   - strategic-advisor: data accuracy, consistency with prior communications.
+2. Consolidate feedback. Author resolves conflicts (board-chair has final say on strategic framing, risk-sentinel has veto on legal risk).
+3. Final draft approved by board-chair.
 4. If the communication involves forward-looking statements, legal counsel reviews before release.
 
 ### Phase 4 — Distribution (Day 7-8)
 
-1. Governance-Ops manages distribution:
+1. governance-clerk manages distribution:
    - Confirm the recipient list is current and complete.
    - Schedule the delivery time (avoid Fridays for material announcements).
    - Send via the appropriate channel (email, portal, in-person, public announcement).
    - If multi-audience: sequence delivery so internal audiences learn before external.
 2. For investor updates: send to board members 24 hours before investors to give them context.
 3. For employee communications: managers receive 2 hours before all-hands so they can prepare for questions.
-4. Governance-Ops logs: message, audience, channel, timestamp, sender.
+4. governance-clerk logs: message, audience, channel, timestamp, sender.
 
 ### Phase 5 — Feedback & Follow-Up (Days 8-15)
 
@@ -84,21 +84,21 @@ A structured process for preparing, drafting, reviewing, and distributing commun
    - Employee questions (through managers or Q&A channels).
    - Partner feedback.
    - Media coverage (if public announcement).
-2. Governance-Ops tracks all incoming questions and routes them to the appropriate responder.
+2. governance-clerk tracks all incoming questions and routes them to the appropriate responder.
 3. Prepare FAQ or follow-up communication if the same question comes from multiple sources.
-4. Board-Chair reviews the feedback summary and decides if a follow-up communication is needed.
-5. Strategy-Analyst notes any feedback that has strategic implications (e.g., investor concerns about a specific metric).
+4. board-chair reviews the feedback summary and decides if a follow-up communication is needed.
+5. strategic-advisor notes any feedback that has strategic implications (e.g., investor concerns about a specific metric).
 6. Archive the communication package: draft, reviews, final version, distribution log, feedback summary.
 
 ## Quality Gates
 
 | Gate | Criteria | Owner |
 |---|---|---|
-| G1 — Context assembled | Data, strategic context, and audience analysis complete | Strategy-Analyst |
+| G1 — Context assembled | Data, strategic context, and audience analysis complete | strategic-advisor (Peter Thiel) |
 | G2 — Draft complete | Communication drafted using appropriate template and voice | Author |
-| G3 — Reviews complete | Board-Chair, Risk-Analyst, Culture-Guardian, Strategy-Analyst reviewed | Board-Chair |
-| G4 — Distribution confirmed | Sent to correct audience via correct channel with proper sequencing | Governance-Ops |
-| G5 — Feedback processed | Questions tracked, responses sent, strategic implications noted | Governance-Ops |
+| G3 — Reviews complete | board-chair, risk-sentinel, culture-steward, strategic-advisor reviewed | board-chair (Board Chair) |
+| G4 — Distribution confirmed | Sent to correct audience via correct channel with proper sequencing | governance-clerk (Simon Sinek) |
+| G5 — Feedback processed | Questions tracked, responses sent, strategic implications noted | governance-clerk (Simon Sinek) |
 
 ## Outputs
 
@@ -137,9 +137,9 @@ For time-sensitive communications (crisis, material events): compress to 24-48 h
 
 | Failure Mode | Symptom | Mitigation |
 |---|---|---|
-| Inconsistent messaging | Different audiences hear different stories | Strategy-Analyst checks consistency across audiences before distribution |
-| Review bottleneck | Communication stuck in review for weeks | Parallel review process; Board-Chair sets a 48-hour review deadline |
-| Tone deafness | Message is accurate but reads as cold or corporate | Culture-Guardian reviews every communication for tone and authenticity |
-| Sequencing failure | External audience learns before internal | Governance-Ops enforces internal-first sequencing |
-| Data errors | Communication contains inaccurate metrics | Strategy-Analyst verifies every data point against source; zero tolerance |
-| One-way communication | Send and forget — no feedback loop | Governance-Ops actively tracks questions and routes responses |
+| Inconsistent messaging | Different audiences hear different stories | strategic-advisor checks consistency across audiences before distribution |
+| Review bottleneck | Communication stuck in review for weeks | Parallel review process; board-chair sets a 48-hour review deadline |
+| Tone deafness | Message is accurate but reads as cold or corporate | culture-steward reviews every communication for tone and authenticity |
+| Sequencing failure | External audience learns before internal | governance-clerk enforces internal-first sequencing |
+| Data errors | Communication contains inaccurate metrics | strategic-advisor verifies every data point against source; zero tolerance |
+| One-way communication | Send and forget — no feedback loop | governance-clerk actively tracks questions and routes responses |

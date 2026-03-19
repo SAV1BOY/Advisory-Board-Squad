@@ -15,6 +15,13 @@ Conduct a comprehensive diagnostic of the company's strategic position — marke
 - **Advisory:** Board members with relevant domain expertise
 - **Optional:** External strategy advisor for independent perspective
 
+
+## Agent Assignment
+> Routing: see `config.yaml → routing → strategic-diagnosis`
+
+- **Lead:** strategic-advisor (Peter Thiel)
+- **Support:** board-chair (Board Chair), risk-sentinel (Ray Dalio), growth-navigator (Naval Ravikant)
+
 ## Pre-Requisites
 - [ ] Current financial data available
 - [ ] Customer data current (NPS, churn, feedback)

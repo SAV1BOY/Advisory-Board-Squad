@@ -15,6 +15,13 @@ Ensure continuity of leadership by identifying and developing successors for all
 - **Support:** Board Ops for process coordination
 - **Advisory:** Full board participates in CEO succession discussion
 
+
+## Agent Assignment
+> Routing: see `config.yaml → routing → succession-planning`
+
+- **Lead:** talent-advisor (Patrick Lencioni)
+- **Support:** board-chair (Board Chair), governance-clerk (Simon Sinek), culture-steward (Brene Brown)
+
 ## Pre-Requisites
 - [ ] Current executive team performance assessments available
 - [ ] Internal talent pipeline data available

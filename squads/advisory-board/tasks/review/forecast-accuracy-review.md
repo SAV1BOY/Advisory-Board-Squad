@@ -14,6 +14,14 @@ Assess how accurate the company's financial and operational forecasts have been.
 - **Support:** CEO, functional leaders who own forecasted metrics, data or analytics team
 - **Advisory:** Board members with financial expertise
 
+
+## Agent Assignment
+> Routing: see `config.yaml → routing → decision-quality-review`
+
+- **Lead:** capital-allocator (Charlie Munger)
+- **Support:** strategic-advisor (Peter Thiel), board-chair (Board Chair)
+- **Review:** governance-clerk (Simon Sinek)
+
 ## Pre-Requisites
 - [ ] Historical forecast data available for comparison
 - [ ] Actual results finalized for the review period

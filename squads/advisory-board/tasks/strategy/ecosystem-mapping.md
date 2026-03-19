@@ -4,6 +4,14 @@
 
 Create a comprehensive map of the competitive ecosystem including direct competitors, indirect competitors, potential entrants, adjacent markets, and the value chain participants who influence competitive dynamics.
 
+
+## Agent Assignment
+> Routing: see `config.yaml → routing → moat-review`
+
+- **Lead:** strategic-advisor (Peter Thiel)
+- **Support:** partnership-broker (Reid Hoffman), growth-navigator (Naval Ravikant)
+- **Review:** board-chair (Board Chair)
+
 ## Context
 
 Most companies define their competitive landscape too narrowly. They track direct competitors but miss the adjacent players, platform shifts, and value chain movements that represent the greatest strategic threats and opportunities.

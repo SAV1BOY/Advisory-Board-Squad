@@ -16,6 +16,14 @@ Evaluate the effectiveness of the current pricing model — its structure, metri
 - **Support:** Head of Sales, Head of Customer Success, Product Marketing, Data/Analytics team
 - **Advisory:** Board members with pricing, revenue model, or SaaS expertise
 
+
+## Agent Assignment
+> Routing: see `config.yaml → routing → capital-allocation-review`
+
+- **Lead:** capital-allocator (Charlie Munger)
+- **Support:** strategic-advisor (Peter Thiel), growth-navigator (Naval Ravikant)
+- **Review:** board-chair (Board Chair)
+
 ## Pre-Requisites
 - [ ] Current pricing model fully documented — metric, tiers, packaging, discounting rules
 - [ ] Revenue data by pricing metric, tier, and segment

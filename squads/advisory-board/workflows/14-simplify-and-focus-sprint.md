@@ -16,17 +16,17 @@ A time-boxed sprint to ruthlessly eliminate complexity, cut low-value activities
 
 | Agent | Role |
 |---|---|
-| Board-Chair | Sponsors the sprint, provides top-cover for hard cuts |
-| Strategy-Analyst | Audits initiatives, quantifies complexity costs |
-| Devil's-Advocate | Challenges sacred cows and sunk-cost reasoning |
-| Execution-Tracker | Measures the impact of simplification |
-| Culture-Guardian | Ensures cuts don't damage culture or morale |
+| board-chair (Board Chair) | Sponsors the sprint, provides top-cover for hard cuts |
+| strategic-advisor (Peter Thiel) | Audits initiatives, quantifies complexity costs |
+| capital-allocator (Charlie Munger) | Challenges sacred cows and sunk-cost reasoning |
+| growth-navigator (Naval Ravikant) | Measures the impact of simplification |
+| culture-steward (Brene Brown) | Ensures cuts don't damage culture or morale |
 
 ## Phases
 
 ### Phase 1 — Complexity Audit (Days 1-7)
 
-1. Strategy-Analyst inventories all active initiatives, projects, products, processes, meetings, and reports:
+1. strategic-advisor inventories all active initiatives, projects, products, processes, meetings, and reports:
    - Name and description.
    - Owner.
    - Resources consumed (headcount, budget, leadership attention).
@@ -39,23 +39,23 @@ A time-boxed sprint to ruthlessly eliminate complexity, cut low-value activities
    - Legacy: existed before current strategy but hasn't been re-validated.
    - Exploratory: experiments or bets.
 3. Calculate the "complexity tax": total resources consumed by legacy and low-value items.
-4. Devil's-Advocate challenges every item classified as "core": "If this didn't exist today, would we start it?"
+4. capital-allocator challenges every item classified as "core": "If this didn't exist today, would we start it?"
 
 ### Phase 2 — Cut List (Days 7-12)
 
-1. Board-Chair and CEO review the complexity audit. For each item, decide:
+1. board-chair and CEO review the complexity audit. For each item, decide:
    - Keep: essential, well-aligned, producing value.
    - Kill: stop immediately. Redirect resources.
    - Shrink: reduce scope, frequency, or investment.
    - Merge: combine with another initiative to reduce overhead.
    - Sunset: wind down over a defined period (30-90 days).
 2. Apply the "hell yes or no" test: if we wouldn't enthusiastically start this today, it should be on the cut list.
-3. Devil's-Advocate specifically challenges:
+3. capital-allocator specifically challenges:
    - Sunk cost arguments: "We've already invested so much."
    - Fear of regret: "What if we need this later?"
    - Political sacred cows: "That's [executive name]'s pet project."
 4. Produce the final cut list with rationale for each decision.
-5. Board-Chair reviews and approves the cut list.
+5. board-chair reviews and approves the cut list.
 
 ### Phase 3 — Communication & Execution (Days 12-20)
 
@@ -64,27 +64,27 @@ A time-boxed sprint to ruthlessly eliminate complexity, cut low-value activities
    - What: the specific changes (items killed, shrunk, merged, sunset).
    - How: the timeline and transition plan for each change.
    - Support: what resources and support are available for affected teams.
-2. Culture-Guardian reviews the communication for tone: this is about focus, not punishment.
+2. culture-steward reviews the communication for tone: this is about focus, not punishment.
 3. Each cut has an execution owner and a timeline:
    - Kill items: stopped within 5 business days.
    - Shrink items: new scope defined within 10 business days.
    - Merge items: combined within 20 business days.
    - Sunset items: wind-down plan with milestones and end date.
-4. Governance-Ops tracks execution of each cut.
+4. governance-clerk tracks execution of each cut.
 
 ### Phase 4 — Capacity Redeployment (Days 15-30)
 
-1. Strategy-Analyst quantifies the freed capacity: headcount hours, budget dollars, leadership attention.
-2. Board-Chair and CEO decide how to redeploy capacity:
+1. strategic-advisor quantifies the freed capacity: headcount hours, budget dollars, leadership attention.
+2. board-chair and CEO decide how to redeploy capacity:
    - Reinvest in top priorities (specific allocation).
    - Create slack (intentionally hold some capacity as buffer).
    - Invest in capability building (training, tools, infrastructure).
 3. Each redeployment is tracked with the same rigor as the original allocation.
-4. Devil's-Advocate asks: "Are we about to fill the freed capacity with new complexity?"
+4. capital-allocator asks: "Are we about to fill the freed capacity with new complexity?"
 
 ### Phase 5 — Impact Measurement (Days 30-90)
 
-1. Execution-Tracker measures the impact of simplification:
+1. growth-navigator measures the impact of simplification:
    - Resources freed: actual vs. projected.
    - Execution velocity: are the remaining priorities moving faster?
    - Team health: is workload more sustainable? Are engagement scores improving?
@@ -101,11 +101,11 @@ A time-boxed sprint to ruthlessly eliminate complexity, cut low-value activities
 
 | Gate | Criteria | Owner |
 |---|---|---|
-| G1 — Audit complete | All active initiatives inventoried and categorized | Strategy-Analyst |
-| G2 — Cut list approved | Board-Chair approves the cut list with rationale | Board-Chair |
+| G1 — Audit complete | All active initiatives inventoried and categorized | strategic-advisor (Peter Thiel) |
+| G2 — Cut list approved | board-chair approves the cut list with rationale | board-chair (Board Chair) |
 | G3 — Communication sent | Organization informed with strategic rationale | CEO |
-| G4 — Cuts executed | All kill/shrink/merge/sunset items actioned on schedule | Governance-Ops |
-| G5 — Impact measured | 90-day impact report delivered | Execution-Tracker |
+| G4 — Cuts executed | All kill/shrink/merge/sunset items actioned on schedule | governance-clerk (Simon Sinek) |
+| G5 — Impact measured | 90-day impact report delivered | growth-navigator (Naval Ravikant) |
 
 ## Outputs
 
@@ -143,9 +143,9 @@ A time-boxed sprint to ruthlessly eliminate complexity, cut low-value activities
 
 | Failure Mode | Symptom | Mitigation |
 |---|---|---|
-| Political gridlock | Every item has an executive sponsor who blocks the cut | Board-Chair provides top-cover; CEO makes the final call |
-| Sunk cost reasoning | "We can't stop now, we've invested too much" | Devil's Advocate asks: "If you hadn't invested anything, would you start this?" |
-| Timid cuts | Only marginal items cut; nothing meaningful changes | Board-Chair sets a target reduction (e.g., ≥20 %); hold the line |
+| Political gridlock | Every item has an executive sponsor who blocks the cut | board-chair provides top-cover; CEO makes the final call |
+| Sunk cost reasoning | "We can't stop now, we've invested too much" | capital-allocator asks: "If you hadn't invested anything, would you start this?" |
+| Timid cuts | Only marginal items cut; nothing meaningful changes | board-chair sets a target reduction (e.g., ≥20 %); hold the line |
 | Capacity re-bloat | Freed capacity immediately consumed by new initiatives | Hold 30-day moratorium on new initiatives after the sprint |
-| Communication failure | Teams learn about cuts through rumors instead of leadership | CEO communicates proactively; Culture-Guardian reviews the message |
+| Communication failure | Teams learn about cuts through rumors instead of leadership | CEO communicates proactively; culture-steward reviews the message |
 | One-time event | Sprint happens once, complexity returns | Make it semi-annual; track complexity metrics continuously |

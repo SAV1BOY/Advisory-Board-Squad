@@ -15,6 +15,14 @@ Model multiple financial scenarios to ensure the company understands its runway 
 - **Support:** CEO, Department heads (for cost reduction scenarios)
 - **Advisory:** Board finance committee
 
+
+## Agent Assignment
+> Routing: see `config.yaml → routing → capital-allocation-review`
+
+- **Lead:** capital-allocator (Charlie Munger)
+- **Support:** board-chair (Board Chair), risk-sentinel (Ray Dalio)
+- **Review:** strategic-advisor (Peter Thiel)
+
 ## Pre-Requisites
 - [ ] Current cash position and burn rate confirmed
 - [ ] Revenue pipeline and forecast available

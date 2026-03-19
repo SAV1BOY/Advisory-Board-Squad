@@ -14,6 +14,13 @@ Conduct a rigorous evaluation of a potential acquisition target to determine str
 - **Support:** CFO (valuation), CTO (technical DD), CHRO (people DD), Legal (legal DD)
 - **Advisory:** Board members with M&A experience, external M&A advisor (if engaged)
 
+
+## Agent Assignment
+> Routing: see `config.yaml → routing → investment-decision`
+
+- **Lead:** capital-allocator (Charlie Munger)
+- **Support:** board-chair (Board Chair), risk-sentinel (Ray Dalio), strategic-advisor (Peter Thiel), ethics-compass (Yvon Chouinard)
+
 ## Pre-Requisites
 - [ ] NDA signed with target (if discussions are bilateral)
 - [ ] Initial information package received from target

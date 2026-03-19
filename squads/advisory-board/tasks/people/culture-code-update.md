@@ -16,6 +16,14 @@ Review and refresh the company's culture code — its articulated values, operat
 - **Support:** Leadership team, culture ambassadors, employee representatives
 - **Advisory:** Board members, particularly those with organizational culture expertise
 
+
+## Agent Assignment
+> Routing: see `config.yaml → routing → culture-audit`
+
+- **Lead:** culture-steward (Brene Brown)
+- **Support:** talent-advisor (Patrick Lencioni), ethics-compass (Yvon Chouinard)
+- **Review:** board-chair (Board Chair)
+
 ## Pre-Requisites
 - [ ] Current culture code or values document
 - [ ] Culture health survey data (recent engagement survey, pulse surveys)

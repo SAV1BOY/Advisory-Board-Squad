@@ -12,6 +12,14 @@ Facilitate an extended board session focused on setting strategic direction, pri
 - **Support:** Board Ops (logistics and materials), CFO (financial planning)
 - **Optional:** External facilitator for strategic framing
 
+
+## Agent Assignment
+> Routing: see `config.yaml → routing → quarterly-board-review`
+
+- **Lead:** board-chair (Board Chair)
+- **Support:** strategic-advisor (Peter Thiel), capital-allocator (Charlie Munger), governance-clerk (Simon Sinek)
+- **Review:** risk-sentinel (Ray Dalio)
+
 ## Pre-Requisites
 - [ ] Annual board review report completed
 - [ ] Board effectiveness review completed

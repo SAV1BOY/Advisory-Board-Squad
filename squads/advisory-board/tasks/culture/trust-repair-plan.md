@@ -15,6 +15,13 @@ Restore organizational trust after a breach event such as layoffs handled poorly
 - **Support:** Communications lead, legal counsel, affected team leaders
 - **Advisory:** Board Chair for governance-level trust breaches
 
+
+## Agent Assignment
+> Routing: see `config.yaml → routing → trust-repair`
+
+- **Lead:** culture-steward (Brene Brown)
+- **Support:** board-chair (Board Chair), ethics-compass (Yvon Chouinard), talent-advisor (Patrick Lencioni)
+
 ## Pre-Requisites
 - [ ] Trust breach clearly identified and acknowledged internally
 - [ ] Root cause understood not just symptoms

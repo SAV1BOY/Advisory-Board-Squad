@@ -14,6 +14,14 @@ Resolve significant interpersonal or inter-functional conflicts at the executive
 - **Support:** CHRO for process facilitation, external mediator if needed
 - **Advisory:** Board members for perspective and governance
 
+
+## Agent Assignment
+> Routing: see `config.yaml → routing → conflict-resolution`
+
+- **Lead:** culture-steward (Brene Brown)
+- **Support:** board-chair (Board Chair), talent-advisor (Patrick Lencioni)
+- **Review:** ethics-compass (Yvon Chouinard)
+
 ## Pre-Requisites
 - [ ] Conflict identified and documented with specific observable impacts
 - [ ] Both parties have been heard individually

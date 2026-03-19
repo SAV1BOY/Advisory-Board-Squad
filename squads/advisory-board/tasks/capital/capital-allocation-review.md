@@ -14,6 +14,13 @@ Review how the company's capital is being allocated across functions, initiative
 - **Support:** CEO, functional leaders (for their budget areas)
 - **Advisory:** Board finance committee or board members with financial expertise
 
+
+## Agent Assignment
+> Routing: see `config.yaml → routing → capital-allocation-review`
+
+- **Lead:** capital-allocator (Charlie Munger)
+- **Support:** board-chair (Board Chair), strategic-advisor (Peter Thiel), risk-sentinel (Ray Dalio)
+
 ## Pre-Requisites
 - [ ] Current financial statements and cash position available
 - [ ] Budget vs. actual reporting current for all departments

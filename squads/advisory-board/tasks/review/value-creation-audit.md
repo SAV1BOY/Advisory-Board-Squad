@@ -14,6 +14,14 @@ Assess whether the company is creating sustainable long-term value for all stake
 - **Support:** All functional leaders contributing their domain's value creation data
 - **Advisory:** Full board participates in value creation discussion
 
+
+## Agent Assignment
+> Routing: see `config.yaml → routing → decision-quality-review`
+
+- **Lead:** strategic-advisor (Peter Thiel)
+- **Support:** capital-allocator (Charlie Munger), board-chair (Board Chair)
+- **Review:** ethics-compass (Yvon Chouinard)
+
 ## Pre-Requisites
 - [ ] Financial data current
 - [ ] Moat tracker current

@@ -15,6 +15,14 @@ Analyze the company's unit economics to ensure the business model is fundamental
 - **Support:** VP Sales (acquisition costs), VP Product (retention metrics), VP Customer Success (expansion and churn)
 - **Advisory:** Board members with relevant operating experience
 
+
+## Agent Assignment
+> Routing: see `config.yaml → routing → capital-allocation-review`
+
+- **Lead:** capital-allocator (Charlie Munger)
+- **Support:** strategic-advisor (Peter Thiel), growth-navigator (Naval Ravikant)
+- **Review:** board-chair (Board Chair)
+
 ## Pre-Requisites
 - [ ] Customer acquisition data by channel and cohort available
 - [ ] Revenue retention data by cohort available

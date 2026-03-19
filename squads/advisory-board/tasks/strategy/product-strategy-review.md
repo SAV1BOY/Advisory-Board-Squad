@@ -14,6 +14,14 @@ Review and validate the product strategy at board level. Ensure product directio
 - **Support:** CTO (technical feasibility), VP Sales (market feedback), CEO (strategic alignment)
 - **Advisory:** Board members with product or technology expertise
 
+
+## Agent Assignment
+> Routing: see `config.yaml → routing → product-strategy-review`
+
+- **Lead:** strategic-advisor (Peter Thiel)
+- **Support:** growth-navigator (Naval Ravikant), simplicity-czar (Derek Sivers)
+- **Review:** board-chair (Board Chair)
+
 ## Pre-Requisites
 - [ ] Product metrics current (adoption, retention, NPS, engagement)
 - [ ] Customer feedback synthesized (support tickets, interviews, surveys)

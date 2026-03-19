@@ -11,6 +11,13 @@ Produce accurate board meeting minutes, update all tracking systems, and ensure 
 - **Reviewer:** Board Chair (approves draft minutes)
 - **Contributors:** CEO (validates management commitments), Action item owners (confirm assignments)
 
+
+## Agent Assignment
+> Routing: see `config.yaml → routing → board-meeting-run`
+
+- **Lead:** governance-clerk (Simon Sinek)
+- **Support:** board-chair (Board Chair), simplicity-czar (Derek Sivers)
+
 ## Pre-Requisites
 - [ ] Meeting has concluded
 - [ ] Real-time notes captured during the meeting

@@ -16,6 +16,14 @@ Conduct a strategic review of the company's technology stack to ensure it suppor
 - **Support:** Engineering leads, DevOps, Security, Product, Data teams
 - **Advisory:** Board members with technology expertise
 
+
+## Agent Assignment
+> Routing: see `config.yaml → routing → product-strategy-review`
+
+- **Lead:** strategic-advisor (Peter Thiel)
+- **Support:** simplicity-czar (Derek Sivers), risk-sentinel (Ray Dalio)
+- **Review:** board-chair (Board Chair)
+
 ## Pre-Requisites
 - [ ] Current architecture documentation up to date
 - [ ] Infrastructure cost data available (cloud spend, licensing, tooling)

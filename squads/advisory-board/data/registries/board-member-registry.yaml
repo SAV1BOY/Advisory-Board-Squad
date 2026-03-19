@@ -1,0 +1,46 @@
+# Board Member Registry
+# Canonical record of all board members, their roles, domains, expertise, and status.
+# Each entry tracks an individual's contributions and standing within the advisory board.
+
+schema:
+  member_id:
+    type: string
+    format: "MBR-NNN"
+    description: "Unique identifier for the board member"
+    required: true
+  name:
+    type: string
+    description: "Full name of the board member"
+    required: true
+  role:
+    type: string
+    enum: [chair, vice-chair, member, observer, emeritus]
+    description: "Current role on the board"
+    required: true
+  domain:
+    type: string
+    description: "Primary domain of responsibility or focus"
+    required: true
+  expertise_areas:
+    type: list
+    description: "List of subject-matter expertise areas"
+    required: true
+  join_date:
+    type: date
+    format: "YYYY-MM-DD"
+    description: "Date the member joined the board"
+    required: true
+  status:
+    type: string
+    enum: [active, on-leave, retired, removed]
+    description: "Current membership status"
+    required: true
+  contributions:
+    type: list
+    items:
+      description: string
+      date: date
+    description: "Notable contributions and their dates"
+    required: false
+
+entries: []

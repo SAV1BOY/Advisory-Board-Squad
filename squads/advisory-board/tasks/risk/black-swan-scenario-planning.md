@@ -14,6 +14,13 @@ Identify and prepare for low-probability, high-impact events that could fundamen
 - **Support:** CFO for financial stress testing, CTO for technology scenarios, Legal for regulatory scenarios, CHRO for people scenarios
 - **Advisory:** Board members who bring diverse perspectives and pattern recognition from prior crises
 
+
+## Agent Assignment
+> Routing: see `config.yaml → routing → crisis-response-72h`
+
+- **Lead:** risk-sentinel (Ray Dalio)
+- **Support:** strategic-advisor (Peter Thiel), capital-allocator (Charlie Munger), board-chair (Board Chair)
+
 ## Pre-Requisites
 - [ ] Risk register current
 - [ ] Financial model available for stress testing

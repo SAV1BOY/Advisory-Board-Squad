@@ -13,16 +13,16 @@ The Board Chair's monthly operating rhythm — a structured review of open decis
 
 | Agent | Role |
 |---|---|
-| Board-Chair | Conducts the review, makes decisions |
-| Governance-Ops | Prepares the review package, updates registries |
-| Strategy-Analyst | Provides data on open strategic items |
-| Execution-Tracker | Reports on action item status and follow-through |
+| board-chair (Board Chair) | Conducts the review, makes decisions |
+| governance-clerk (Simon Sinek) | Prepares the review package, updates registries |
+| strategic-advisor (Peter Thiel) | Provides data on open strategic items |
+| growth-navigator (Naval Ravikant) | Reports on action item status and follow-through |
 
 ## Phases
 
 ### Phase 1 — Agenda Review (30 minutes)
 
-1. Board-Chair reviews the next board meeting agenda:
+1. board-chair reviews the next board meeting agenda:
    - Is the agenda set? If not, draft it now.
    - Are the right topics included? Any emerging issues that need to displace a standing item?
    - Are pre-read owners assigned and aware of deadlines?
@@ -51,12 +51,12 @@ The Board Chair's monthly operating rhythm — a structured review of open decis
 
 ### Phase 3 — Registry Updates (30 minutes)
 
-1. **Risk Register**: Review with Governance-Ops.
+1. **Risk Register**: Review with governance-clerk.
    - Any new risks flagged since last month?
    - Any existing risk ratings that need adjustment?
    - Are mitigation plans on track?
    - Flag anything that needs board attention at the next meeting.
-2. **Action Tracker**: Review with Execution-Tracker.
+2. **Action Tracker**: Review with growth-navigator.
    - How many action items are open? How many are overdue?
    - For overdue items: what is blocking them? Do any need escalation?
    - Close completed items. Update status on in-progress items.
@@ -69,7 +69,7 @@ The Board Chair's monthly operating rhythm — a structured review of open decis
 
 ### Phase 4 — Stakeholder Pulse (20 minutes)
 
-1. Board-Chair reviews recent communications with key stakeholders:
+1. board-chair reviews recent communications with key stakeholders:
    - CEO: any concerns, requests, or signals from the most recent check-in?
    - Advisors: any individual advisor disengaging, expressing frustration, or raising concerns?
    - Investors (if applicable): any follow-up items from the last update?
@@ -78,24 +78,24 @@ The Board Chair's monthly operating rhythm — a structured review of open decis
 
 ### Phase 5 — Planning Next Month (20 minutes)
 
-1. Based on the review, Board-Chair sets priorities for the coming month:
+1. Based on the review, board-chair sets priorities for the coming month:
    - Top 3 items that need Chair attention.
    - Any workflows that need to be initiated or progressed.
    - Any communications that need to be sent.
    - Any meetings that need to be scheduled.
 2. Update the personal task list.
-3. Send a brief update to Governance-Ops with any actions needed from the ops team.
-4. If anything from the review requires immediate board attention, Board-Chair sends an async note to the full board.
+3. Send a brief update to governance-clerk with any actions needed from the ops team.
+4. If anything from the review requires immediate board attention, board-chair sends an async note to the full board.
 
 ## Quality Gates
 
 | Gate | Criteria | Owner |
 |---|---|---|
-| G1 — Review completed | All five phases completed within the allotted time | Board-Chair |
-| G2 — Registries current | Decision log, risk register, action tracker reviewed and updated | Governance-Ops |
-| G3 — Overdue items addressed | Every overdue action item has a plan (complete, escalate, or re-schedule) | Board-Chair |
-| G4 — Next month planned | Top 3 priorities identified, actions assigned | Board-Chair |
-| G5 — Consistency | Review happened every month, no skips | Governance-Ops (accountability partner) |
+| G1 — Review completed | All five phases completed within the allotted time | board-chair (Board Chair) |
+| G2 — Registries current | Decision log, risk register, action tracker reviewed and updated | governance-clerk (Simon Sinek) |
+| G3 — Overdue items addressed | Every overdue action item has a plan (complete, escalate, or re-schedule) | board-chair (Board Chair) |
+| G4 — Next month planned | Top 3 priorities identified, actions assigned | board-chair (Board Chair) |
+| G5 — Consistency | Review happened every month, no skips | governance-clerk (accountability partner) |
 
 ## Outputs
 
@@ -105,7 +105,7 @@ The Board Chair's monthly operating rhythm — a structured review of open decis
 - Action tracker status (open, overdue, completed counts).
 - Stakeholder pulse notes.
 - Chair's monthly priorities (top 3).
-- Governance-Ops action list.
+- governance-clerk action list.
 
 ## Timeline
 
@@ -135,9 +135,9 @@ Scheduled: first week of each month. Block a single morning or split across two 
 
 | Failure Mode | Symptom | Mitigation |
 |---|---|---|
-| Skipping the review | "Too busy this month" — review gets postponed indefinitely | Governance-Ops schedules the recurring block; treats it as an appointment, not a task |
+| Skipping the review | "Too busy this month" — review gets postponed indefinitely | governance-clerk schedules the recurring block; treats it as an appointment, not a task |
 | Surface-level review | Chair skims the registries without actually engaging | Structured phases with specific questions force depth |
-| Registry rot | Registries are reviewed but never updated | Governance-Ops makes updates during or immediately after the review |
-| Isolation | Chair does the review alone without input | Governance-Ops participates; Execution-Tracker provides action tracker data |
-| Overdue normalization | Overdue items become the norm and stop triggering action | Hard target: ≤10 % overdue. Board-Chair escalates anything older than 30 days overdue |
-| Missing the signal | Stakeholder relationship deterioration not caught | Stakeholder pulse phase is mandatory; Board-Chair actively looks for disengagement signals |
+| Registry rot | Registries are reviewed but never updated | governance-clerk makes updates during or immediately after the review |
+| Isolation | Chair does the review alone without input | governance-clerk participates; growth-navigator provides action tracker data |
+| Overdue normalization | Overdue items become the norm and stop triggering action | Hard target: ≤10 % overdue. board-chair escalates anything older than 30 days overdue |
+| Missing the signal | Stakeholder relationship deterioration not caught | Stakeholder pulse phase is mandatory; board-chair actively looks for disengagement signals |

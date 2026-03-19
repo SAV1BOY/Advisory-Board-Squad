@@ -17,6 +17,13 @@ Facilitate a structured scenario planning session that maps multiple plausible f
 - **Advisory:** Board members with relevant domain expertise
 - **Facilitator:** External facilitator recommended for annual sessions to reduce anchoring
 
+
+## Agent Assignment
+> Routing: see `config.yaml → routing → strategic-diagnosis`
+
+- **Lead:** strategic-advisor (Peter Thiel)
+- **Support:** risk-sentinel (Ray Dalio), capital-allocator (Charlie Munger), board-chair (Board Chair)
+
 ## Pre-Requisites
 - [ ] Focal question defined and circulated to participants 1 week in advance
 - [ ] Current strategy document available for reference

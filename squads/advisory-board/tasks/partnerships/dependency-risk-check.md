@@ -15,6 +15,14 @@ Assess and monitor the company's dependency on key partners, vendors, platforms,
 - **Support:** Product for technology dependencies, Sales for revenue dependencies, Engineering for infrastructure dependencies
 - **Advisory:** Board members for risk assessment perspective
 
+
+## Agent Assignment
+> Routing: see `config.yaml → routing → partnership-evaluation`
+
+- **Lead:** risk-sentinel (Ray Dalio)
+- **Support:** partnership-broker (Reid Hoffman), strategic-advisor (Peter Thiel)
+- **Review:** board-chair (Board Chair)
+
 ## Pre-Requisites
 - [ ] Current partner and vendor inventory
 - [ ] Revenue breakdown by partner and channel

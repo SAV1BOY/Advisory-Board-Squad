@@ -14,6 +14,13 @@ Establish the advisory board from scratch — define composition, governance str
 - **Support:** Legal counsel, existing investors, Board Ops (once hired/assigned)
 - **Advisory:** Existing advisors or mentors with board experience
 
+
+## Agent Assignment
+> Routing: see `config.yaml → routing → board-setup`
+
+- **Lead:** board-chair (Board Chair)
+- **Support:** governance-clerk (Simon Sinek), talent-advisor (Patrick Lencioni), ethics-compass (Yvon Chouinard)
+
 ## Pre-Requisites
 - [ ] Company has a clear strategic direction (even if evolving)
 - [ ] Founder/CEO has identified the types of expertise needed on the board

@@ -14,6 +14,14 @@ Facilitate a rigorous pivot-or-persevere decision when evidence suggests the cur
 - **Support:** CFO for financial analysis, Product and Sales for market evidence
 - **Advisory:** Board members for pattern recognition and external perspective
 
+
+## Agent Assignment
+> Routing: see `config.yaml → routing → pivot-or-persevere-decision`
+
+- **Lead:** strategic-advisor (Peter Thiel)
+- **Support:** board-chair (Board Chair), capital-allocator (Charlie Munger), risk-sentinel (Ray Dalio)
+- **Review:** culture-steward (Brene Brown)
+
 ## Pre-Requisites
 - [ ] Current performance data vs. original plan available
 - [ ] Customer feedback and market data current

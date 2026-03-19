@@ -15,17 +15,17 @@ Bridges the gap between board-level strategic decisions and squad-level executio
 
 | Agent | Role |
 |---|---|
-| Board-Chair | Approves the handoff brief, ensures clarity of intent |
-| Strategy-Analyst | Drafts the squad brief, translates strategy into actionable direction |
-| Execution-Tracker | Monitors squad execution and feedback loops |
-| Governance-Ops | Manages the handoff process, documentation, and tracking |
+| board-chair (Board Chair) | Approves the handoff brief, ensures clarity of intent |
+| strategic-advisor (Peter Thiel) | Drafts the squad brief, translates strategy into actionable direction |
+| growth-navigator (Naval Ravikant) | Monitors squad execution and feedback loops |
+| governance-clerk (Simon Sinek) | Manages the handoff process, documentation, and tracking |
 | Squad-Lead (external) | Receives the brief, confirms understanding, executes |
 
 ## Phases
 
 ### Phase 1 — Decision Packaging (Days 1-3)
 
-1. After the board makes a strategic decision, Strategy-Analyst drafts the squad brief:
+1. After the board makes a strategic decision, strategic-advisor drafts the squad brief:
    - Decision: what was decided (one paragraph, plain language).
    - Intent: why this was decided — the strategic reasoning (not just "the board said so").
    - Scope: what is in scope and what is explicitly out of scope.
@@ -33,12 +33,12 @@ Bridges the gap between board-level strategic decisions and squad-level executio
    - Success criteria: what does "done well" look like? Measurable outcomes.
    - Authority: what can the squad decide on its own? What requires escalation?
    - Open questions: what the board explicitly left unresolved for the squad to figure out.
-2. Board-Chair reviews the brief for accuracy and clarity of intent.
-3. Devil's-Advocate reviews: "Could a reasonable person misinterpret this brief?"
+2. board-chair reviews the brief for accuracy and clarity of intent.
+3. capital-allocator reviews: "Could a reasonable person misinterpret this brief?"
 
 ### Phase 2 — Handoff Meeting (Days 3-5)
 
-1. Board-Chair or Strategy-Analyst conducts a 30-minute handoff meeting with each affected squad:
+1. board-chair or strategic-advisor conducts a 30-minute handoff meeting with each affected squad:
    - Walk through the brief (10 min).
    - Squad-Lead asks clarifying questions (10 min).
    - Confirm: does the squad understand the decision, intent, and success criteria? (5 min).
@@ -48,19 +48,19 @@ Bridges the gap between board-level strategic decisions and squad-level executio
 
 ### Phase 3 — Execution Monitoring (Ongoing)
 
-1. Squad-Lead provides bi-weekly status updates to Execution-Tracker:
+1. Squad-Lead provides bi-weekly status updates to growth-navigator:
    - Progress against milestones.
    - Blockers and dependencies.
    - Resource consumption vs. plan.
    - Emerging risks or issues.
-2. Execution-Tracker compiles a cross-squad dashboard for the board:
+2. growth-navigator compiles a cross-squad dashboard for the board:
    - Initiative status (green/yellow/red).
    - Key metrics.
    - Blockers requiring board attention.
 3. Escalation protocol:
    - Green: no board action needed.
-   - Yellow: Strategy-Analyst investigates and provides context at next board meeting.
-   - Red: Board-Chair is notified within 24 hours; ad-hoc discussion if needed.
+   - Yellow: strategic-advisor investigates and provides context at next board meeting.
+   - Red: board-chair is notified within 24 hours; ad-hoc discussion if needed.
 
 ### Phase 4 — Feedback Loop (Monthly)
 
@@ -69,18 +69,18 @@ Bridges the gap between board-level strategic decisions and squad-level executio
    - What assumptions from the original decision are proving wrong?
    - What new information has emerged that the board should know?
    - What decisions does the squad need from the board?
-2. Strategy-Analyst synthesizes squad feedback across all active handoffs.
+2. strategic-advisor synthesizes squad feedback across all active handoffs.
 3. Board reviews squad feedback at each quarterly meeting.
-4. Board-Chair can adjust the brief if squad feedback reveals that the original direction needs modification.
+4. board-chair can adjust the brief if squad feedback reveals that the original direction needs modification.
 5. Any adjustment is documented and communicated back to the squad within 48 hours.
 
 ### Phase 5 — Closure (At completion or when superseded)
 
 1. When the initiative is complete (or the strategic direction is superseded):
    - Squad-Lead submits a completion report: what was delivered, outcomes vs. success criteria, lessons learned.
-   - Strategy-Analyst validates that the outcomes match the board's intent.
-   - Execution-Tracker closes the tracking entry.
-2. Board-Chair acknowledges completion and highlights lessons in the next board meeting.
+   - strategic-advisor validates that the outcomes match the board's intent.
+   - growth-navigator closes the tracking entry.
+2. board-chair acknowledges completion and highlights lessons in the next board meeting.
 3. Archive the handoff package: brief, meeting notes, status updates, feedback, completion report.
 4. Lessons feed into the post-mortem workflow (19) and decision quality review (12).
 
@@ -88,11 +88,11 @@ Bridges the gap between board-level strategic decisions and squad-level executio
 
 | Gate | Criteria | Owner |
 |---|---|---|
-| G1 — Brief approved | Board-Chair confirms accuracy and clarity | Board-Chair |
-| G2 — Handoff confirmed | Squad-Lead signs off on understanding | Strategy-Analyst |
-| G3 — Monitoring active | Bi-weekly updates flowing, dashboard updated | Execution-Tracker |
-| G4 — Feedback flowing | Monthly squad feedback reaching the board | Strategy-Analyst |
-| G5 — Closure documented | Completion report filed with outcomes and lessons | Governance-Ops |
+| G1 — Brief approved | board-chair confirms accuracy and clarity | board-chair (Board Chair) |
+| G2 — Handoff confirmed | Squad-Lead signs off on understanding | strategic-advisor (Peter Thiel) |
+| G3 — Monitoring active | Bi-weekly updates flowing, dashboard updated | growth-navigator (Naval Ravikant) |
+| G4 — Feedback flowing | Monthly squad feedback reaching the board | strategic-advisor (Peter Thiel) |
+| G5 — Closure documented | Completion report filed with outcomes and lessons | governance-clerk (Simon Sinek) |
 
 ## Outputs
 
@@ -130,9 +130,9 @@ Bridges the gap between board-level strategic decisions and squad-level executio
 
 | Failure Mode | Symptom | Mitigation |
 |---|---|---|
-| Vague brief | Squad interprets the decision differently than intended | Board-Chair reviews for clarity; handoff meeting confirms understanding |
+| Vague brief | Squad interprets the decision differently than intended | board-chair reviews for clarity; handoff meeting confirms understanding |
 | Missing intent | Squad follows the letter but misses the spirit | Brief explicitly states "why," not just "what" |
-| Feedback vacuum | Squad sends updates but never hears back | Board-Chair acknowledges feedback; adjustments communicated within 48 hours |
+| Feedback vacuum | Squad sends updates but never hears back | board-chair acknowledges feedback; adjustments communicated within 48 hours |
 | Over-specification | Brief micromanages execution, removing squad autonomy | Brief specifies intent and constraints, not methods; authority section is clear |
-| Monitoring without action | Dashboard shows red, but nobody responds | Red-status triggers Board-Chair notification within 24 hours |
+| Monitoring without action | Dashboard shows red, but nobody responds | Red-status triggers board-chair notification within 24 hours |
 | Handoff without resources | Strategic direction given without the capacity to execute | Brief explicitly addresses resources; squad can flag gaps before accepting |

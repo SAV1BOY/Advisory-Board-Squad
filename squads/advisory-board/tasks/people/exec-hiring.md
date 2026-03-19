@@ -14,6 +14,13 @@ Run a board-level executive hiring process from role definition through offer an
 - **Support:** CHRO or People Lead, search firm if engaged
 - **Advisory:** Board members for interviews and network, Board sponsor
 
+
+## Agent Assignment
+> Routing: see `config.yaml → routing → exec-hiring`
+
+- **Lead:** talent-advisor (Patrick Lencioni)
+- **Support:** board-chair (Board Chair), culture-steward (Brene Brown), strategic-advisor (Peter Thiel)
+
 ## Pre-Requisites
 - [ ] Role justified and approved by board
 - [ ] Compensation framework approved

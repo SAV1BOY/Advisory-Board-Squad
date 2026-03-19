@@ -14,6 +14,13 @@ Coordinate between the Advisory Board Squad and other operating squads to ensure
 - **Support:** Squad leads from all operating squads
 - **Advisory:** Board Chair if board-level coordination is needed
 
+
+## Agent Assignment
+> Routing: see `config.yaml → routing → cross-squad-sync`
+
+- **Lead:** board-chair (Board Chair)
+- **Support:** governance-clerk (Simon Sinek), strategic-advisor (Peter Thiel), growth-navigator (Naval Ravikant)
+
 ## Pre-Requisites
 - [ ] Board meeting decisions and action items documented
 - [ ] Squad status updates available

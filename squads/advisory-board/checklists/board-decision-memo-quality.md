@@ -70,3 +70,11 @@ Ensure every decision memo presented to the board meets the standard of clarity,
 - [Decision Log Currency Quality](decision-log-currency-quality.md)
 - [Strategy Memo Quality](strategy-memo-quality.md)
 - [Ethics and Reputation Risk Quality](ethics-and-reputation-risk-quality.md)
+
+## Routing & Integration
+- **Framework:** `frameworks/decision-memo-framework.md` (defines the structure this gate validates)
+- **Enforcement:** `config.yaml → quality_gates → mandatory → decision_memo_quality` (block_on_fail, applies_to: all_decision_tasks)
+- **Rework protocol:** If this gate fails, see `docs/rework-loop-protocol.md` for the rework cycle
+- **Template:** `templates/memos/decision-memo-template.md` (the standard format that helps pass this gate)
+- **Registry:** Pass/fail results tracked in `data/metrics/decision-quality-scores.yaml` (KPI: BE-01)
+- **Architecture reference:** `ARCHITECTURE.md → Section 7` (Quality Gates System)

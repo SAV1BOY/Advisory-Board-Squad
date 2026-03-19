@@ -15,6 +15,14 @@ Assess the quality, cadence, and effectiveness of the company's communications t
 - **Support:** CFO for investor communications, CHRO for employee communications, VP Sales for customer communications
 - **Advisory:** Board members for investor communication perspective
 
+
+## Agent Assignment
+> Routing: see `config.yaml → routing → decision-quality-review`
+
+- **Lead:** board-chair (Board Chair)
+- **Support:** governance-clerk (Simon Sinek), ethics-compass (Yvon Chouinard)
+- **Review:** culture-steward (Brene Brown)
+
 ## Pre-Requisites
 - [ ] Stakeholder map and communication inventory available
 - [ ] Feedback from stakeholders collected

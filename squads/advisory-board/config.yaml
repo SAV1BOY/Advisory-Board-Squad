@@ -74,67 +74,78 @@ agents:
   board-chair:
     role: "Chief orchestrator. Routes tasks, runs meetings, resolves deadlocks, owns quality."
     persona: "Disciplined, fair, decisive. Speaks last in deliberation."
+    thinker: board-chair
     path: agents/board-chair.md
     domain: governance
 
   strategic-advisor:
     role: "Competitive strategy, moat analysis, market positioning, product-strategy review."
-    persona: "Analytical, pattern-matching, contrarian when evidence warrants."
-    path: agents/strategic-advisor.md
+    persona: "Peter Thiel — Contrarian Truth & Monopoly Strategy Agent"
+    thinker: peter-thiel
+    path: agents/peter-thiel.md
     domain: strategy
 
   capital-allocator:
     role: "Financial modeling, fundraising, investment decisions, resource allocation."
-    persona: "Numerate, conservative on assumptions, aggressive on opportunity."
-    path: agents/capital-allocator.md
+    persona: "Charlie Munger — Mental Models & Anti-Stupidity Agent"
+    thinker: charlie-munger
+    path: agents/charlie-munger.md
     domain: capital
 
   talent-advisor:
     role: "Executive hiring, org design, succession planning, team effectiveness."
-    persona: "People-first, evidence-based, allergic to vanity titles."
-    path: agents/talent-advisor.md
+    persona: "Patrick Lencioni — Organizational Health & Team Alignment Agent"
+    thinker: patrick-lencioni
+    path: agents/patrick-lencioni.md
     domain: people
 
   culture-steward:
     role: "Culture audits, trust repair, values alignment, organizational health."
-    persona: "Empathetic, truth-telling, long-horizon thinker."
-    path: agents/culture-steward.md
+    persona: "Brene Brown — Trust & Courageous Conversations Agent"
+    thinker: brene-brown
+    path: agents/brene-brown.md
     domain: culture
 
   risk-sentinel:
     role: "Risk mapping, crisis response, scenario planning, compliance."
-    persona: "Paranoid optimist. Prepares for worst, builds for best."
-    path: agents/risk-sentinel.md
+    persona: "Ray Dalio — Principles & Decision Process Agent"
+    thinker: ray-dalio
+    path: agents/ray-dalio.md
     domain: risk
 
   partnership-broker:
     role: "Partnership evaluation, deal structuring, negotiation strategy, alliance management."
-    persona: "Relationship-oriented, commercially rigorous, trust-but-verify."
-    path: agents/partnership-broker.md
+    persona: "Reid Hoffman — Network Effects & Blitzscaling Agent"
+    thinker: reid-hoffman
+    path: agents/reid-hoffman.md
     domain: partnerships
 
   growth-navigator:
     role: "Growth strategy, execution planning, 30-60-90 programs, scaling frameworks."
-    persona: "Execution-obsessed, metrics-driven, allergic to strategy without action."
-    path: agents/growth-navigator.md
+    persona: "Naval Ravikant — Leverage & Wealth Creation Agent"
+    thinker: naval-ravikant
+    path: agents/naval-ravikant.md
     domain: growth
 
   governance-clerk:
     role: "Documentation, compliance, decision logs, meeting minutes, registry maintenance."
-    persona: "Meticulous, process-oriented, institutional memory keeper."
-    path: agents/governance-clerk.md
+    persona: "Simon Sinek — Purpose & Mission Clarity Agent"
+    thinker: simon-sinek
+    path: agents/simon-sinek.md
     domain: governance
 
   ethics-compass:
     role: "Ethical review, stakeholder impact, sustainability, long-term reputation."
-    persona: "Principled, multi-stakeholder perspective, uncomfortable-question asker."
-    path: agents/ethics-compass.md
+    persona: "Yvon Chouinard — Mission & Ethics Agent"
+    thinker: yvon-chouinard
+    path: agents/yvon-chouinard.md
     domain: ethics
 
   simplicity-czar:
     role: "Complexity reduction, focus enforcement, scope control, noise filtering."
-    persona: "Ruthlessly simple. If it cannot be explained in one sentence, it is not ready."
-    path: agents/simplicity-czar.md
+    persona: "Derek Sivers — Radical Focus & Simplicity Agent"
+    thinker: derek-sivers
+    path: agents/derek-sivers.md
     domain: operations
 
 # ============================================================================
@@ -1265,3 +1276,104 @@ defaults:
     memos: permanent
     metrics: 5_years_rolling
     crisis_logs: permanent
+
+# ============================================================================
+# AGENT-THINKER MAPPING — Canonical role-to-thinker reference
+# ============================================================================
+# Each routing role maps to a thinker-based agent file. Use role names in
+# routing and task assignment; use thinker names when invoking personas.
+# See also: docs/agent-role-mapping.md
+
+agent_mapping:
+  board-chair:       { thinker: "Board Chair",        file: agents/board-chair.md }
+  strategic-advisor:  { thinker: "Peter Thiel",        file: agents/peter-thiel.md }
+  capital-allocator:  { thinker: "Charlie Munger",     file: agents/charlie-munger.md }
+  talent-advisor:     { thinker: "Patrick Lencioni",   file: agents/patrick-lencioni.md }
+  culture-steward:    { thinker: "Brene Brown",        file: agents/brene-brown.md }
+  risk-sentinel:      { thinker: "Ray Dalio",          file: agents/ray-dalio.md }
+  partnership-broker: { thinker: "Reid Hoffman",       file: agents/reid-hoffman.md }
+  growth-navigator:   { thinker: "Naval Ravikant",     file: agents/naval-ravikant.md }
+  governance-clerk:   { thinker: "Simon Sinek",        file: agents/simon-sinek.md }
+  ethics-compass:     { thinker: "Yvon Chouinard",    file: agents/yvon-chouinard.md }
+  simplicity-czar:    { thinker: "Derek Sivers",       file: agents/derek-sivers.md }
+
+# ============================================================================
+# ESCALATION RULES — When tasks escalate beyond lead agent authority
+# ============================================================================
+
+escalation_rules:
+  triggers:
+    - condition: "Quality gate fails on second attempt"
+      action: "Escalate to board-chair for review and rework assignment"
+    - condition: "Lead agent cannot resolve within decision_type time window"
+      action: "Escalate to board-chair for reassignment or scope change"
+    - condition: "Cross-squad dependency blocks progress > 48 hours"
+      action: "Board-chair initiates cross-squad escalation via workflow 15"
+    - condition: "Ethical concern raised by any agent"
+      action: "Immediate escalation to ethics-compass (Yvon Chouinard), then board-chair"
+    - condition: "Dissent unresolved after two deliberation rounds"
+      action: "Board-chair invokes conflict resolution protocol (ARCHITECTURE.md Section 4)"
+    - condition: "Type 1 decision lacks unanimous support from assigned agents"
+      action: "Board-chair schedules extended deliberation session within 72 hours"
+
+  levels:
+    L0_agent: "Lead agent handles autonomously. Logs in registry."
+    L1_chair: "Board-chair consulted. Chair decides or reassigns."
+    L2_board: "Full agent deliberation. Chair makes final call."
+    L3_unanimous: "All agents must concur. Used for principle or constitution changes."
+
+# ============================================================================
+# REWORK LOOP — Protocol when outputs fail quality gates
+# ============================================================================
+
+rework_loop:
+  protocol:
+    - step: 1
+      action: "Quality gate reviewer documents specific failure points with evidence"
+    - step: 2
+      action: "Lead agent receives failure report and has 24h (Type 2) or 72h (Type 1) to revise"
+    - step: 3
+      action: "Revised output re-submitted to same quality gate"
+    - step: 4
+      action: "If second failure, escalate to board-chair (L1)"
+    - step: 5
+      action: "Board-chair may reassign to different agent, adjust scope, or convene review session"
+  max_rework_cycles: 3
+  timeout_hours:
+    type_1: 72
+    type_2: 24
+  on_max_cycles_exceeded: "Board-chair convenes emergency review. Task is either descoped, reassigned, or archived with lessons learned."
+  registry: data/registries/lessons-learned-registry.yaml
+
+# ============================================================================
+# DELEGATION RULES — When a task should leave the advisory-board squad
+# ============================================================================
+
+delegation_rules:
+  out_of_scope_indicators:
+    - "Task requires hands-on execution (coding, design, content creation) rather than advisory"
+    - "Task is operational/tactical with no strategic, governance, or capital component"
+    - "Task requires domain expertise not held by any advisory-board agent"
+    - "Task is a sub-task of a cross-squad handoff already assigned to receiving squad"
+
+  delegation_protocol:
+    - step: 1
+      action: "Lead agent flags task as potential delegation candidate with rationale"
+    - step: 2
+      action: "Board-chair validates the delegation decision"
+    - step: 3
+      action: "Governance-clerk (Simon Sinek) prepares handoff package per workflow 15"
+    - step: 4
+      action: "Cross-squad handoff quality gate must pass before transfer"
+    - step: 5
+      action: "Log delegation in data/registries/cross-squad-log.yaml"
+
+  receiving_squads:
+    brand_squad: "Brand positioning, identity campaigns, employer branding execution"
+    copy_squad: "Content writing, messaging, editorial production"
+    data_squad: "Dashboard building, data pipeline, analytics implementation"
+    cybersecurity_squad: "Security implementation, compliance execution, penetration testing"
+    design_squad: "UX/UI design, prototyping, design system implementation"
+    traffic_squad: "Growth channel execution, paid media, SEO implementation"
+    storytelling_squad: "Narrative content production, thought leadership writing"
+    movement_squad: "Community management, advocacy programs, event execution"

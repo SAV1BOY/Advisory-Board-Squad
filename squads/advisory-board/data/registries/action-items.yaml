@@ -1,0 +1,48 @@
+# Action Items Registry
+# Tracks action items arising from board meetings with owners, deadlines, and status.
+# Each entry creates accountability for follow-through on board decisions and discussions.
+
+schema:
+  action_id:
+    type: string
+    format: "ACT-YYYY-NNN"
+    description: "Unique identifier for the action item"
+    required: true
+  description:
+    type: string
+    description: "Clear, actionable description of what must be done"
+    required: true
+  owner:
+    type: string
+    description: "Person or role responsible for completing the action"
+    required: true
+  source_meeting:
+    type: string
+    description: "Reference to the meeting where this action was created (e.g. date or meeting ID)"
+    required: true
+  created_date:
+    type: date
+    format: "YYYY-MM-DD"
+    description: "Date the action item was created"
+    required: true
+  deadline:
+    type: date
+    format: "YYYY-MM-DD"
+    description: "Target completion date"
+    required: true
+  status:
+    type: string
+    enum: [open, in-progress, completed, blocked, cancelled]
+    description: "Current status of the action item"
+    required: true
+  completion_date:
+    type: date
+    format: "YYYY-MM-DD"
+    description: "Actual date of completion — filled in when status moves to completed"
+    required: false
+  notes:
+    type: string
+    description: "Additional context, blockers, or updates"
+    required: false
+
+entries: []

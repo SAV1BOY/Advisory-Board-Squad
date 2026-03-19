@@ -15,6 +15,14 @@ Verify that the company's stated values are consistently reflected in decisions,
 - **Support:** Functional leaders, People team, legal counsel
 - **Advisory:** Board members as values stewards
 
+
+## Agent Assignment
+> Routing: see `config.yaml → routing → culture-audit`
+
+- **Lead:** culture-steward (Brene Brown)
+- **Support:** ethics-compass (Yvon Chouinard), board-chair (Board Chair)
+- **Review:** talent-advisor (Patrick Lencioni)
+
 ## Pre-Requisites
 - [ ] Company values clearly documented and communicated
 - [ ] Recent decision log available for analysis

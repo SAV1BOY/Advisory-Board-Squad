@@ -145,3 +145,12 @@ The chosen path with clear rationale:
 - **Pre-Mortem Framework** — Run before finalizing the decision to stress-test the chosen option
 - **Decision Log Framework** — Store completed memos for institutional learning
 - **Regret Minimization Framework** — Use as a gut-check on high-stakes, irreversible decisions
+
+## Routing & Integration
+
+- **Quality gate:** `checklists/board-decision-memo-quality.md` (mandatory, block_on_fail)
+- **Template:** `templates/memos/decision-memo-template.md`
+- **Registry:** Completed memos filed in `data/decisions/` and indexed in `data/registries/decision-registry.yaml`
+- **Used in tasks:** board-meeting-prep, strategic-diagnosis, capital-allocation-review, investment-decision, pivot-or-persevere-decision, exec-hiring, partnership-evaluation, crisis-response (see `config.yaml → routing`)
+- **Primary agents:** board-chair (owns process), all agents (produce memos in their domain)
+- **Architecture reference:** `ARCHITECTURE.md → Section 2` (Decision Policy)

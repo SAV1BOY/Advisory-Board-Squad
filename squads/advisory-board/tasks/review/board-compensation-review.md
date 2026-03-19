@@ -4,6 +4,13 @@
 
 Evaluate current board member and advisor compensation against market benchmarks, company stage, and strategic value delivered. Produce recommendations for adjustments that attract and retain top governance talent while maintaining fiscal discipline.
 
+
+## Agent Assignment
+> Routing: see `config.yaml → routing → decision-quality-review`
+
+- **Lead:** governance-clerk (Simon Sinek)
+- **Support:** board-chair (Board Chair), capital-allocator (Charlie Munger), ethics-compass (Yvon Chouinard)
+
 ## Context
 
 Board and advisor compensation must balance multiple objectives: attracting experienced directors, aligning incentives with long-term value creation, maintaining independence, and demonstrating responsible capital stewardship. Under-compensating leads to disengaged directors; over-compensating signals poor governance.

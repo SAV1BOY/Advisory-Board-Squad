@@ -15,11 +15,11 @@ A structured process for evaluating, negotiating, and governing strategic partne
 
 | Agent | Role |
 |---|---|
-| Board-Chair | Approves partnerships above threshold, advises on strategy |
-| Strategy-Analyst | Evaluates strategic fit, builds financial models |
-| Risk-Analyst | Assesses operational, legal, and reputational risks |
-| Devil's-Advocate | Challenges the partnership thesis, identifies hidden dependencies |
-| Governance-Ops | Manages pipeline, documentation, contract tracking |
+| board-chair (Board Chair) | Approves partnerships above threshold, advises on strategy |
+| strategic-advisor (Peter Thiel) | Evaluates strategic fit, builds financial models |
+| risk-sentinel (Ray Dalio) | Assesses operational, legal, and reputational risks |
+| capital-allocator (Charlie Munger) | Challenges the partnership thesis, identifies hidden dependencies |
+| governance-clerk (Simon Sinek) | Manages pipeline, documentation, contract tracking |
 
 ## Phases
 
@@ -30,22 +30,22 @@ A structured process for evaluating, negotiating, and governing strategic partne
    - Strategic rationale: why this partner? What capability or access do they provide?
    - Estimated value: revenue, cost savings, market access, technology advantage.
    - Estimated cost: financial, operational, opportunity cost.
-2. Strategy-Analyst scores the opportunity against a standard evaluation framework:
+2. strategic-advisor scores the opportunity against a standard evaluation framework:
    - Strategic fit (1-5): does this align with our strategy?
    - Value creation (1-5): is the expected value material?
    - Execution feasibility (1-5): can both parties actually deliver?
    - Alternatives (1-5): how unique is this partner? What are the alternatives?
-3. Risk-Analyst conducts a preliminary risk scan:
+3. risk-sentinel conducts a preliminary risk scan:
    - Counterparty risk: financial health, reputation, stability.
    - Dependency risk: does this create a single point of failure?
    - IP and data risk: what are we sharing? What are they accessing?
    - Exit risk: how hard is it to unwind if the partnership fails?
-4. Devil's-Advocate asks: "What happens if this partner becomes a competitor? What happens if they get acquired?"
-5. Board-Chair reviews the evaluation and decides: pursue, decline, or request more information.
+4. capital-allocator asks: "What happens if this partner becomes a competitor? What happens if they get acquired?"
+5. board-chair reviews the evaluation and decides: pursue, decline, or request more information.
 
 ### Phase 2 — Term Negotiation (Days 10-30)
 
-1. If pursuing, Strategy-Analyst drafts the term sheet framework:
+1. If pursuing, strategic-advisor drafts the term sheet framework:
    - Scope of collaboration.
    - Economic terms: revenue share, cost allocation, investment requirements.
    - Exclusivity provisions (if any) — be very cautious here.
@@ -55,18 +55,18 @@ A structured process for evaluating, negotiating, and governing strategic partne
    - Duration and renewal terms.
    - Termination triggers and exit provisions.
 2. Legal counsel reviews for regulatory, antitrust, and contractual issues.
-3. Board-Chair advises on negotiation strategy and red lines.
-4. Negotiation proceeds. Governance-Ops tracks term sheet versions and open issues.
-5. Risk-Analyst updates the risk assessment as terms evolve.
-6. Devil's-Advocate reviews the near-final terms: "What are we giving up that we might regret?"
+3. board-chair advises on negotiation strategy and red lines.
+4. Negotiation proceeds. governance-clerk tracks term sheet versions and open issues.
+5. risk-sentinel updates the risk assessment as terms evolve.
+6. capital-allocator reviews the near-final terms: "What are we giving up that we might regret?"
 
 ### Phase 3 — Risk & Approval (Days 25-35)
 
-1. Risk-Analyst produces the final partnership risk assessment:
+1. risk-sentinel produces the final partnership risk assessment:
    - Risk matrix: likelihood × impact for each identified risk.
    - Mitigation plan for each material risk.
    - Residual risk after mitigations.
-2. Strategy-Analyst updates the financial model with final terms.
+2. strategic-advisor updates the financial model with final terms.
 3. Package for board review: strategic rationale, financial model, risk assessment, key terms, recommendation.
 4. Board reviews and decides: approve, approve with conditions, reject, or defer.
 5. If approved with conditions, cycle back to negotiation for specific term changes.
@@ -74,13 +74,13 @@ A structured process for evaluating, negotiating, and governing strategic partne
 
 ### Phase 4 — Governance & Monitoring (Ongoing)
 
-1. Upon signing, Governance-Ops sets up the partnership governance framework:
+1. Upon signing, governance-clerk sets up the partnership governance framework:
    - Joint steering committee schedule and composition.
    - KPI dashboard: the 3-5 metrics that indicate partnership health.
    - Review cadence: quarterly performance review, annual strategic review.
    - Escalation path for disputes or underperformance.
-2. Strategy-Analyst monitors KPIs monthly. Flags variance from expectations.
-3. Risk-Analyst conducts a semi-annual risk reassessment.
+2. strategic-advisor monitors KPIs monthly. Flags variance from expectations.
+3. risk-sentinel conducts a semi-annual risk reassessment.
 4. Board receives a partnership portfolio summary in each quarterly meeting.
 5. Renewal/termination decisions follow the same evaluation rigor as the original decision.
 
@@ -88,11 +88,11 @@ A structured process for evaluating, negotiating, and governing strategic partne
 
 | Gate | Criteria | Owner |
 |---|---|---|
-| G1 — Evaluation scored | Strategic fit, value, feasibility, and alternatives rated | Strategy-Analyst |
-| G2 — Risk scanned | Counterparty, dependency, IP, and exit risks assessed | Risk-Analyst |
-| G3 — Terms reviewed | Legal, Board-Chair, and Devil's Advocate have reviewed | Board-Chair |
-| G4 — Board decision | Approve/reject/defer recorded with rationale | Board-Chair |
-| G5 — Governance live | Steering committee, KPIs, and review cadence established | Governance-Ops |
+| G1 — Evaluation scored | Strategic fit, value, feasibility, and alternatives rated | strategic-advisor (Peter Thiel) |
+| G2 — Risk scanned | Counterparty, dependency, IP, and exit risks assessed | risk-sentinel (Ray Dalio) |
+| G3 — Terms reviewed | Legal, board-chair, and capital-allocator have reviewed | board-chair (Board Chair) |
+| G4 — Board decision | Approve/reject/defer recorded with rationale | board-chair (Board Chair) |
+| G5 — Governance live | Steering committee, KPIs, and review cadence established | governance-clerk (Simon Sinek) |
 
 ## Outputs
 
@@ -132,8 +132,8 @@ A structured process for evaluating, negotiating, and governing strategic partne
 | Failure Mode | Symptom | Mitigation |
 |---|---|---|
 | Strategic drift | Partnership signed for revenue that doesn't align with strategy | Evaluation scorecard requires explicit strategy alignment rating |
-| Exclusivity trap | Exclusive terms lock out better future options | Board-Chair reviews all exclusivity provisions; default is non-exclusive |
-| Governance neglect | Partnership signed but never reviewed again | Governance-Ops automates quarterly review reminders |
-| Dependency creep | Partner becomes critical infrastructure without a backup plan | Risk-Analyst flags dependency risk; require mitigation for high-dependency partnerships |
-| Optimism bias | Financial model assumes best-case adoption and revenue | Devil's Advocate requires base and downside scenarios |
+| Exclusivity trap | Exclusive terms lock out better future options | board-chair reviews all exclusivity provisions; default is non-exclusive |
+| Governance neglect | Partnership signed but never reviewed again | governance-clerk automates quarterly review reminders |
+| Dependency creep | Partner becomes critical infrastructure without a backup plan | risk-sentinel flags dependency risk; require mitigation for high-dependency partnerships |
+| Optimism bias | Financial model assumes best-case adoption and revenue | capital-allocator requires base and downside scenarios |
 | Exit paralysis | Failing partnership persists because unwinding is painful | Define exit provisions upfront; review against exit triggers quarterly |

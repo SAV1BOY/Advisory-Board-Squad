@@ -16,6 +16,14 @@ Assess the company's cybersecurity posture and fraud prevention controls at boar
 - **Support:** Engineering leadership, Finance for fraud controls, Legal for compliance, external security assessors if engaged
 - **Advisory:** Board members with technology or security expertise
 
+
+## Agent Assignment
+> Routing: see `config.yaml → routing → crisis-response-72h`
+
+- **Lead:** risk-sentinel (Ray Dalio)
+- **Support:** governance-clerk (Simon Sinek), ethics-compass (Yvon Chouinard)
+- **Review:** board-chair (Board Chair)
+
 ## Pre-Requisites
 - [ ] Security assessment or audit data available
 - [ ] Incident log current

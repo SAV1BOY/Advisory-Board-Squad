@@ -16,6 +16,14 @@ Review and optimize the company's pricing strategy to ensure it maximizes revenu
 - **Support:** CFO, Head of Sales, Head of Customer Success, Product Marketing
 - **Advisory:** Board members with pricing, revenue, or market strategy expertise
 
+
+## Agent Assignment
+> Routing: see `config.yaml → routing → capital-allocation-review`
+
+- **Lead:** capital-allocator (Charlie Munger)
+- **Support:** strategic-advisor (Peter Thiel), growth-navigator (Naval Ravikant)
+- **Review:** board-chair (Board Chair)
+
 ## Pre-Requisites
 - [ ] Current pricing structure documented (all plans, tiers, add-ons, discounting policies)
 - [ ] Revenue and margin data by plan, segment, and cohort

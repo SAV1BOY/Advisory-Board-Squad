@@ -1,0 +1,44 @@
+# Succession Plans Registry
+# Tracks succession readiness for critical roles within the advisory board and leadership team.
+# Each entry identifies potential successors and their readiness levels to ensure continuity.
+
+schema:
+  plan_id:
+    type: string
+    format: "SUC-NNN"
+    description: "Unique identifier for the succession plan"
+    required: true
+  role:
+    type: string
+    description: "Title or role being planned for"
+    required: true
+  current_holder:
+    type: string
+    description: "Name of the person currently in the role"
+    required: true
+  successors:
+    type: list
+    items:
+      name: string
+      readiness_level:
+        type: string
+        enum: [ready-now, ready-in-6-months, ready-in-12-months, developmental]
+    description: "Ranked list of potential successors with their readiness level"
+    required: true
+  last_reviewed:
+    type: date
+    format: "YYYY-MM-DD"
+    description: "Date the succession plan was last reviewed"
+    required: true
+  review_cadence:
+    type: string
+    enum: [quarterly, semi-annual, annual]
+    description: "How often this plan should be reviewed"
+    required: true
+  risk_level:
+    type: string
+    enum: [low, medium, high, critical]
+    description: "Risk level if this role were vacated unexpectedly"
+    required: true
+
+entries: []

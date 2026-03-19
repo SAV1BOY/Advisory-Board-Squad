@@ -11,6 +11,13 @@ Conduct a comprehensive quarterly review of company performance, strategic progr
 - **Support:** CFO (financial review), Board Ops (logistics and materials)
 - **Contributors:** Functional leaders for their sections of the review
 
+
+## Agent Assignment
+> Routing: see `config.yaml → routing → quarterly-board-review`
+
+- **Lead:** board-chair (Board Chair)
+- **Support:** governance-clerk (Simon Sinek), strategic-advisor (Peter Thiel), capital-allocator (Charlie Munger), talent-advisor (Patrick Lencioni), culture-steward (Brene Brown), risk-sentinel (Ray Dalio)
+
 ## Pre-Requisites
 - [ ] Quarter has closed and financial data is available
 - [ ] Board scorecard updated with current period data

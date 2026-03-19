@@ -15,6 +15,14 @@ Review and approve the annual or quarterly operating budget to ensure spending a
 - **Support:** CEO, functional leaders (each presenting their budget area), FP&A lead
 - **Advisory:** Board finance committee or full board (for annual budget approval)
 
+
+## Agent Assignment
+> Routing: see `config.yaml → routing → capital-allocation-review`
+
+- **Lead:** capital-allocator (Charlie Munger)
+- **Support:** board-chair (Board Chair), strategic-advisor (Peter Thiel)
+- **Review:** risk-sentinel (Ray Dalio)
+
 ## Pre-Requisites
 - [ ] Prior period actuals finalized and reconciled
 - [ ] Revenue forecast current with scenario analysis

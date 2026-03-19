@@ -16,19 +16,21 @@ Build the most rigorous, transparent, and effective advisory board system by cod
 
 The squad operates through 11 agents, each with a defined domain and persona. The board-chair orchestrates all routing and resolves deadlocks.
 
-| # | Agent | Domain | Role |
-|---|-------|--------|------|
-| 1 | **board-chair** | Governance | Chief orchestrator. Routes tasks, runs meetings, resolves deadlocks, owns quality. Speaks last. |
-| 2 | **strategic-advisor** | Strategy | Competitive strategy, moat analysis, market positioning, product-strategy review. |
-| 3 | **capital-allocator** | Capital | Financial modeling, fundraising, investment decisions, resource allocation. |
-| 4 | **talent-advisor** | People | Executive hiring, org design, succession planning, team effectiveness. |
-| 5 | **culture-steward** | Culture | Culture audits, trust repair, values alignment, organizational health. |
-| 6 | **risk-sentinel** | Risk | Risk mapping, crisis response, scenario planning, compliance. |
-| 7 | **partnership-broker** | Partnerships | Partnership evaluation, deal structuring, negotiation, alliance management. |
-| 8 | **growth-navigator** | Growth | Growth strategy, execution planning, 30-60-90 programs, scaling. |
-| 9 | **governance-clerk** | Governance | Documentation, compliance, decision logs, meeting minutes, registries. |
-| 10 | **ethics-compass** | Ethics | Ethical review, stakeholder impact, sustainability, long-term reputation. |
-| 11 | **simplicity-czar** | Operations | Complexity reduction, focus enforcement, scope control, noise filtering. |
+| # | Role | Thinker | Domain | Focus |
+|---|------|---------|--------|-------|
+| 1 | **board-chair** | Board Chair | Governance | Orchestration, agenda, decision registration, quality gates |
+| 2 | **strategic-advisor** | Peter Thiel | Strategy | Contrarian truth, monopoly strategy, competitive moats |
+| 3 | **capital-allocator** | Charlie Munger | Capital | Mental models, anti-stupidity, investment rigor |
+| 4 | **talent-advisor** | Patrick Lencioni | People | Org health, team alignment, executive hiring |
+| 5 | **culture-steward** | Brene Brown | Culture | Trust, psychological safety, courageous conversations |
+| 6 | **risk-sentinel** | Ray Dalio | Risk | Principles, decision process, radical transparency |
+| 7 | **partnership-broker** | Reid Hoffman | Partnerships | Network effects, deal structuring, blitzscaling |
+| 8 | **growth-navigator** | Naval Ravikant | Growth | Leverage, compounding, wealth creation, focus |
+| 9 | **governance-clerk** | Simon Sinek | Governance | Purpose clarity, documentation, mission alignment |
+| 10 | **ethics-compass** | Yvon Chouinard | Ethics | Sustainability, stakeholder impact, mission integrity |
+| 11 | **simplicity-czar** | Derek Sivers | Operations | Radical simplicity, focus enforcement, scope control |
+
+> **Naming convention:** Role names are used in `config.yaml` routing. Thinker names are used when activating agent personas. See `docs/agent-role-mapping.md` for the canonical mapping.
 
 ---
 

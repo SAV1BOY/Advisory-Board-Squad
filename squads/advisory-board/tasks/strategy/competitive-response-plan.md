@@ -15,6 +15,14 @@ Develop and execute a response plan when a competitor makes a significant move t
 - **Support:** Product, Sales, Marketing, Engineering
 - **Advisory:** Board members with competitive strategy experience
 
+
+## Agent Assignment
+> Routing: see `config.yaml → routing → strategic-diagnosis`
+
+- **Lead:** strategic-advisor (Peter Thiel)
+- **Support:** board-chair (Board Chair), risk-sentinel (Ray Dalio)
+- **Review:** growth-navigator (Naval Ravikant)
+
 ## Pre-Requisites
 - [ ] Competitive intelligence verified from multiple sources
 - [ ] Impact assessment on our customers and pipeline complete

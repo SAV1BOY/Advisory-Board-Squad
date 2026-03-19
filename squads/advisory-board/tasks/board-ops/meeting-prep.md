@@ -12,6 +12,13 @@ Prepare all materials, logistics, and stakeholders for a board meeting so that t
 - **Contributors:** CEO, CFO, functional leaders presenting at the meeting
 - **Reviewer:** Board Chair (approves final package)
 
+
+## Agent Assignment
+> Routing: see `config.yaml → routing → board-meeting-prep`
+
+- **Lead:** board-chair (Board Chair)
+- **Support:** governance-clerk (Simon Sinek), strategic-advisor (Peter Thiel), capital-allocator (Charlie Munger)
+
 ## Pre-Requisites
 - [ ] Meeting date confirmed and calendar holds sent
 - [ ] Agenda topics identified by CEO and Chair

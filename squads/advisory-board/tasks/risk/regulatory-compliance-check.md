@@ -17,6 +17,14 @@ Review the organization's regulatory compliance posture across all applicable ju
 - **Support:** CFO, CTO (for data and technology compliance), CHRO (for employment law), functional compliance owners
 - **Advisory:** Board members with legal or regulatory expertise, external legal counsel
 
+
+## Agent Assignment
+> Routing: see `config.yaml → routing → crisis-response-72h`
+
+- **Lead:** risk-sentinel (Ray Dalio)
+- **Support:** governance-clerk (Simon Sinek), ethics-compass (Yvon Chouinard)
+- **Review:** board-chair (Board Chair)
+
 ## Pre-Requisites
 - [ ] Regulatory register — list of all applicable regulations by jurisdiction and domain
 - [ ] Current compliance status for each regulation

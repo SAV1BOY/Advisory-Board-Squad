@@ -14,6 +14,13 @@ Systematically review and update all data, research, and benchmark files in the 
 - **Support:** Research analysts, functional leaders (for domain-specific data), CFO (financial benchmarks)
 - **Advisory:** Board Chair for prioritization of research areas
 
+
+## Agent Assignment
+> Routing: see `config.yaml → routing → quarterly-board-review`
+
+- **Lead:** governance-clerk (Simon Sinek)
+- **Support:** board-chair (Board Chair), strategic-advisor (Peter Thiel), capital-allocator (Charlie Munger)
+
 ## Pre-Requisites
 - [ ] Complete inventory of all data and research files with last-updated dates
 - [ ] Access to primary data sources (industry reports, public filings, databases)

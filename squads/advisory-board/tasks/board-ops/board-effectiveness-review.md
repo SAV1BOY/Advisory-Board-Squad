@@ -13,6 +13,14 @@ Assess how well the board is functioning across governance, strategy, oversight,
 - **Support:** Board Ops (survey distribution, data compilation)
 - **Participants:** All board members, CEO, CFO (management perspective)
 
+
+## Agent Assignment
+> Routing: see `config.yaml → routing → board-effectiveness-review`
+
+- **Lead:** board-chair (Board Chair)
+- **Support:** governance-clerk (Simon Sinek), culture-steward (Brene Brown)
+- **Review:** ethics-compass (Yvon Chouinard)
+
 ## Pre-Requisites
 - [ ] Board has been operating for at least 6 months (sufficient history to assess)
 - [ ] Survey instrument prepared or external facilitator engaged

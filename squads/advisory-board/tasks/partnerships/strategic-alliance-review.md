@@ -4,6 +4,13 @@
 
 Conduct a comprehensive review of all existing strategic alliances, partnerships, and joint ventures to assess performance, alignment, and whether each relationship should be expanded, maintained, restructured, or terminated.
 
+
+## Agent Assignment
+> Routing: see `config.yaml → routing → partnership-evaluation`
+
+- **Lead:** partnership-broker (Reid Hoffman)
+- **Support:** strategic-advisor (Peter Thiel), capital-allocator (Charlie Munger), board-chair (Board Chair)
+
 ## Context
 
 Strategic alliances accumulate over time. Without periodic review, companies maintain partnerships that no longer serve strategic objectives, miss opportunities to deepen high-performing relationships, and fail to recognize partnerships that have become liabilities.

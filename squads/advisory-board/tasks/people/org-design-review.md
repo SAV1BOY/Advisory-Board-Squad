@@ -15,6 +15,13 @@ Assess whether the current organizational structure supports the company strateg
 - **Support:** CHRO, functional leaders
 - **Advisory:** Board members with organizational expertise
 
+
+## Agent Assignment
+> Routing: see `config.yaml → routing → org-design-review`
+
+- **Lead:** talent-advisor (Patrick Lencioni)
+- **Support:** board-chair (Board Chair), simplicity-czar (Derek Sivers), culture-steward (Brene Brown)
+
 ## Pre-Requisites
 - [ ] Current org chart and role descriptions available
 - [ ] Strategic priorities defined

@@ -21,6 +21,10 @@ This is not a guideline. It is a constitution. Deviations require explicit board
 9. [Cross-Squad Integration Protocol](#9-cross-squad-integration-protocol)
 10. [Board Effectiveness Measurement](#10-board-effectiveness-measurement)
 11. [System Integrity and Maintenance](#11-system-integrity-and-maintenance)
+12. [Agent-Role Mapping](#12-agent-role-mapping)
+13. [Rework Loop Protocol](#13-rework-loop-protocol)
+14. [Delegation Protocol](#14-delegation-protocol)
+15. [Data Architecture](#15-data-architecture)
 
 ---
 
@@ -619,6 +623,112 @@ The governance-clerk runs a monthly system health check:
 - Are RalphLoop reviews being completed?
 
 Failures in the system health check are escalated to the board-chair and addressed before the next Full Board meeting.
+
+---
+
+## 12. Agent-Role Mapping
+
+Each advisory board agent is a thinker-based persona mapped to a functional role. The routing table in `config.yaml` uses role names; agent files use thinker names. This table is the canonical cross-reference.
+
+| Role (config.yaml) | Thinker | Agent File | Domain |
+|---|---|---|---|
+| board-chair | Board Chair | `agents/board-chair.md` | governance |
+| strategic-advisor | Peter Thiel | `agents/peter-thiel.md` | strategy |
+| capital-allocator | Charlie Munger | `agents/charlie-munger.md` | capital |
+| talent-advisor | Patrick Lencioni | `agents/patrick-lencioni.md` | people |
+| culture-steward | Brene Brown | `agents/brene-brown.md` | culture |
+| risk-sentinel | Ray Dalio | `agents/ray-dalio.md` | risk |
+| partnership-broker | Reid Hoffman | `agents/reid-hoffman.md` | partnerships |
+| growth-navigator | Naval Ravikant | `agents/naval-ravikant.md` | growth |
+| governance-clerk | Simon Sinek | `agents/simon-sinek.md` | governance |
+| ethics-compass | Yvon Chouinard | `agents/yvon-chouinard.md` | ethics |
+| simplicity-czar | Derek Sivers | `agents/derek-sivers.md` | operations |
+
+**Usage convention:** When routing tasks, use role names (e.g., `strategic-advisor`). When activating agent personas, use thinker names (e.g., Peter Thiel). The `config.yaml` `agent_mapping` section is the machine-readable source of truth.
+
+---
+
+## 13. Rework Loop Protocol
+
+When an output fails a quality gate, the following rework loop applies:
+
+### Process
+
+1. **Gate reviewer** documents specific failure points with evidence (what failed, why, what's needed).
+2. **Lead agent** receives failure report and has 24h (Type 2) or 72h (Type 1) to revise.
+3. **Revised output** is re-submitted to the same quality gate.
+4. **If second failure:** Escalate to board-chair (L1 escalation).
+5. **Board-chair** may: reassign to a different agent, adjust scope, or convene a review session.
+
+### Constraints
+
+- **Max rework cycles:** 3 per output
+- **On max exceeded:** Board-chair convenes emergency review. Task is descoped, reassigned, or archived with lessons captured in `data/registries/lessons-learned-registry.yaml`.
+- **No silent failures:** Every rework cycle is logged. Patterns of repeated failure trigger a process review via the RalphLoop (Section 6).
+
+### Anti-Patterns
+
+- Rubber-stamping on rework ("just pass it this time") — violates quality gate integrity.
+- Infinite rework without escalation — wastes capacity and signals scope or skill mismatch.
+- Rework without specific feedback — the reviewer must explain *what* failed and *why*.
+
+---
+
+## 14. Delegation Protocol
+
+When a task falls outside the advisory board's scope, it must be delegated — not dropped.
+
+### Out-of-Scope Indicators
+
+- Task requires hands-on execution (coding, design, content creation) rather than advisory input.
+- Task is operational/tactical with no strategic, governance, or capital dimension.
+- Task requires domain expertise not held by any advisory-board agent.
+- Task is a sub-task of a cross-squad handoff already assigned to the receiving squad.
+
+### Delegation Process
+
+1. Lead agent flags the task as a delegation candidate with written rationale.
+2. Board-chair validates the delegation decision.
+3. Governance-clerk (Simon Sinek) prepares a handoff package per `workflows/15-cross-squad-strategic-handoff.md`.
+4. The cross-squad handoff quality gate (`checklists/cross-squad-handoff-quality.md`) must pass before transfer.
+5. The delegation is logged in `data/registries/cross-squad-log.yaml`.
+
+### Receiving Squads
+
+See `config.yaml → cross_squad` for the full list of sibling squads and their handoff contracts.
+
+---
+
+## 15. Data Architecture
+
+The `data/` directory is the board's institutional memory. It stores registries, metrics, decisions, meeting minutes, and research.
+
+### Structure
+
+```
+data/
+├── registries/         # YAML files — structured, schema-defined records
+│   ├── decision-registry.yaml
+│   ├── risk-registry.yaml
+│   ├── action-items.yaml
+│   ├── cross-squad-log.yaml
+│   ├── ... (13+ registries)
+├── metrics/            # Markdown files — KPI definitions and tracking
+│   ├── decision-quality-scores.yaml (ref: config.yaml KPIs)
+│   ├── board-effectiveness-score.md
+│   ├── ... (17 metric files)
+├── decisions/          # Finalized decision records (YYYY-MM-DD-title.md)
+├── meeting-minutes/    # Meeting minutes (YYYY-MM-DD-meeting-type.md)
+└── research/           # Background research, market data, competitor profiles
+```
+
+### Governance Rules
+
+- **Registries** are schema-defined. New fields require board-chair approval.
+- **Decisions** are immutable once filed. Amendments create new entries referencing the original.
+- **Meeting minutes** are filed within 48 hours of the meeting. Missing minutes trigger an escalation.
+- **Metrics** are refreshed per their cadence (see `config.yaml → kpis`).
+- **Research** is refreshed quarterly or when triggered by strategic diagnosis tasks.
 
 ---
 

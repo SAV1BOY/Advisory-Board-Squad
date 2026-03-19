@@ -16,6 +16,14 @@ Design and implement an employee recognition program that reinforces company val
 - **Support:** CEO (executive sponsorship and modeling), functional leaders (program champions), finance (budget)
 - **Advisory:** Board members with experience in culture-driven organizations
 
+
+## Agent Assignment
+> Routing: see `config.yaml → routing → culture-audit`
+
+- **Lead:** culture-steward (Brene Brown)
+- **Support:** talent-advisor (Patrick Lencioni), growth-navigator (Naval Ravikant)
+- **Review:** board-chair (Board Chair)
+
 ## Pre-Requisites
 - [ ] Company values clearly defined and documented
 - [ ] Engagement survey data identifying recognition gaps

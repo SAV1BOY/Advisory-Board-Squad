@@ -14,6 +14,13 @@ Translate a board-approved strategic decision into a structured 30-60-90 day exe
 - **Support:** Functional leaders contributing to execution, Board Ops (tracking)
 - **Oversight:** CEO, Board sponsor for the initiative
 
+
+## Agent Assignment
+> Routing: see `config.yaml → routing → execution-30-60-90`
+
+- **Lead:** growth-navigator (Naval Ravikant)
+- **Support:** board-chair (Board Chair), simplicity-czar (Derek Sivers), strategic-advisor (Peter Thiel)
+
 ## Pre-Requisites
 - [ ] Board decision documented in decision log with clear parameters
 - [ ] Budget and resources approved

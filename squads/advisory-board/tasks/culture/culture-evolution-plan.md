@@ -15,6 +15,14 @@ Proactively evolve the company's culture to support its next stage of growth. Cu
 - **Support:** Functional leaders, culture champions across the organization
 - **Advisory:** Board members with organizational development expertise
 
+
+## Agent Assignment
+> Routing: see `config.yaml → routing → culture-audit`
+
+- **Lead:** culture-steward (Brene Brown)
+- **Support:** talent-advisor (Patrick Lencioni), board-chair (Board Chair)
+- **Review:** ethics-compass (Yvon Chouinard)
+
 ## Pre-Requisites
 - [ ] Culture audit completed
 - [ ] Strategic plan identifies cultural requirements

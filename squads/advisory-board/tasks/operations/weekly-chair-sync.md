@@ -13,6 +13,13 @@ Maintain a structured weekly sync between the CEO and Board Chair to ensure cont
 - **Support:** Board Chair
 - **Advisory:** Board Ops may attend for action tracking
 
+
+## Agent Assignment
+> Routing: see `config.yaml → routing → cross-squad-sync`
+
+- **Lead:** board-chair (Board Chair)
+- **Support:** governance-clerk (Simon Sinek)
+
 ## Pre-Requisites
 - [ ] Week's key developments documented
 - [ ] Any urgent board-level items identified

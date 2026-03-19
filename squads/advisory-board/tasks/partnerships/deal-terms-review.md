@@ -14,6 +14,14 @@ Review and negotiate the specific terms of a partnership, vendor contract, or co
 - **Support:** CFO for financial terms, CTO for technology terms, relevant functional leaders
 - **Advisory:** Board members for strategic terms guidance
 
+
+## Agent Assignment
+> Routing: see `config.yaml → routing → partnership-evaluation`
+
+- **Lead:** partnership-broker (Reid Hoffman)
+- **Support:** capital-allocator (Charlie Munger), risk-sentinel (Ray Dalio)
+- **Review:** board-chair (Board Chair)
+
 ## Pre-Requisites
 - [ ] Partner evaluation completed and board direction to proceed
 - [ ] Legal counsel engaged

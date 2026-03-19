@@ -15,11 +15,11 @@ A recurring process to identify new risks, reassess existing risks, validate mit
 
 | Agent | Role |
 |---|---|
-| Risk-Analyst | Maintains the register, conducts assessments |
-| Board-Chair | Reviews the register, ensures board engagement |
-| Strategy-Analyst | Links risks to strategic priorities |
-| Devil's-Advocate | Challenges risk ratings, identifies blind spots |
-| Governance-Ops | Manages the update process and archiving |
+| risk-sentinel (Ray Dalio) | Maintains the register, conducts assessments |
+| board-chair (Board Chair) | Reviews the register, ensures board engagement |
+| strategic-advisor (Peter Thiel) | Links risks to strategic priorities |
+| capital-allocator (Charlie Munger) | Challenges risk ratings, identifies blind spots |
+| governance-clerk (Simon Sinek) | Manages the update process and archiving |
 
 ## Phases
 
@@ -37,7 +37,7 @@ A recurring process to identify new risks, reassess existing risks, validate mit
    - Description: what could happen? Under what conditions?
    - Category: strategic, operational, financial, regulatory, reputational, technology, people.
    - Risk owner: the person accountable for monitoring and mitigation.
-3. Monthly: Risk-Analyst reviews all inputs and updates the register with new risks.
+3. Monthly: risk-sentinel reviews all inputs and updates the register with new risks.
 
 ### Phase 2 — Risk Assessment (Monthly + Quarterly)
 
@@ -52,7 +52,7 @@ A recurring process to identify new risks, reassess existing risks, validate mit
    - High (12-19): requires mitigation plan and regular monitoring.
    - Medium (6-11): monitored, mitigation optional.
    - Low (1-5): accepted, reviewed periodically.
-3. Devil's-Advocate challenges:
+3. capital-allocator challenges:
    - "Are we rating this too low because we don't want to deal with it?"
    - "What risk are we not seeing because it hasn't happened yet?"
    - "Which risks are correlated — if one materializes, which others become more likely?"
@@ -69,29 +69,29 @@ A recurring process to identify new risks, reassess existing risks, validate mit
    - Cost of mitigation (some mitigations are more expensive than the risk).
    - Residual risk after mitigation (what remains even after we act).
    - Trigger for escalation: what would cause this risk to jump to a higher category?
-3. Risk-Analyst validates that mitigation plans are realistic, resourced, and tracked.
+3. risk-sentinel validates that mitigation plans are realistic, resourced, and tracked.
 
 ### Phase 4 — Board Review (Quarterly)
 
-1. Risk-Analyst prepares the quarterly risk report:
+1. risk-sentinel prepares the quarterly risk report:
    - Risk heat map: all risks plotted on a likelihood × impact matrix.
    - Changes since last review: new risks, re-rated risks, materialized risks, retired risks.
    - Top 5 risks with mitigation status.
    - Emerging risks: early signals that don't yet meet the threshold for the register.
-2. Board-Chair allocates 15 minutes of the quarterly meeting for risk review.
+2. board-chair allocates 15 minutes of the quarterly meeting for risk review.
 3. Board discussion: are we focused on the right risks? Are mitigations adequate? What are we missing?
 4. Board decisions: accept current risk posture, or direct specific changes to mitigation plans.
 5. Record the board's risk posture decisions in the meeting minutes.
 
 ### Phase 5 — Annual Comprehensive Review (Annually)
 
-1. Risk-Analyst conducts a full review of the risk register:
+1. risk-sentinel conducts a full review of the risk register:
    - Every risk re-assessed from scratch (not just incremental updates).
    - Review the past year: which risks materialized? Were we prepared?
    - Review risk categories: are the categories still relevant? Any new categories needed?
    - Benchmark against industry risk reports and peer company disclosures.
-2. Devil's-Advocate leads a "black swan" exercise: brainstorm risks that are unlikely but catastrophic.
-3. Strategy-Analyst links the risk register to the strategic plan: are the biggest risks to our strategy adequately captured?
+2. capital-allocator leads a "black swan" exercise: brainstorm risks that are unlikely but catastrophic.
+3. strategic-advisor links the risk register to the strategic plan: are the biggest risks to our strategy adequately captured?
 4. Board dedicates a 60-minute session to the annual risk review.
 5. Update the register, retire resolved risks, add new risks, recalibrate scoring criteria.
 6. Archive the annual risk review package in `archive/risk-reviews/YYYY/`.
@@ -100,11 +100,11 @@ A recurring process to identify new risks, reassess existing risks, validate mit
 
 | Gate | Criteria | Owner |
 |---|---|---|
-| G1 — Register current | Monthly update completed, no stale risks | Risk-Analyst |
-| G2 — Assessments valid | All critical/high risks assessed within the last quarter | Risk-Analyst |
-| G3 — Mitigations active | Every critical/high risk has a mitigation plan with owners | Risk-Analyst |
-| G4 — Board reviewed | Quarterly risk report presented and discussed | Board-Chair |
-| G5 — Annual review complete | Full register re-assessment, black swan exercise, strategy linkage | Risk-Analyst |
+| G1 — Register current | Monthly update completed, no stale risks | risk-sentinel (Ray Dalio) |
+| G2 — Assessments valid | All critical/high risks assessed within the last quarter | risk-sentinel (Ray Dalio) |
+| G3 — Mitigations active | Every critical/high risk has a mitigation plan with owners | risk-sentinel (Ray Dalio) |
+| G4 — Board reviewed | Quarterly risk report presented and discussed | board-chair (Board Chair) |
+| G5 — Annual review complete | Full register re-assessment, black swan exercise, strategy linkage | risk-sentinel (Ray Dalio) |
 
 ## Outputs
 
@@ -139,9 +139,9 @@ A recurring process to identify new risks, reassess existing risks, validate mit
 
 | Failure Mode | Symptom | Mitigation |
 |---|---|---|
-| Stale register | Risks haven't been updated in months | Monthly update cycle enforced by Governance-Ops |
-| Risk inflation | Everything rated critical; nothing is actually prioritized | Enforce the scoring rubric; Devil's Advocate challenges ratings |
+| Stale register | Risks haven't been updated in months | Monthly update cycle enforced by governance-clerk |
+| Risk inflation | Everything rated critical; nothing is actually prioritized | Enforce the scoring rubric; capital-allocator challenges ratings |
 | Risk deflation | Real threats rated low to avoid board scrutiny | Annual review re-assesses from scratch; benchmark against industry |
-| Mitigation theater | Plans exist on paper but no one is executing | Risk-Analyst verifies action progress monthly |
-| Missing correlations | Risks assessed individually but correlated risks not considered | Devil's Advocate explicitly asks about risk interactions |
+| Mitigation theater | Plans exist on paper but no one is executing | risk-sentinel verifies action progress monthly |
+| Missing correlations | Risks assessed individually but correlated risks not considered | capital-allocator explicitly asks about risk interactions |
 | Black swan avoidance | Only incremental risks considered; catastrophic risks ignored | Annual black swan exercise is mandatory |

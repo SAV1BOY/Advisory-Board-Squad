@@ -14,6 +14,13 @@ Develop and execute a fundraising strategy that secures capital on favorable ter
 - **Support:** CFO (model, data room, financial narrative), Legal (term sheet, documentation)
 - **Advisory:** Board members (introductions, references, signaling, term negotiation)
 
+
+## Agent Assignment
+> Routing: see `config.yaml → routing → fundraising-plan`
+
+- **Lead:** capital-allocator (Charlie Munger)
+- **Support:** board-chair (Board Chair), strategic-advisor (Peter Thiel), partnership-broker (Reid Hoffman)
+
 ## Pre-Requisites
 - [ ] Clear strategic narrative and use of proceeds plan
 - [ ] Financial model updated and stress-tested

@@ -15,6 +15,13 @@ Establish and maintain the annual board meeting calendar, ensuring a well-struct
 - **Support:** Board Chair, CEO, executive assistant to Chair and CEO
 - **Advisory:** Board Chair for strategic session planning
 
+
+## Agent Assignment
+> Routing: see `config.yaml → routing → board-setup`
+
+- **Lead:** governance-clerk (Simon Sinek)
+- **Support:** board-chair (Board Chair)
+
 ## Pre-Requisites
 - [ ] Board member availability collected for the year
 - [ ] Key business calendar events identified (fiscal year end, annual planning, audit cycle)

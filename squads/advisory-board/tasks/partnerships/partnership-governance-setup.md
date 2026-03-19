@@ -13,6 +13,14 @@ Establish the governance framework for a new partnership including joint decisio
 - **Support:** Legal for governance documentation, Product or Engineering for technical governance, Finance for financial governance
 - **Advisory:** Board sponsor for the partnership
 
+
+## Agent Assignment
+> Routing: see `config.yaml → routing → partnership-evaluation`
+
+- **Lead:** partnership-broker (Reid Hoffman)
+- **Support:** governance-clerk (Simon Sinek), board-chair (Board Chair)
+- **Review:** ethics-compass (Yvon Chouinard)
+
 ## Pre-Requisites
 - [ ] Partnership agreement signed
 - [ ] Key contacts identified on both sides

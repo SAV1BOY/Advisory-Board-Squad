@@ -1,0 +1,43 @@
+# Cross-Squad Log
+# Logs all handoffs and interactions between the advisory board and other squads.
+# Each entry records the direction, context, and assets exchanged to maintain coordination.
+
+schema:
+  log_id:
+    type: string
+    format: "XSQ-YYYY-NNN"
+    description: "Unique identifier for the cross-squad interaction"
+    required: true
+  date:
+    type: date
+    format: "YYYY-MM-DD"
+    description: "Date the interaction occurred"
+    required: true
+  direction:
+    type: string
+    enum: [inbound, outbound]
+    description: "Whether the advisory board received (inbound) or initiated (outbound) the interaction"
+    required: true
+  squad:
+    type: string
+    description: "Name of the other squad involved"
+    required: true
+  description:
+    type: string
+    description: "Summary of the interaction or handoff"
+    required: true
+  assets_exchanged:
+    type: list
+    description: "List of documents, data, or deliverables exchanged"
+    required: false
+  status:
+    type: string
+    enum: [open, in-progress, completed, stalled]
+    description: "Current status of the interaction"
+    required: true
+  follow_up:
+    type: string
+    description: "Next steps or follow-up actions required"
+    required: false
+
+entries: []

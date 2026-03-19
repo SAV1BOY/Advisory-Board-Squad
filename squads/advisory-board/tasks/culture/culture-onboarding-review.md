@@ -14,6 +14,14 @@ Assess how effectively the company's onboarding process transmits culture to new
 - **Support:** Hiring managers, recent hires, onboarding program designers
 - **Advisory:** Board sponsor for culture if one exists
 
+
+## Agent Assignment
+> Routing: see `config.yaml → routing → culture-audit`
+
+- **Lead:** culture-steward (Brene Brown)
+- **Support:** talent-advisor (Patrick Lencioni), governance-clerk (Simon Sinek)
+- **Review:** board-chair (Board Chair)
+
 ## Pre-Requisites
 - [ ] Current onboarding program documented
 - [ ] New hire survey data available

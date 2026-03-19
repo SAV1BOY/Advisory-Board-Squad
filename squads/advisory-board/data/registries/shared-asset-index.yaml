@@ -1,0 +1,37 @@
+# Shared Asset Index
+# Index of all assets shared between the advisory board and other squads.
+# Each entry tracks ownership, governance, and which squads have access to the asset.
+
+schema:
+  asset_id:
+    type: string
+    format: "AST-NNN"
+    description: "Unique identifier for the shared asset"
+    required: true
+  path:
+    type: string
+    description: "Relative file path to the asset within the repository"
+    required: true
+  description:
+    type: string
+    description: "Brief description of the asset and its purpose"
+    required: true
+  shared_with_squads:
+    type: list
+    description: "List of squad names that have access to or use this asset"
+    required: true
+  owner_squad:
+    type: string
+    description: "Squad responsible for maintaining the asset"
+    required: true
+  last_updated:
+    type: date
+    format: "YYYY-MM-DD"
+    description: "Date the asset was last modified"
+    required: true
+  governance_notes:
+    type: string
+    description: "Notes on access control, update procedures, or review requirements"
+    required: false
+
+entries: []

@@ -16,6 +16,13 @@ Maintain and update the board's knowledge base — the collection of reference m
 - **Support:** CEO, CFO, General Counsel, functional leaders (for content areas they own)
 - **Advisory:** Board Chair for governance materials
 
+
+## Agent Assignment
+> Routing: see `config.yaml → routing → cross-squad-sync`
+
+- **Lead:** governance-clerk (Simon Sinek)
+- **Support:** board-chair (Board Chair), strategic-advisor (Peter Thiel)
+
 ## Pre-Requisites
 - [ ] Current knowledge base inventory and structure documented
 - [ ] Access permissions and security protocols defined

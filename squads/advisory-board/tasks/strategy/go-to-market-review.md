@@ -16,6 +16,14 @@ Evaluate the effectiveness of the company's go-to-market strategy across sales, 
 - **Support:** Head of Marketing, Head of Customer Success, Head of Partnerships, Product Marketing
 - **Advisory:** Board members with GTM, sales, or market development expertise
 
+
+## Agent Assignment
+> Routing: see `config.yaml → routing → strategic-diagnosis`
+
+- **Lead:** strategic-advisor (Peter Thiel)
+- **Support:** growth-navigator (Naval Ravikant), partnership-broker (Reid Hoffman)
+- **Review:** board-chair (Board Chair)
+
 ## Pre-Requisites
 - [ ] Sales pipeline and conversion data current
 - [ ] Marketing funnel metrics and attribution data available

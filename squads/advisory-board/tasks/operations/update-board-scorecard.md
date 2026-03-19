@@ -13,6 +13,13 @@ Refresh the board scorecard dashboard with current data across all dimensions to
 - **Support:** Functional leaders for their metrics, Data or Analytics team
 - **Advisory:** Board Chair for scorecard design decisions
 
+
+## Agent Assignment
+> Routing: see `config.yaml → routing → quarterly-board-review`
+
+- **Lead:** governance-clerk (Simon Sinek)
+- **Support:** board-chair (Board Chair), capital-allocator (Charlie Munger)
+
 ## Pre-Requisites
 - [ ] Data sources identified and accessible for each metric
 - [ ] Prior scorecard available as baseline

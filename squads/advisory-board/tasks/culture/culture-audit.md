@@ -15,6 +15,13 @@ Conduct a comprehensive assessment of the company's culture against its stated v
 - **Support:** CEO, functional leaders, external culture consultant if needed
 - **Advisory:** Board members particularly those with people and culture expertise
 
+
+## Agent Assignment
+> Routing: see `config.yaml → routing → culture-audit`
+
+- **Lead:** culture-steward (Brene Brown)
+- **Support:** board-chair (Board Chair), talent-advisor (Patrick Lencioni), ethics-compass (Yvon Chouinard)
+
 ## Pre-Requisites
 - [ ] Engagement survey data current
 - [ ] Exit interview data compiled

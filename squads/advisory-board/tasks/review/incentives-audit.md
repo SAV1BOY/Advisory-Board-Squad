@@ -15,6 +15,14 @@ Review compensation, bonus, equity, and non-financial incentive structures to en
 - **Support:** CEO, functional leaders, compensation consultant if engaged
 - **Advisory:** Board compensation committee
 
+
+## Agent Assignment
+> Routing: see `config.yaml → routing → decision-quality-review`
+
+- **Lead:** ethics-compass (Yvon Chouinard)
+- **Support:** capital-allocator (Charlie Munger), talent-advisor (Patrick Lencioni)
+- **Review:** board-chair (Board Chair)
+
 ## Pre-Requisites
 - [ ] Current compensation and incentive structure documentation
 - [ ] Performance review data

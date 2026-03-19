@@ -14,6 +14,14 @@ Assess whether the current board composition matches the company's current and a
 - **Support:** Board Ops, CEO
 - **Advisory:** Governance advisor or legal counsel (if governance changes needed)
 
+
+## Agent Assignment
+> Routing: see `config.yaml → routing → board-setup`
+
+- **Lead:** board-chair (Board Chair)
+- **Support:** governance-clerk (Simon Sinek), talent-advisor (Patrick Lencioni)
+- **Review:** ethics-compass (Yvon Chouinard)
+
 ## Pre-Requisites
 - [ ] Current skills matrix exists
 - [ ] Board effectiveness review completed (or in progress)

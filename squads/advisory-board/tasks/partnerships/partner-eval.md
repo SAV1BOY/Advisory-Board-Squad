@@ -15,6 +15,14 @@ Evaluate a potential strategic partner for strategic fit, value creation potenti
 - **Support:** Product for technical fit assessment, Legal for terms review, Finance for economic modeling
 - **Advisory:** Board members with relevant industry connections or partnership experience
 
+
+## Agent Assignment
+> Routing: see `config.yaml → routing → partnership-evaluation`
+
+- **Lead:** partnership-broker (Reid Hoffman)
+- **Support:** board-chair (Board Chair), strategic-advisor (Peter Thiel), risk-sentinel (Ray Dalio), capital-allocator (Charlie Munger)
+- **Review:** ethics-compass (Yvon Chouinard)
+
 ## Pre-Requisites
 - [ ] Initial partner conversations have occurred and mutual interest confirmed
 - [ ] NDA signed if needed

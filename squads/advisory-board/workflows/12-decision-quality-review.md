@@ -14,17 +14,17 @@ A systematic retrospective on the quality of past decisions — not just their o
 
 | Agent | Role |
 |---|---|
-| Board-Chair | Facilitates the review, ensures intellectual honesty |
-| Strategy-Analyst | Compiles decision data, calculates accuracy metrics |
-| Devil's-Advocate | Challenges outcome-bias and hindsight-bias in the review |
-| Decision-Tracker | Maintains the decision log with outcomes and annotations |
-| Governance-Ops | Archives review findings and updates the decision framework |
+| board-chair (Board Chair) | Facilitates the review, ensures intellectual honesty |
+| strategic-advisor (Peter Thiel) | Compiles decision data, calculates accuracy metrics |
+| capital-allocator (Charlie Munger) | Challenges outcome-bias and hindsight-bias in the review |
+| governance-clerk (Simon Sinek) | Maintains the decision log with outcomes and annotations |
+| governance-clerk (Simon Sinek) | Archives review findings and updates the decision framework |
 
 ## Phases
 
 ### Phase 1 — Decision Inventory (Days 1-5)
 
-1. Decision-Tracker pulls all decisions from the decision log for the review period.
+1. governance-clerk pulls all decisions from the decision log for the review period.
 2. For each decision, compile:
    - Date, question, options considered, decision made, rationale, dissenting views.
    - Projected outcome at time of decision.
@@ -37,7 +37,7 @@ A systematic retrospective on the quality of past decisions — not just their o
 
 ### Phase 2 — Process Quality Assessment (Days 5-10)
 
-1. For each flagged decision, Strategy-Analyst evaluates the decision process (not the outcome):
+1. For each flagged decision, strategic-advisor evaluates the decision process (not the outcome):
    - Information quality: did we have the right information? Was it complete? Was it accurate?
    - Option generation: did we consider enough alternatives? Were they genuinely distinct?
    - Assumption testing: were key assumptions identified and tested?
@@ -45,11 +45,11 @@ A systematic retrospective on the quality of past decisions — not just their o
    - Decision criteria: were criteria clear and applied consistently?
    - Reversibility awareness: did we correctly assess how reversible the decision was?
 2. Score each decision's process quality on a 1-5 scale independent of outcome.
-3. Devil's-Advocate challenges: "Are we rating this process poorly because the outcome was bad (outcome bias)? Would we rate it the same if the outcome had been good?"
+3. capital-allocator challenges: "Are we rating this process poorly because the outcome was bad (outcome bias)? Would we rate it the same if the outcome had been good?"
 
 ### Phase 3 — Bias Identification (Days 10-15)
 
-1. Strategy-Analyst analyzes the full decision set for systematic patterns:
+1. strategic-advisor analyzes the full decision set for systematic patterns:
    - Optimism bias: are projections consistently too optimistic? By how much?
    - Anchoring: are decisions disproportionately influenced by the first option presented?
    - Status quo bias: how often does the board endorse the existing approach when change was warranted?
@@ -57,11 +57,11 @@ A systematic retrospective on the quality of past decisions — not just their o
    - Recency bias: are recent events over-weighted in risk assessments?
    - Sunk cost: are failing initiatives continued because of prior investment?
 2. Compare to prior review periods: are biases improving, stable, or worsening?
-3. Devil's-Advocate presents the findings with specific examples. No abstractions — concrete instances.
+3. capital-allocator presents the findings with specific examples. No abstractions — concrete instances.
 
 ### Phase 4 — Learning Integration (Days 15-20)
 
-1. Board-Chair convenes the review session (90 minutes for annual; 15 minutes for quarterly):
+1. board-chair convenes the review session (90 minutes for annual; 15 minutes for quarterly):
    - Present decision accuracy metrics (15 min).
    - Walk through 2-3 case studies: one good process/good outcome, one good process/bad outcome, one bad process (15 min each).
    - Present bias analysis with trends (15 min).
@@ -69,15 +69,15 @@ A systematic retrospective on the quality of past decisions — not just their o
 2. For each identified improvement:
    - Update the decision framework (decision-policy.md) with specific changes.
    - Update the pre-read template if information quality was a recurring issue.
-   - Adjust the Devil's Advocate protocol if dissent quality was weak.
+   - Adjust the capital-allocator protocol if dissent quality was weak.
 3. Document the review findings and changes in the decision quality log.
 
 ### Phase 5 — Framework Update & Monitoring (Days 20-30)
 
-1. Governance-Ops updates the decision policy and related templates.
-2. Strategy-Analyst recalibrates any scoring rubrics or evaluation frameworks based on findings.
-3. Decision-Tracker adds new annotation fields to the decision log if the review revealed missing data.
-4. Board-Chair communicates the key learnings and framework changes to the executive team.
+1. governance-clerk updates the decision policy and related templates.
+2. strategic-advisor recalibrates any scoring rubrics or evaluation frameworks based on findings.
+3. governance-clerk adds new annotation fields to the decision log if the review revealed missing data.
+4. board-chair communicates the key learnings and framework changes to the executive team.
 5. Set the calibration question for the next review: "We predicted that [X]. Let's check at the next review whether [X] materialized."
 6. Archive the review package in `archive/decision-reviews/`.
 
@@ -85,11 +85,11 @@ A systematic retrospective on the quality of past decisions — not just their o
 
 | Gate | Criteria | Owner |
 |---|---|---|
-| G1 — Decision inventory complete | All decisions compiled with projections and outcomes | Decision-Tracker |
-| G2 — Process scored | Each flagged decision scored for process quality (1-5) | Strategy-Analyst |
-| G3 — Bias analysis complete | Systematic patterns identified with specific examples | Strategy-Analyst |
-| G4 — Review session held | Board discusses findings and agrees on changes | Board-Chair |
-| G5 — Framework updated | Decision policy and templates updated based on findings | Governance-Ops |
+| G1 — Decision inventory complete | All decisions compiled with projections and outcomes | governance-clerk (Simon Sinek) |
+| G2 — Process scored | Each flagged decision scored for process quality (1-5) | strategic-advisor (Peter Thiel) |
+| G3 — Bias analysis complete | Systematic patterns identified with specific examples | strategic-advisor (Peter Thiel) |
+| G4 — Review session held | Board discusses findings and agrees on changes | board-chair (Board Chair) |
+| G5 — Framework updated | Decision policy and templates updated based on findings | governance-clerk (Simon Sinek) |
 
 ## Outputs
 
@@ -126,7 +126,7 @@ A systematic retrospective on the quality of past decisions — not just their o
 
 | Failure Mode | Symptom | Mitigation |
 |---|---|---|
-| Outcome bias | Rating process quality based on outcome, not process | Devil's Advocate explicitly challenges this; score process before revealing outcome |
+| Outcome bias | Rating process quality based on outcome, not process | capital-allocator explicitly challenges this; score process before revealing outcome |
 | Hindsight bias | "We should have known" — applying current knowledge to past decisions | Review only the information available at the time of the decision |
 | Cherry-picking | Only reviewing decisions that went well | Review all flagged decisions, including uncomfortable ones |
 | Abstract learnings | "We need to be better at X" without specific changes | Every learning must produce a specific framework, template, or process change |

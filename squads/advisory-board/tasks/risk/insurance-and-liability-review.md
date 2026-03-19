@@ -16,6 +16,14 @@ Review the organization's insurance coverage and liability exposure to ensure ad
 - **Support:** Insurance broker, CHRO (for employment practices coverage), CTO (for cyber coverage), operations leads
 - **Advisory:** Board members with risk management or insurance expertise
 
+
+## Agent Assignment
+> Routing: see `config.yaml → routing → capital-allocation-review`
+
+- **Lead:** risk-sentinel (Ray Dalio)
+- **Support:** capital-allocator (Charlie Munger), governance-clerk (Simon Sinek)
+- **Review:** board-chair (Board Chair)
+
 ## Pre-Requisites
 - [ ] Current insurance policy schedule — all active policies with terms, limits, and premiums
 - [ ] Claims history for the past 3-5 years

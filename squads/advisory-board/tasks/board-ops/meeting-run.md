@@ -11,6 +11,13 @@ Facilitate an effective board meeting that produces clear decisions, actionable 
 - **Support:** Board Ops (minutes, time management, logistics)
 - **Participants:** Board members, CEO, invited management presenters
 
+
+## Agent Assignment
+> Routing: see `config.yaml → routing → board-meeting-run`
+
+- **Lead:** board-chair (Board Chair)
+- **Support:** governance-clerk (Simon Sinek), simplicity-czar (Derek Sivers)
+
 ## Pre-Requisites
 - [ ] All meeting-prep.md steps completed
 - [ ] Quorum confirmed

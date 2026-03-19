@@ -16,6 +16,13 @@ Proactively assess and manage risks to the company's reputation with customers, 
 - **Support:** Legal Counsel, CHRO, Customer Success, Marketing
 - **Advisory:** Board members with communications or crisis management experience
 
+
+## Agent Assignment
+> Routing: see `config.yaml → routing → crisis-response-72h`
+
+- **Lead:** risk-sentinel (Ray Dalio)
+- **Support:** ethics-compass (Yvon Chouinard), culture-steward (Brene Brown), board-chair (Board Chair)
+
 ## Pre-Requisites
 - [ ] Media monitoring data available
 - [ ] Social media sentiment data available

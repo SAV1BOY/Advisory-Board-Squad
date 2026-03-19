@@ -13,6 +13,13 @@ Execute a structured onboarding process for a new advisory board member to maxim
 - **Support:** Board Chair for relationship integration, CHRO for administrative setup
 - **Advisory:** Existing board members for relationship building
 
+
+## Agent Assignment
+> Routing: see `config.yaml → routing → board-setup`
+
+- **Lead:** board-chair (Board Chair)
+- **Support:** governance-clerk (Simon Sinek), talent-advisor (Patrick Lencioni)
+
 ## Pre-Requisites
 - [ ] Board member agreement signed
 - [ ] Compensation and equity terms finalized

@@ -14,21 +14,21 @@ Establishes the Advisory Board from scratch: ratifies the charter, locks the ope
 
 | Agent | Role |
 |---|---|
-| Board-Chair | Drives charter drafting, sets agenda for Meeting Zero |
-| Governance-Ops | Prepares templates, logistics, access permissions |
-| Strategy-Analyst | Supplies market context and competitive landscape brief |
-| Culture-Guardian | Validates that charter aligns with stated values |
+| board-chair (Board Chair) | Drives charter drafting, sets agenda for Meeting Zero |
+| governance-clerk (Simon Sinek) | Prepares templates, logistics, access permissions |
+| strategic-advisor (Peter Thiel) | Supplies market context and competitive landscape brief |
+| culture-steward (Brene Brown) | Validates that charter aligns with stated values |
 
 ## Phases
 
 ### Phase 1 — Charter Drafting (Days 1-5)
 
-1. Board-Chair pulls the charter template from `templates/board-charter-template.md`.
+1. board-chair pulls the charter template from `templates/board-charter-template.md`.
 2. Fill in: purpose statement, scope of authority, composition requirements, term lengths, quorum rules, decision-rights matrix, confidentiality obligations.
-3. Strategy-Analyst attaches a one-page market context brief so advisors understand the operating environment.
-4. Culture-Guardian reviews the charter for alignment with company values and flags any tension points.
+3. strategic-advisor attaches a one-page market context brief so advisors understand the operating environment.
+4. culture-steward reviews the charter for alignment with company values and flags any tension points.
 5. Circulate the draft to all prospective advisors for async comment (48-hour window).
-6. Board-Chair resolves comments and produces Charter v1.0.
+6. board-chair resolves comments and produces Charter v1.0.
 
 ### Phase 2 — Cadence Design (Days 3-7)
 
@@ -40,7 +40,7 @@ Establishes the Advisory Board from scratch: ratifies the charter, locks the ope
 
 ### Phase 3 — Format Standards (Days 5-10)
 
-1. Governance-Ops finalizes document templates:
+1. governance-clerk finalizes document templates:
    - Pre-read memo (2-page max, structured: context → question → options → recommendation).
    - Meeting minutes (decisions, action items, dissenting views, next steps).
    - Decision log entry (date, question, options considered, decision, rationale, owner, review date).
@@ -51,7 +51,7 @@ Establishes the Advisory Board from scratch: ratifies the charter, locks the ope
 
 ### Phase 4 — Inaugural Meeting (Day 12-14)
 
-1. Board-Chair sends the agenda 5 days in advance along with the charter and market context brief.
+1. board-chair sends the agenda 5 days in advance along with the charter and market context brief.
 2. Meeting Zero agenda:
    - Introductions and expectations alignment (15 min).
    - Charter walkthrough and ratification vote (20 min).
@@ -59,26 +59,26 @@ Establishes the Advisory Board from scratch: ratifies the charter, locks the ope
    - First strategic topic: top three risks and opportunities (30 min).
    - Decision-rights exercise: walk through a hypothetical decision to test the process (15 min).
    - Wrap-up: confirm next meeting date, assign first pre-read owners (10 min).
-3. Governance-Ops records minutes using the standard template.
+3. governance-clerk records minutes using the standard template.
 4. Within 24 hours, distribute minutes, ratified charter, and first action items.
 
 ### Phase 5 — Post-Setup Hardening (Days 15-21)
 
-1. Board-Chair conducts a 15-minute 1:1 with each advisor to capture initial impressions and concerns.
-2. Governance-Ops archives Meeting Zero artifacts in `archive/`.
-3. Strategy-Analyst updates the risk register with items surfaced during the meeting.
-4. Culture-Guardian logs any value-alignment observations for the first effectiveness review.
-5. Board-Chair writes a brief retrospective memo: what worked, what to adjust for Meeting One.
+1. board-chair conducts a 15-minute 1:1 with each advisor to capture initial impressions and concerns.
+2. governance-clerk archives Meeting Zero artifacts in `archive/`.
+3. strategic-advisor updates the risk register with items surfaced during the meeting.
+4. culture-steward logs any value-alignment observations for the first effectiveness review.
+5. board-chair writes a brief retrospective memo: what worked, what to adjust for Meeting One.
 
 ## Quality Gates
 
 | Gate | Criteria | Owner |
 |---|---|---|
-| G1 — Charter Complete | All required sections filled, no open comments, ratified by quorum | Board-Chair |
-| G2 — Calendar Locked | 12-month calendar holds sent, confirmed by >80 % of advisors | Governance-Ops |
-| G3 — Templates Validated | All four core templates reviewed, version-numbered, accessible | Governance-Ops |
-| G4 — Meeting Zero Done | Minutes distributed within 24 hours, action items assigned | Board-Chair |
-| G5 — Post-Setup Retro | Retrospective memo filed, 1:1 feedback collected | Board-Chair |
+| G1 — Charter Complete | All required sections filled, no open comments, ratified by quorum | board-chair (Board Chair) |
+| G2 — Calendar Locked | 12-month calendar holds sent, confirmed by >80 % of advisors | governance-clerk (Simon Sinek) |
+| G3 — Templates Validated | All four core templates reviewed, version-numbered, accessible | governance-clerk (Simon Sinek) |
+| G4 — Meeting Zero Done | Minutes distributed within 24 hours, action items assigned | board-chair (Board Chair) |
+| G5 — Post-Setup Retro | Retrospective memo filed, 1:1 feedback collected | board-chair (Board Chair) |
 
 ## Outputs
 
@@ -117,7 +117,7 @@ Total elapsed time: **3 weeks** from kickoff to fully operational board.
 |---|---|---|
 | Charter bloat | Document exceeds 5 pages; advisors don't read it | Enforce 3-page max; move details to appendices |
 | Calendar drift | Meetings slip within the first quarter | Lock dates 12 months out; treat moves as exceptions requiring Chair approval |
-| Template ignorance | Advisors submit free-form memos | Reject non-compliant pre-reads; Governance-Ops returns with template link |
+| Template ignorance | Advisors submit free-form memos | Reject non-compliant pre-reads; governance-clerk returns with template link |
 | Passive inaugural meeting | No substantive debate in Meeting Zero | Seed the agenda with a genuine strategic tension, not a softball topic |
 | Access gaps | Advisors can't find shared drive or templates | Test access for every advisor before Meeting Zero; keep a checklist |
-| Skipping the retro | Post-setup retrospective never happens | Board-Chair blocks 30 minutes on Day 15; Governance-Ops enforces |
+| Skipping the retro | Post-setup retrospective never happens | board-chair blocks 30 minutes on Day 15; governance-clerk enforces |

@@ -16,6 +16,14 @@ Review executive compensation and equity packages to ensure they are competitive
 - **Support:** CFO (for financial modeling), external compensation consultant (if engaged)
 - **Advisory:** Board compensation committee or full board
 
+
+## Agent Assignment
+> Routing: see `config.yaml → routing → exec-hiring`
+
+- **Lead:** talent-advisor (Patrick Lencioni)
+- **Support:** capital-allocator (Charlie Munger), board-chair (Board Chair)
+- **Review:** ethics-compass (Yvon Chouinard)
+
 ## Pre-Requisites
 - [ ] Current compensation data for all executives — base, bonus, equity, benefits
 - [ ] Market compensation benchmarks from reputable sources (Radford, Carta, Option Impact, etc.)

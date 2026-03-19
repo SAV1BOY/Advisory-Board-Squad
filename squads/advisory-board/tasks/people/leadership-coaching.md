@@ -14,6 +14,13 @@ Identify executive development needs and establish coaching engagements to close
 - **Support:** CHRO for coach selection and engagement management
 - **Advisory:** Board sponsor assigned to monitor progress
 
+
+## Agent Assignment
+> Routing: see `config.yaml → routing → exec-hiring`
+
+- **Lead:** talent-advisor (Patrick Lencioni)
+- **Support:** culture-steward (Brene Brown), board-chair (Board Chair)
+
 ## Pre-Requisites
 - [ ] Development gaps identified and documented
 - [ ] Budget for coaching engagement approved

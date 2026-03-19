@@ -14,6 +14,14 @@ Evaluate and plan expansion into a new market segment, geography, or customer ti
 - **Support:** Product for market-product fit, Finance for unit economics, Legal for regulatory
 - **Advisory:** Board members with relevant market experience
 
+
+## Agent Assignment
+> Routing: see `config.yaml → routing → strategic-diagnosis`
+
+- **Lead:** strategic-advisor (Peter Thiel)
+- **Support:** growth-navigator (Naval Ravikant), partnership-broker (Reid Hoffman), risk-sentinel (Ray Dalio)
+- **Review:** board-chair (Board Chair)
+
 ## Pre-Requisites
 - [ ] Current market performance data available
 - [ ] Target market research conducted

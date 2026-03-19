@@ -1,0 +1,43 @@
+# Committee Assignments
+# Tracks which agents and members are assigned to which committees and working groups.
+# Each entry represents a standing or ad-hoc committee with its membership and cadence.
+
+schema:
+  committee_id:
+    type: string
+    format: "COM-NNN"
+    description: "Unique identifier for the committee"
+    required: true
+  name:
+    type: string
+    description: "Name of the committee or working group"
+    required: true
+  purpose:
+    type: string
+    description: "Charter statement describing the committee's mandate"
+    required: true
+  members:
+    type: list
+    description: "List of member_ids assigned to this committee"
+    required: true
+  chair:
+    type: string
+    description: "member_id of the committee chair"
+    required: true
+  cadence:
+    type: string
+    enum: [weekly, biweekly, monthly, quarterly, ad-hoc]
+    description: "How often the committee meets"
+    required: true
+  last_meeting:
+    type: date
+    format: "YYYY-MM-DD"
+    description: "Date of the most recent meeting"
+    required: false
+  next_meeting:
+    type: date
+    format: "YYYY-MM-DD"
+    description: "Date of the next scheduled meeting"
+    required: false
+
+entries: []

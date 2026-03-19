@@ -16,6 +16,14 @@ Execute a structured crisis response when a significant adverse event occurs. En
 - **Support:** Communications Lead, Legal Counsel, relevant functional leaders, external advisors as needed
 - **Advisory:** Board Chair and full board per urgency level communication protocol
 
+
+## Agent Assignment
+> Routing: see `config.yaml → routing → crisis-response-72h`
+
+- **Lead:** risk-sentinel (Ray Dalio)
+- **Support:** board-chair (Board Chair), ethics-compass (Yvon Chouinard), culture-steward (Brene Brown)
+- **Review:** governance-clerk (Simon Sinek)
+
 ## Pre-Requisites
 - [ ] Crisis brief template available
 - [ ] Emergency contact list current
